@@ -4,4 +4,6 @@
 
 > *** Note: To view the result of Java 1 Object, you need to open MOB1014-Lap-trinh-java-1/ps18817_TranCaoMinh/src
 
-Spring 2021 Semester: 
+> **Spring 2021 Semester**: MySQL Database, Javascript Basis, Adobe Photoshop
+
+Summer 2021 Semester
