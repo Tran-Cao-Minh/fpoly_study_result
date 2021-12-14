@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            text-align: center;
+        }
+        button
+        {
+            width: 80px;
+            height: 80px;
+        }
+        table
+        {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h3>TICTACTOE GAME</h3>
+    <table>
+        <tr>
+            <td><button onclick="mark(0)"></button></td>
+            <td><button onclick="mark(1)"></button></td>
+            <td><button onclick="mark(2)"></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="mark(3)"></button></td>
+            <td><button onclick="mark(4)"></button></td>
+            <td><button onclick="mark(5)"></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="mark(6)"></button></td>
+            <td><button onclick="mark(7)"></button></td>
+            <td><button onclick="mark(8)"></button></td>
+        </tr>
+    </table>
+    <script>
+        // khai bao bien toan cuc
+        var count = 0; // gioi han so lan 
+        var flag = true; // chon nhan true X / false O
+        // su kien click nut thu i
+        function mark(i)
+        {
+            var button = document.getElementsByTagName("button")[i];
+            button.innerText = flag?"X":"O";
+            button.style.backgroundColor = flag?"aqua":"yellow";
+            button.setAttribute("disabled","true");
+            flag = !flag; // dao nguoc flag
+            count ++; // dem so lan click
+            if(count == 8)
+            {
+                alert("Game over!");
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>

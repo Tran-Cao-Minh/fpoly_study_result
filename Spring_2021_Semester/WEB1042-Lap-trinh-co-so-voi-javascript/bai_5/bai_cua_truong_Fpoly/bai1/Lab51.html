@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- chua ten va gia san pham -->
+    <label id="pro" data-price="1950">iPhone 9</label>
+    <!-- chua so luong san pham nhap vao -->
+    <input type="number" id="qty" value="1" min="0">
+    <button onclick="display()">OK</button>
+    <hr>
+    <!-- hien thi ten va gia san pham -->
+    <h3>Name: <span id="name">?</span></h3>
+    <h3>Amount: <span id="amount">?</span></h3>
+    <script>
+        function display()
+        {
+            // truy xuat ten va gia san pham
+            var pro = document.getElementById("pro");
+            var name = pro.innerText;
+            var price = pro.getAttribute("data-price");
+            // doc gia tri nhap tu input:number
+            var quantity = qty.value;
+            // tinh gia tri thanh tien
+            var amount = price * quantity;
+            // hien thi ket qua
+            document.getElementById("name").innerText = name;
+            document.getElementById("amount").innerText = amount;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleAll.css">
+    <script type="text/javascript">
+        var check;
+        function moCuaSo()
+        {
+            myWindow = window.open('https://www.google.com.vn/','Google',
+                                    'width=100, height=100');
+            check = true;
+        }
+        function dongCuaSo()
+        {
+            myWindow.close();
+            check = false;
+        }
+        function kiemTra()
+        {
+            if(check == true)
+            {
+                alert("Cửa sổ mới vẫn chưa được đóng");
+            }
+            else if(check == false)
+            {
+                alert("Cửa sổ mới đã được đóng");
+            }
+        }
+    </script>
+</head>
+<body>  
+    <button onclick="moCuaSo()">Mở cửa sổ mới</button>
+    <button onclick="dongCuaSo()">Đóng cửa sổ mới</button>
+    <button onclick="kiemTra()">Kiểm tra cửa sổ mới đã đóng hay chưa</button>
+    <script type="text/javascript"></script>
+</body>
+</html>

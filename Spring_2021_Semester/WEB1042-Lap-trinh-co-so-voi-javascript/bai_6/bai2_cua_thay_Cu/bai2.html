@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai2.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="title">
+                ĐẶT HÀNG
+            </div>
+        </div>
+        <div id="container">
+            <form action="#" onsubmit="return kiemTra()">
+                <div class="contain-total-form">
+                    <div class="contain-form">
+                        <div class="form-title">
+                            Sản phẩm:
+                        </div>
+                        <input type="text" id="tenSP" placeholder="Nhập tên sản phẩm">
+                    </div>
+                    <div class="contain-form">
+                        <div class="form-title">
+                            Loại:
+                        </div>
+                        <select id="loai">
+                            <option value="">Chọn loại sản phẩm</option>
+                            <option value="DT">Điện thoại</option>
+                            <option value="MT">Máy tính</option>
+                        </select>
+                    </div>
+                    <div class="contain-form">
+                        <div class="form-title">
+                            Đơn giá:
+                        </div>
+                        <input type="text" id="donGia" placeholder="Nhập đơn giá">
+                    </div>
+                    <div class="contain-form">
+                        <div class="form-title">
+                            Nơi nhận hàng:
+                        </div>
+                        <div class="contain-radios-input">
+                            <div class="contain-radio">
+                                <label ngoaiThanhr="noiThanh">Nội thành</label>
+                                <input type="radio" name="noiNhanHang" value="noiThanh" id="noiThanh" onclick="hienThi(false)">
+                            </div>
+                            <div class="contain-radio">
+                                <label for="ngoaiThanh">Ngoại thành</label>
+                                <input type="radio" name="noiNhanHang" value="ngoaiThanh" id="ngoaiThanh" onclick="hienThi(true)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contain-form" id="phiVanChuyen">
+                        <div class="form-title">
+                            Phí vận chuyển:
+                        </div>
+                        <input type="text" value="100000" readonly>
+                    </div>
+                </div> 
+                <div class="contain-button">
+                    <button type="submit">Đặt mua</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./bai2.js"></script>
+</body>
+</html>

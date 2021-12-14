@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Sortable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        body
+        {
+            background-image: url(./background.jpg);
+            background-size: cover;
+        }
+        #sortable 
+        { 
+            background-color: rgba(255, 255, 255, 0.5);
+            list-style-type: none; 
+            margin: 30px auto 0px; 
+            padding: 10px; 
+            width: fit-content; 
+            border: 3px solid rgb(112, 216, 185);
+            border-radius: 15px;
+        }
+        #sortable li 
+        { 
+            width: 200px;
+            background-color: rgb(112, 216, 185);
+            margin: 0 3px 3px 3px; 
+            padding: 0.4em; 
+            padding-left: 1.5em; 
+            border: 3px solid rgb(242, 110, 34);
+            border-radius: 15px;
+            font-size: 1.4em; 
+            height: 18px; 
+            font-size: 20px;
+            font-weight: bolder;
+            color: black;
+        }
+        #sortable li span 
+        { 
+            position: absolute; 
+            margin-left: -1.3em; 
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        $( "#sortable" ).sortable();
+        $( "#sortable" ).disableSelection();
+    } );
+    </script>
+</head>
+<body>
+ 
+<ul id="sortable">
+    <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+        Item 1
+    </li>
+    <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+        Item 2
+    </li>
+    <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+        Item 3
+    </li>
+    <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+        Item 4
+    </li>
+    <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+        Item 5
+    </li>
+    <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+        Item 6
+    </li>
+    <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+        Item 7
+    </li>
+</ul>
+ 
+</body>
+</html>

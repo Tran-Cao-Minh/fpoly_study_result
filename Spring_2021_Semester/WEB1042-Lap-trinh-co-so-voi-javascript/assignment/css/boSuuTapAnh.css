@@ -1,0 +1,128 @@
+/* reset css */
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* chi dinh font chu */
+html
+{
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* bao boc bo cuc */
+#wrapper
+{
+    background-image: url('../images/backgroundBoSuuTapAnh.jpg');
+    background-size: cover;
+    background-position: bottom left;
+    width: 100%;
+    min-height: 1000px;
+}
+
+/* HEADER */
+#header
+{
+    background-color: none;
+    max-width: 1024px;
+    min-height: 70px;
+    margin: auto;
+    padding: 1px;
+    text-align: center;
+}
+.title
+{
+    background-color: none;
+    width: fit-content;
+    height: fit-content;
+    margin: 5px auto;
+    font-size: 40px;
+    font-weight: bolder;
+}
+/* end header */
+/* CONTAINER */
+#container
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    height: fit-content;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgb(70, 70, 70);
+    padding: 1px;
+    position: relative;
+}
+.contain-button
+{
+    background-color: none;
+    max-width: 415px;
+    min-height: 55px;
+    margin: -38px auto 0px;
+    padding-left: 12px;
+    position: relative;
+}
+.contain-button button
+{
+    opacity: 0.9;
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
+    margin-left: 10px;
+    border: 5px solid rgb(85, 85, 85);
+    color: white;
+}
+.contain-button button:hover,
+.contain-button button:focus
+{
+    color: black;
+}
+/* tao hieu ung cho anh */
+@keyframes hieuUngAnh
+{
+    0%
+    {
+        border-color: rgb(220, 53, 69);
+    }
+    25%
+    {
+        border-color: rgb(255, 193, 7);
+    }
+    50%
+    {
+        border-color: rgb(25, 135, 84);
+    }
+    75%
+    {
+        border-color: rgb(13, 110, 253);
+    }
+    100%
+    {
+        border-color: rgb(220, 53, 69);
+    }
+}
+.image
+{
+    background-color: none;
+    max-width: 380px;
+    height: fit-content;
+    margin: 5px auto;
+}
+.image > img
+{
+    width: 100%;
+    height: auto;
+    border: 10px solid;
+    border-radius: 15px;
+    animation-name: hieuUngAnh;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.note
+{
+    background-color: none;
+    width: fit-content;
+    height: fit-content;
+    margin: 5px auto 0px;
+    font-size: 30px;
+    font-weight: bolder;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+    <script type="text/javascript">
+        // dam bao f0 va f1 lon hon 0 va phai la so
+        var f0 = prompt("F0: ");
+        var f1 = prompt("F1: ");
+        f0 = Number(f0);
+        f1 = Number(f1);
+        var f;
+        for(var i = 0; i < 10 ;i++)
+        {
+            f = f0 + f1;
+            f0 = f1;
+            f1 = f;
+            document.write("<p>" + f + "</p>" + "<br>");
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript"></script>
+</body>
+</html>

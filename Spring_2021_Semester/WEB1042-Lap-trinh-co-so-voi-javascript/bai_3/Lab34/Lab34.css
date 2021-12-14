@@ -1,0 +1,26 @@
+﻿body {
+    text-align: center;
+    background-color: rgba(188, 143, 143, 0.308);
+}
+h1
+{
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+p
+{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+button {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    margin: 5px;
+    border: 5px solid rgb(54, 54, 54);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}

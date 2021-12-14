@@ -1,0 +1,93 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html
+{
+    font-family: Helvetica, Arial, sans-serif;
+}
+#wrapper
+{
+    background-image: url('./background.jpg');
+    width: 100vw;
+    min-height: 1000px;
+}
+
+/* header */
+#header
+{
+    background-color: none;
+    max-width: 800px;
+    min-height: 100px;
+    margin: auto;
+    padding-top: 25px;
+}
+#header > .title
+{
+    background-color: none;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bolder;
+}
+/* end header */
+
+/* body */
+#container
+{
+    background-color: none;
+    max-width: 900px;
+    min-height: 800px;    
+    margin: auto;
+    padding-top: 5px;
+    font-size: 18px;
+}
+#container > table
+{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-collapse: collapse;
+    margin: auto;
+}
+#container th,
+#container td
+{
+    border: 1.75px solid black;
+    padding: 6px 25px;
+    text-align: center;
+}
+#container table input
+{
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
+#container table button
+{
+    width: 60px;
+    height: 25px;
+    font-size: 15px;
+}
+#container hr
+{
+    margin: 25px 0px;
+}
+#container .title-table-cart
+{
+    width: fit-content;
+    height: fit-content;
+    margin: 0px auto 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#container h3
+{
+    width: fit-content;
+    height: fit-content;
+    margin: 20px auto 0px;
+}
+/* end body */

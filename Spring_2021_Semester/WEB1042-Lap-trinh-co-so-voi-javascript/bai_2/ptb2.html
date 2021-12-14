@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var a = prompt("Mời bạn nhập hệ số thứ 1 của phương trình bậc 2");
+        var b = prompt("Mời bạn nhập hệ số thứ 2 của phương trình bậc 2");
+        var c = prompt("Mời bạn nhập hệ số thứ 3 của phương trình bậc 2");
+        var delta = Math.pow(b,2) - 4*a*c;
+        if(delta < 0)
+        {
+            alert("Phương trình vô nghiệm");
+        }
+        else if(delta == 0)
+        {
+            var nghiemKep = -b / (2*a);
+            alert("Phương trình có nghiệm kép là: " + nghiemKep);
+        }
+        else
+        {
+            var x1 = (-b + Math.sqrt(delta)) / (2*a);
+            var x2 = (-b - Math.sqrt(delta)) / (2*a);
+            alert("Phương trình có 2 nghiệm phân biệt là: " + x1 + " và " + x2);
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript"></script>
+</body>
+</html>

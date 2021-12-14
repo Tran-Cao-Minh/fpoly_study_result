@@ -1,0 +1,12 @@
+html
+{
+    font-family: Helvetica, Arial, sans-serif;
+}
+p
+{
+    background-color: orange;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: aqua;
+    text-align: center;
+}

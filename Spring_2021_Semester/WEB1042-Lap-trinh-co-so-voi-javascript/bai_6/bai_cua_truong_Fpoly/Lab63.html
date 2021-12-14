@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body
+        {
+            background-color: rgb(167, 223, 223);
+        }
+        body,
+        input,
+        select,
+        button
+        {
+            text-align: center;
+            font-size: 25px;
+            font-family: Helvetica;
+        }
+        .contain-radios-input > input
+        {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>ĐẶT HÀNG</h2>
+    <form onsubmit="return kiem_tra()">
+        <p>
+            <label>Sản phẩm</label>
+            <input id="san_pham"/>
+        </p>
+        <p>
+            <label>Loại</label>
+            <select id="loai">
+                <option></option>
+                <option value="DT">Điện thoại</option>
+                <option value="MT">Máy tính</option>
+            </select>
+        </p>
+        <p>
+            <label>Đơn giá</label>
+            <input id="don_gia" />
+        </p>
+        <p class="contain-radios-input">
+            <label>Nơi nhận hàng</label>
+            <input type="radio" name="dia_chi" onclick="hien_thi(false)" />Nội thành
+            <input type="radio" name="dia_chi" onclick="hien_thi(true)" />Ngoại thành
+        </p>
+        <p id="phi_vc" style="display:none">
+            <label>Phí vận chuyển</label>
+            <input value="100000" readonly />
+        </p>
+        <hr />
+        <button>Đặt mua</button>
+    </form>
+
+    <script>
+        function hien_thi(trangThai) 
+        {
+            var phi_vc = document.getElementById("phi_vc");
+            phi_vc.style.display = trangThai ? "":"none";
+        }
+        function kiem_tra()
+        {
+            // kiem tra ten sp
+            var tenSP = document.getElementById("san_pham");
+            if(tenSP.value.length == 0)
+            {
+                alert("Vui lòng nhập tên sản phẩm!");
+                return false;
+            }
+            // kiem tra gia sp
+            var giaSP = document.getElementById("don_gia");
+            if(isNaN(giaSP.value)) // true la ko phai so
+            {
+                alert("Vui lòng nhập số!");
+                return false;
+            }
+            else if(Number(giaSP.value) <= 0)
+            {
+                alert("Vui lòng nhập số dương lớn hơn 0!");
+                return false;
+            }
+            // kiem tra viec chon loai sp 
+            var loaiSP = document.getElementById("loai");
+            if(loai.value.length == 0)
+            {
+                alert("Vui lòng chọn loại sản phẩm!")
+                return false;
+            }
+            // kiem tra chon noi nhan hang
+            var noiNhanHang = document.getElementsByName("dia_chi");
+            if(!noiNhanHang[0].checked && !noiNhanHang[1].checked)
+            {
+                alert("Vui lòng chọn nơi nhận hàng!");
+                return false;
+            }
+            alert("Chúc mừng bạn nhập đúng!");
+            return true;
+        }
+    </script>
+</body>
+</html>

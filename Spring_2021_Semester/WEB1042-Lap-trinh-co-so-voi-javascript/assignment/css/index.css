@@ -1,0 +1,22 @@
+/* reset css */
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* chi dinh font chu */
+html
+{
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* bao boc bo cuc */
+#wrapper
+{   
+    background-image: url('../images/backgroundBanHang.jpg');
+    background-size: cover;
+    background-position: top left;
+    width: 100%;
+    min-height: 1000px;
+    padding-top: 1px;
+}

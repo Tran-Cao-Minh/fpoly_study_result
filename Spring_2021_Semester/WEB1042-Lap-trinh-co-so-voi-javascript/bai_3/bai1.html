@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+    <script type="text/javascript">
+        var so1 = prompt("Nhập số 1: ");
+        var so2 = prompt("Nhập số 2: ");
+        so1 = Number(so1);
+        so2 = Number(so2);
+        var phepTinh = prompt("Nhập phép tính: ");
+        switch(phepTinh)
+        {
+            case '+':
+                document.write("<p>" + "Tong: " + (so1+so2) + "</p>");
+                break;
+            case '-':
+                document.write("<p>" + "Hieu: " + (so1-so2));
+                break;
+            case '*':
+                document.write("<p>" + "Tich: " + (so1*so2));
+                break;
+            case '/':
+                document.write("<p>" + "Thuong: " + (so1/so2));
+                break;
+            default:
+                document.write(phepTinh + " không phải toán tử");
+                break;
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript"></script>
+</body>
+</html>

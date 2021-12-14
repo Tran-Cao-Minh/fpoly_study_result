@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./myMath.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        html
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body
+        {
+            background-image: url(./background.jpg);
+            background-size: cover;
+        }
+        form
+        {
+            background-color: rgba(34, 192, 255, 0.603);
+            width: 300px;
+            margin: 20px auto;
+            padding: 8px;
+            border: 3px solid rgb(235, 108, 32);
+            border-radius: 15px;
+        }
+        form > h4
+        {
+            text-align: center;
+            font-weight: bolder;
+            margin-top: 8px;
+        }
+        .form-group > label
+        {
+            font-size: 18px;
+            font-weight: bolder;
+            color: rgb(58, 18, 0);
+        }
+        .form-group > input
+        {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btn-success
+        {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h4>TÌM SỐ LỚN NHẤT</h4>
+        <div class="form-group" style="margin-top: 5px;">
+            <label>A:</label>
+            <input type="number" name="txtA" value="0" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>B:</label>
+            <input type="number" name="txtB" value="0" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>C:</label>
+            <input type="number" name="txtC" value="0" class="form-control">
+        </div>
+        <input class="btn btn-success" type="button" value="Kết Quả" onclick="traVeSoLonNhat()">
+    </form>
+    
+    <script type="text/javascript">
+        function traVeSoLonNhat()
+        {
+            var a = document.forms[0].txtA.value;
+            var b = document.forms[0].txtB.value;
+            var c = document.forms[0].txtC.value;
+            var kq;
+            kq = myMath.soLonNhatTrongBaSo(a,b,c);
+            alert("Số lớn nhất là: " + kq);
+        }
+    </script>
+</body>
+</html>

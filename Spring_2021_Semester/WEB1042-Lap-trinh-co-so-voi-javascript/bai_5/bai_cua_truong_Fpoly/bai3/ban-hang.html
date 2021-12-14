@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>DANH MỤC HÀNG HÓA</h3>
+    <table border="1">
+        <tr>
+            <td>iPhone9</td>
+            <td>$2700</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Sumsung Star</td>
+            <td>$1500</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Nokia 2020</td>
+            <td>$1200</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Sony Xperia</td>
+            <td>$1700</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+    </table>
+    <!-- nang cap giao dien -->
+    <h3 id="empty">Bạn chưa chọn mặt hàng nào</h3>
+    <div id="not-empty" style="display: none;">
+        <h3>GIỎ HÀNG CỦA BẠN</h3>
+        <!-- chua cac mat hang da chon -->
+        <table id="cart" border="1"></table>
+        <!-- hien thi tong tien cua gio hang -->
+        <h3>TỔNG SỐ TIỀN: $<span id="tong">0</span></h3>
+    </div>
+    <!-- ma js -->
+    <script>
+        // su kien them mat hang
+        function them(button)
+        {
+            // sao cheo hang chua nut bi click 
+            var row = button.parentElement.parentElement.cloneNode(true);
+            // sua lai hang vua sao chep
+            var btnXoa = row.getElementsByTagName("button")[0];
+            btnXoa.innerText = "Xóa"
+            btnXoa.setAttribute('onclick','xoa(this)');
+            // bo sung node vao table id cart
+            document.getElementById("cart").appendChild(row);
+            // tinh tong tien gio hang
+            tinhTong();
+        }
+        //  su kien xoa mat hang
+        function xoa(button)
+        {
+            // tim hang chua nut xoa bi click
+            var row = button.parentElement.parentElement;
+            // xoa hang tim duoc khoi table id cart
+            document.getElementById("cart").removeChild(row);
+            // tinh tong tien lai
+            tinhTong();
+        }
+        // tinh va hien thi tong tien trong gio hang
+        function tinhTong()
+        {
+            // lay danh sach cac hang trong table id cart
+            var cart = document.getElementById("cart");
+            var rows = cart.getElementsByTagName("tr");
+            // duyet danh sach va tinh tong tien
+            var tong = 0;
+            for (var i = 0; i < rows.length; i++)
+            {
+                var cells = rows[i].getElementsByTagName("td");
+                var price = cells[1].innerText.substr(1);
+                tong += 1 * price;
+            }
+            // chon cach hien thi dua tren tong
+            if(tong == 0)
+            {
+                document.getElementById("empty").style.display = "block";
+                document.getElementById("not-empty").style.display = "none";
+            }
+            else 
+            {
+                document.getElementById("empty").style.display = "none";
+                document.getElementById("not-empty").style.display = "block";
+                if(tong > 6000)
+                {
+                    document.getElementById("tong").style.backgroundColor = "yellow";
+                }
+                else
+                {
+                    document.getElementById("tong").style.backgroundColor = "transparent";
+                }
+            }
+            // hien thi tong tien
+            document.getElementById("tong").innerText = tong;
+        }
+    </script>
+</body>
+</html>

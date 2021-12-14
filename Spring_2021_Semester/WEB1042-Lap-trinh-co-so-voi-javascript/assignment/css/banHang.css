@@ -1,0 +1,103 @@
+/* reset css */
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* chi dinh font chu */
+html
+{
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* bao boc bo cuc */
+#wrapper
+{   
+    background-image: url('../images/backgroundBanHang.jpg');
+    background-size: cover;
+    background-position: top left;
+    width: 100%;
+    min-height: 1000px;
+    padding-top: 1px;
+}
+
+/* HEADER */
+#header
+{
+    background-color: none;
+    max-width: 618px;
+    min-height: 100px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.title
+{
+    background-color: none;
+    width: fit-content;
+    height: fit-content;
+    margin: 30px auto 20px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+#header > .mucGia
+{
+    width: fit-content;
+    min-height: 30px;
+    margin: auto;
+}
+.mucGia > h2
+{
+    display: block;
+    float: left;
+    margin: 8px 5px 0px 0px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.mucGia > .form-control
+{
+    width: 200px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid #eb6c20;
+}
+/* end header */
+/* CONTAINER */
+#container
+{
+    background-color: white;
+    max-width: 618px;
+    min-height: 350px;
+    margin: 15px auto 0px;
+    border: 1px solid black;
+    border-radius: 1px;
+    box-shadow: 0px 0px 5px rgb(70, 70, 70);
+    padding-top: 4px;
+    position: relative;
+}
+/* dinh dang lai do rong cho cot */
+.contain-table
+{
+    max-width: 660px;
+    margin: auto;
+    height: 424px;
+    background-color: cadetblue;
+    border: 5px solid #eb6a2059;
+    border-radius: 7px;
+}
+.contain-table td,
+.contain-table th
+{
+    text-align: center;
+    font-size: 18px;
+}
+.contain-table th:nth-child(5)
+{
+    width: 160px;
+}
+.contain-table input[type='number']
+{
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    padding: 0px;
+}

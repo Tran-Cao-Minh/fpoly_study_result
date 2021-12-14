@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai2-banhang.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="title">
+                CÁC SẢN PHẨM HOA
+            </div>
+        </div>
+        <div id="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="chon-het"></th>
+                        <th>Tên sản phẩm hoa</th>
+                        <th>Giá</th>
+                        <th>Mua</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" checked onchange="daott(this)" class="chon"></td>
+                        <td>Hạnh Phúc Trọn Vẹn</td>
+                        <td>900000</td>
+                        <td><button onclick="them(this)">Chọn</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked onchange="daott(this)" class="chon"></td>
+                        <td>Con Đường Thành Công</td>
+                        <td>1750000</td>
+                        <td><button onclick="them(this)">Chọn</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked onchange="daott(this)" class="chon"></td>
+                        <td>Phú Quý</td>
+                        <td>1300000</td>
+                        <td><button onclick="them(this)">Chọn</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked onchange="daott(this)" class="chon"></td>
+                        <td>Vững Bước</td>
+                        <td>1300000</td>
+                        <td><button onclick="them(this)">Chọn</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked onchange="daott(this)" class="chon"></td>
+                        <td>Một Cõi Đi Về</td>
+                        <td>950000</td>
+                        <td><button onclick="them(this)">Chọn</button></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <hr>
+            <div class="title-table-cart">
+                GIỎ HÀNG CỦA BẠN
+            </div>
+            <table id="cart">
+    
+            </table>
+            <h3 id="tong-tien">TỔNG SỐ TIỀN: <span id="tong">0</span></h3>
+        </div>
+    </div>
+    <script src="./bai2-banhang.js"></script>
+</body>
+</html>

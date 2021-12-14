@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img
+        {
+            display: block;
+            margin: 30px auto;
+            border: 5px solid rgb(228, 89, 8);
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./Anh/0.jpg" alt="Load..." id="anh"
+        onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+
+    <script>
+        // tai anh truoc
+        var out = new Image(), over = new Image();
+        out.src = "./Anh/0.jpg";
+        over.src = "./Anh/1.jpg";
+        function onMouseOver()
+        {
+            var anh = document.getElementById("anh");
+            anh.src = over.src;
+        }
+        function onMouseOut()
+        {
+            var anh = document.getElementById("anh");
+            anh.src = out.src;
+        }
+    </script>
+</body>
+</html>

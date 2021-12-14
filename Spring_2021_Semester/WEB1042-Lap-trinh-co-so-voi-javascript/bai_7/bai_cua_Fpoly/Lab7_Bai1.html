@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        html
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body
+        {
+            background-image: url(./background.jpg);
+            background-size: cover;
+        }
+        .container
+        {
+            background-color: rgba(130, 34, 255, 0.8);
+            margin: 20px auto;
+            padding: 15px;
+            border: 3px solid rgb(235, 108, 32);
+            border-radius: 15px;
+            width: fit-content;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h2
+        {
+            font-size: 120px;
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" ng-app="a">
+        <div ng-controller="myController">
+            <h2>{{timer}}</h2>
+            <button class="btn btn-primary" ng-click="count10()">Start count to 10</button>
+        </div>
+    </div>
+
+    <script>
+        app = angular.module("a",[]);
+        app.controller("myController",demso);
+        function demso($scope) 
+        {
+            $scope.timer = 1;
+            $scope.count10 = function()
+            {
+                setInterval(function()
+                        {
+                            if($scope.timer < 10) 
+                            {
+                                $scope.timer++;
+                            }
+                            else
+                            {
+                                $scope.timer = 1;
+                            }
+                            // xai apply de cap nhat ket qua ra ngoai Ajs
+                            $scope.$apply();
+                        }
+                , 1000);
+            }
+            
+        };
+    </script>
+</body>
+</html>

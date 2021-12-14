@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1 - Lab 1</title>
+    <link rel="stylesheet" href="style-bai1.css">
+    <script>
+        var hoten="Trần Cao Minh";
+        var masv="PS18817";
+        var ngaysinh="14/08/2002";
+    </script>
+</head>
+<body>
+    <div class="thongTinCaNhan">
+        <div class="title">
+            <h2>Thông tin cá nhân</h2>
+        </div>
+        <div class="thongTin">
+            <p>
+                <span> Họ tên :</span>
+                <b id="hoTen">
+                    <script>document.write(hoten)</script>
+                </b>
+            </p>
+            <p>
+                <span> Mã SV :</span>
+                <b id="maSv">
+                    <script>document.write(masv)</script>
+                </b>
+            </p>
+            <p>
+                <span> Ngày sinh :</span>
+                <b id="ns">
+                </b>
+            </p>
+            <script>
+                document.getElementById("ns").innerText=ngaysinh;
+            </script>
+        </div>
+    </div>  
+</body>
+</html>

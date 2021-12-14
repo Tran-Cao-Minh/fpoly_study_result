@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS18817_Tran_Cao_Minh</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <style>
+        html
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body
+        {
+            background-image: url(../background.jpg);
+            background-size: cover;
+        }
+        #form
+        {
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 15px;
+            border-width: 5px !important;
+        }
+        b
+        {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            font-size: 40px;
+        }
+        label
+        {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        fieldset
+        {
+            border-radius: 10px;
+        }
+        .btn
+        {
+            display: block;
+            margin: auto;
+            font-weight: bold;
+        }
+        .h4
+        {
+            display: block;
+            width: fit-content;
+            margin: 10px auto 0px;
+        }
+    </style>
+</head>
+<body ng-app="b3" ng-controller="ctrl">
+    <form name="frm" class="col-5 mxauto border border-primary" id="form">
+        <b class="text-info h2">
+            PS18817_Tran_Cao_Minh
+        </b>
+        <div class="form-group">
+            <label>Tên sản phẩm</label>
+            <input type="text" class="form-control bg-light"
+                ng-model="tensp" minlength="2" maxlength="30"
+                id="tensp" name="tensp" required>
+            <em ng-if="frm.tensp.$invalid" class="text-danger h6">
+                Nhập tên sản phẩm từ 2 đến 30 ký tự
+            </em> 
+        </div>
+        <div class="form-group">
+            <label>Số lượng</label>
+            <input type="number" class="form-control bg-light" 
+                ng-model="soluong" min="1" value="{{1}}" id="soluong">
+            <em ng-if="frm.soluong.$invalid || soluong>100" class="text-danger h6">
+                Nhập số lượng từ 1 đến 100
+            </em>
+        </div>
+        <div class="form-group">
+            <label>Nhà sản xuất</label>
+            <select name="nsx" class="form-control bg-light"
+                ng-model="nsx">
+                <option value="0">Chọn nhà sản xuất</option>
+                <option value="1">Samsung</option>
+                <option value="2">Toshiba</option>
+                <option value="3">HTC</option>
+            </select>
+            <em ng-if="!nsx || nsx==0" class="text-danger h6">
+                Hãy chọn 1 nhà sản xuất
+            </em>
+        </div>
+        <div class="form-group">
+            <label>Tình trạng</label>
+            <fieldset class="border border-secondary p-3">
+                <input ng-model="tinhtrang" type="radio" name="tinhtrang" value="1"> Hàng cũ &nbsp;
+                <input ng-model="tinhtrang" type="radio" name="tinhtrang" value="2"> Hàng mới
+                <em ng-if="!tinhtrang" class="text-danger h6">
+                    <br>Hàng cũ hay mới
+                </em>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label>Tình trạng</label>
+            <fieldset class="border border-secondary p-3">
+                <input ng-model="maudo" type="checkbox" value="do"> Đỏ &nbsp;
+                <input ng-model="mauden" type="checkbox" value=""> Đen &nbsp;
+                <input ng-model="mautrang" type="checkbox" value=""> Trắng
+                <em ng-if="!maudo && !mauden && !mautrang" class="text-danger h6">
+                    <br>Màu gì vậy?
+                </em>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-info">
+                Nhập sản phẩm
+            </button>
+            <em ng-if="!(frm.tensp.$invalid
+                        || frm.soluong.$invalid || soluong>100
+                        || !nsx || nsx==0
+                        || !tinhtrang
+                        || !maudo && !mauden && !mautrang)" class="text-success h4">
+                Bạn đã nhập liệu chính xác cảm ơn nhé!
+                {{comeToNewPage()}}
+            </em>
+        </div>
+    </form>
+
+    <script>
+        // chuyen den trang moi ban angular
+        app = angular.module("b3",[]);
+        app.controller("ctrl",xuly);
+        function xuly($scope)
+        {
+            // code xu ly
+            $scope.comeToNewPage = 
+            function()
+            {
+                setTimeout(
+                    function()
+                    {
+                        window.location="../bai_cua_truong_Fpoly/Lab8_Bai1.html";
+                    },5000
+                );
+            }
+        }
+        // kiem tra va thay doi dinh dang khi dau vao du lieu khong phu hop
+        $('#tensp').change
+        (
+            function()
+            {
+                if($(this).val().length < 2 || $(this).val().length > 30) // nhap sai
+                {
+                    $(this).css({'border-color':'yellow'});
+                    $(this).removeClass("bg-light").addClass( "bg-danger" );
+                }
+                else // nhap dung
+                {
+                    $(this).css({'border-color':'green'});
+                    $(this).removeClass("bg-danger").addClass( "bg-light" );
+                }
+            }
+        );
+        $('#soluong').change
+        (
+            function()
+            {
+                if($(this).val() < 1 || $(this).val() > 100) // nhap sai
+                {
+                    $(this).css({'border-color':'yellow'});
+                    $(this).removeClass("bg-light").addClass( "bg-danger" );
+                }
+                else // nhap dung
+                {
+                    $(this).css({'border-color':'green'});
+                    $(this).removeClass("bg-danger").addClass( "bg-light" );
+                }
+            }
+        );
+    </script>
+</body>
+</html>

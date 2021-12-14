@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-1.6.4.min.js"></script>
+    <link rel="stylesheet" href="./banHang.css">
+    <style>
+        /* reset css */
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        /* chi dinh font chu */
+        html
+        {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        /* bao boc bo cuc */
+        #wrapper
+        {   
+            background-image: url('./background.jpg');
+            background-size: cover;
+            background-position: top left;
+            width: 100%;
+            min-height: 700px;
+            padding-top: 1px;
+        }
+
+        /* HEADER */
+        #header
+        {
+            background-color: none;
+            max-width: 618px;
+            min-height: 100px;
+            margin: auto;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+        .title
+        {
+            background-color: none;
+            width: fit-content;
+            height: fit-content;
+            margin: 30px auto 20px;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        #header > .chonMucGia
+        {
+            background-color: none;
+            width: fit-content;
+            min-height: 30px;
+            margin: auto;
+        }
+        .chonMucGia > label
+        {
+            font-size: 22px;
+            font-weight: bolder;
+        }
+        .chonMucGia > select
+        {
+            width: 300px;
+            height: 25px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /* end header */
+        /* CONTAINER */
+        #container
+        {
+            background-color: white;
+            max-width: 256px;
+            height: fit-content;
+            margin: 15px auto 0px;
+            border: 1px solid black;
+            border-radius: 1px;
+            box-shadow: 0px 0px 5px rgb(70, 70, 70);
+            padding-top: 4px;
+            position: relative;
+        }
+        /* dinh dang cho hang */
+        .row-title,
+        .row-content
+        {
+            background-color: none;
+            width: fit-content;
+            height: 38px;
+            padding: 1px;
+        }
+        /* ket thuc dinh dang hang */
+        /* dinh dang cho cot */
+        .cell1,
+        .cell2
+        {
+            background-color: white;
+            float: left;
+            margin-left: 4px;
+            border: 1px solid black;
+            height: 34px;
+            padding: 6px 2px 0px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .cell1
+        {
+            width: 150px;
+        }
+        .cell2
+        {
+            width: 90px;
+        }
+        /* ket thuc dinh dang cho cot */
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="title">
+                SHOP
+            </div>
+            <div class="chonMucGia">
+                <label for="">Mức giá: </label>
+                <select name="" id="chonMucGia" onchange="doimausanpham(this)">
+                    <option value="">Chọn mức giá</option>
+                    <option value="lt200">Nhỏ hơn 200</option>
+                    <option value="btw200&500">Từ 200 đến 500</option>
+                    <option value="gt500">Lớn hơn 500</option>
+                </select>
+            </div>
+        </div>
+        <div id="container">
+            <div class="tabel">
+                <div class="row-title">
+                    <div class="cell1">
+                        Tên mặt hàng
+                    </div>
+                    <div class="cell2">
+                        Đơn giá
+                    </div>
+                </div>
+                <div class="row-content" mucgia="700">
+                    <div class="cell1">
+                        iPhone 9
+                    </div>
+                    <div class="cell2">
+                        700
+                    </div>
+                </div>
+                <div class="row-content" mucgia="400">
+                    <div class="cell1">
+                        Samsung
+                    </div>
+                    <div class="cell2">
+                        400
+                    </div>
+                </div>
+                <div class="row-content" mucgia="100">
+                    <div class="cell1">
+                        Nokia
+                    </div>
+                    <div class="cell2">
+                        100
+                    </div>
+                </div>
+                <div class="row-content" mucgia="450">
+                    <div class="cell1">
+                        Xony Xperia
+                    </div>
+                    <div class="cell2">
+                        450
+                    </div>
+                </div>
+                <div class="row-content" mucgia="180">
+                    <div class="cell1">
+                        Motorola
+                    </div>
+                    <div class="cell2">
+                        180
+                    </div>
+                </div>
+                <div class="row-content" mucgia="600">
+                    <div class="cell1">
+                        Oppo
+                    </div>
+                    <div class="cell2">
+                        600
+                    </div>
+                </div>
+                <div class="row-content" mucgia="90">
+                    <div class="cell1">
+                        bPhone
+                    </div>
+                    <div class="cell2">
+                        90
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function doimausanpham(luaChon)
+        {
+            // reset ve lai khong co mau
+            $('.row-content>div').css('background-color','transparent');
+            // lay gia tri cua select chon muc gia
+            var mucGia = luaChon.value;
+            // xu ly mau sac theo muc gia
+            if(mucGia == 'lt200')
+            {
+                $('div[mucgia="90"]>div').css('background-color','cyan');
+                $('div[mucgia="100"]>div').css('background-color','cyan');
+                $('div[mucgia="180"]>div').css('background-color','cyan');
+            }
+            else if(mucGia == 'btw200&500')
+            {
+                $('div[mucgia="450"]>div').css('background-color','cyan');
+                $('div[mucgia="400"]>div').css('background-color','cyan');
+            }
+            else if(mucGia == 'gt500')
+            {
+                $('div[mucgia="700"]>div').css('background-color','cyan');
+                $('div[mucgia="600"]>div').css('background-color','cyan');
+            }
+        }
+    </script>
+</body>
+</html>

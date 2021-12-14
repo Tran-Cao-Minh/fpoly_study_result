@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Datepicker - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        $( "#datepicker" ).datepicker();
+    } );
+    </script>
+    <style>
+        body
+        {
+            background-image: url(./background.jpg);
+            background-size: cover;
+        }
+        .contain-datepicker
+        {
+            background-color: paleturquoise;
+            width: fit-content;
+            height: fit-content;
+            border: 5px solid rgb(242, 110, 34);
+            border-radius: 15px;
+            margin: 50px auto 0px;
+            padding: 3px 10px;
+        }
+        p,
+        input
+        {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input
+        {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain-datepicker">
+        <p>Date: <input type="text" id="datepicker"></p>
+    </div>
+</body>
+</html>

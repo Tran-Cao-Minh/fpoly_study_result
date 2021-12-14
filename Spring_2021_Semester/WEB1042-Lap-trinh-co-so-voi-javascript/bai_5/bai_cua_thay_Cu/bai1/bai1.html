@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html
+        {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        #wrapper
+        {
+            background-image: url('./background.jpg');
+            background-size: cover;
+            padding: 15px;
+        }
+        .container
+        {
+            background-color: rgb(253, 207, 215);
+            max-width: 500px;
+            height: fit-content;
+            margin: auto;
+            text-align: center;
+            padding: 15px 0px 15px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        h2
+        {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .contain-img
+        {
+            margin-top: -50px;
+            max-width: 500px;
+        }
+        img
+        {
+            width: 100%;
+        }
+        label
+        {
+            margin-top: -100px;
+        }
+        .contain-xuly
+        {
+            width: fit-content;
+            height: fit-content;
+            background-color: none;
+            margin: -50px auto 0px;
+        }
+        .contain-xuly > label,
+        .contain-xuly > input,
+        .contain-xuly > button
+        {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        .contain-xuly > input
+        {
+            text-align: center;
+        }
+        .contain-information
+        {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        button:hover
+        {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <h2 id="ten">IPHONE XS MAX 2019</h2>
+            <div class="contain-img">
+                <img src="./iphone.png" alt="" >
+            </div>
+            <br>
+            <div class="contain-xuly">
+                <label id="sanPham" data-price="1950">Số lượng:</label>
+                <input type="number" id="soLuong" value="1" />
+                <button onclick="hienThi()">Tính</button>
+            </div>  
+            <hr>
+            <div class="contain-information">
+                <h3>Name: <span id="name">?</span></h3>
+                <h3>Amount: <span id="amount">?</span></h3>
+            </div>  
+        </div>
+    </div>
+    
+    <script>
+        function hienThi()
+        {
+            var tenSP = document.getElementById("ten").innerText;
+            var soLuongSP = document.getElementById("soLuong").value;
+            var giaSP = document.getElementById("sanPham").getAttribute("data-price");
+            var tinhTien = giaSP * soLuongSP;
+            document.getElementById("name").innerText = tenSP;
+            document.getElementById("amount").innerText = "$" + tinhTien;
+        }
+    </script>
+</body>
+</html>

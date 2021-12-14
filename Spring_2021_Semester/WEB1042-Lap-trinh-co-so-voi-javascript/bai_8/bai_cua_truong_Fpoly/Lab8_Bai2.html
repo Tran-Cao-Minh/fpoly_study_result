@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-image: url(../background.jpg);
+            background-size: cover;
+        }
+        table
+        {
+            margin: 50px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        table, td
+        {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        button
+        {
+            width: 65px;
+            height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        button:first-child
+        {
+            color: blue;
+        }
+        button:last-child
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body ng-app="FPT">
+    <div ng-controller="handleEventController">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Likes</td>
+                <td>Dislikes</td>
+                <td>Minus</td>
+                <td>Action</td>
+            </tr>
+            <tr ng-repeat="technology in technologies">
+                <td>{{technology.Name}}</td>
+                <td>{{technology.Likes}}</td>
+                <td>{{technology.Dislikes}}</td>
+                <td>{{technology.Minus}}</td>
+                <td>
+                    <button ng-click="increaseLike(technology)">Like</button>
+                    <button ng-click="increaseDislike(technology)">Dislike</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+    <script>
+        var app = angular.module('FPT',[]);
+        app.controller('handleEventController',['$scope',
+            function($scope)
+            {
+                var technologies =
+                [
+                    {
+                        Name:"C#",Likes:0,Minus:0,Dislikes:0
+                    },
+                    {
+                        Name:"ASP.NET",Likes:0,Minus:0,Dislikes:0
+                    },
+                    {
+                        Name:"SQL Server",Likes:0,Minus:0,Dislikes:0
+                    },
+                    {
+                        Name:"AngularJS",Likes:0,Minus:0,Dislikes:0
+                    }
+                ];
+                $scope.technologies = technologies;
+                $scope.increaseLike = function(technology)
+                {
+                    technology.Likes++;
+                    technology.Minus = technology.Likes - technology.Dislikes;
+                }
+                $scope.increaseDislike = function(technology)
+                {
+                    technology.Dislikes++;
+                    technology.Minus = technology.Likes - technology.Dislikes;
+                }
+            }])
+    </script>
+</body>
+</html>

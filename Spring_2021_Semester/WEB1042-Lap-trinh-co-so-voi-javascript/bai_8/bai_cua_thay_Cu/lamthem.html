@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS18817_Tran_Cao_Minh</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        html
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body
+        {
+            background-image: url(../background.jpg);
+            background-size: cover;
+        }
+        #myInfo
+        {
+            background-color: white;
+            width: fit-content;
+            margin: 15px auto;
+            padding: 15px;
+            border: 5px solid #eb6c20;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #container
+        {
+            background-color: white;
+            width: fit-content;
+            margin: 20px auto 0;
+            padding: 20px 20px 0px;
+            border: 5px solid #eb6c20;
+            border-radius: 15px;
+        }
+        #main
+        {
+            display: block;
+            width: 480px;
+            height: 480px;
+            margin: auto;
+        }
+        .contain-sub-img
+        {
+            width: fit-content;
+            margin: 10px auto;
+        }
+        .contain-sub-img > img
+        {
+            width: 115px;
+            height: 115px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="./images/_ (0).jfif" id="main">
+        <div class="contain-sub-img">
+            <img src="./images/_ (0).jfif">
+            <img src="./images/_ (1).jfif">
+            <img src="./images/_ (2).jfif">
+            <img src="./images/_ (3).jfif">
+        </div>
+    </div>
+    <div id="myInfo">
+        PS18817 - TRẦN CAO MINH - 10đ
+    </div>
+    
+    <script>
+        $('.contain-sub-img>img').click
+        (
+            function()
+            {
+                $('#main').attr('src',$(this).attr('src'));
+            }
+        )
+    </script>
+</body>
+</html>

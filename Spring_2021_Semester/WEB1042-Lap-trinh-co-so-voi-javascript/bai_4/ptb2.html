@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleAll.css">
+    <script type="text/javascript">
+        var ptb2 = new Object();
+        ptb2.a = prompt("Mời bạn nhập hệ số thứ 1 của phương trình bậc 2"); 
+        ptb2.b = prompt("Mời bạn nhập hệ số thứ 2 của phương trình bậc 2"); 
+        ptb2.c = prompt("Mời bạn nhập hệ số thứ 3 của phương trình bậc 2");
+        ptb2.a = Number(ptb2.a);
+        ptb2.b = Number(ptb2.b);
+        ptb2.c = Number(ptb2.c);
+        var delta = ptb2.b*ptb2.b - 4*ptb2.a*ptb2.c;
+        ptb2.giai = function()
+        {
+            if(delta < 0)
+            {
+                alert("Phương trình vô nghiệm");
+            }
+            else if(delta == 0)
+            {
+                alert("Phương trình có nghiệm kép là: "
+                    + ( -ptb2.b/(2*ptb2.a) ) );
+            }
+            else
+            {
+                alert("Phương trình có 2 nghiệm phân biệt là: "
+                    + ( (-ptb2.b + Math.sqrt(delta)) / (2*ptb2.a) ) + " và "
+                    + ( (-ptb2.b - Math.sqrt(delta)) / (2*ptb2.a) ));
+            }
+        }
+    </script>
+</head>
+<body>   
+    <button onclick="ptb2.giai()">Giải</button>
+    <script type="javascript/text"></script>
+</body>
+</html>

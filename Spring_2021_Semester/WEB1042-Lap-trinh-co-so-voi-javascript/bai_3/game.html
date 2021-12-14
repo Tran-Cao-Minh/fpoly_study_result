@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var soBiMat = Math.round(Math.random()*100);
+        while(true)
+        {
+            var so = prompt("Bạn hãy nhập một số bất kỳ: ");
+            if(soBiMat == so)
+            {
+                alert("Bạn đã đoán đúng");
+                break;
+            }
+            else if(soBiMat < so)
+            {
+                alert("Số của bạn lớn hơn số bí mật");
+            }
+            else
+            {
+                alert("Số của bạn nhỏ hơn số bí mật");
+            }
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript"></script>
+</body>
+</html>

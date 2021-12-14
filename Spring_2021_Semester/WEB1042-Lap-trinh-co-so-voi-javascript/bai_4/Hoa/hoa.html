@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./hoa.css">
+    <script type="text/javascript">
+        var hoa = new Object();
+        hoa.urlHoaNo = "./hoano.jpg";
+        hoa.urlHoaHeNu = "./hoahenu.jpg";
+        hoa.noHoa = function ()
+        {
+            document.write("<img src ='" + this.urlHoaNo + "'/>");
+        }
+        hoa.heNu = function ()
+        {
+            document.write("<img src ='" + this.urlHoaHeNu + "'/>");
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Nở Hoa" onclick="hoa.noHoa()"></input>
+    <input type="button" value="Hé Nụ" onclick="hoa.heNu()"></input>
+    <script type="text/javascript"></script>
+</body>
+</html>

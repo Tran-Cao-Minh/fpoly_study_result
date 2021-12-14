@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS18817_Tran_Cao_Minh</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        html
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body
+        {
+            background-image: url(../background.jpg);
+            background-size: cover;
+        }
+        #myInfo
+        {
+            background-color: white;
+            width: fit-content;
+            margin: 15px auto;
+            padding: 15px;
+            border: 5px solid #eb6c20;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #container
+        {
+            background-color: white;
+            width: fit-content;
+            margin: calc(10vh) auto 0;
+            padding: 20px 20px 0px;
+            border: 5px solid #eb6c20;
+            border-radius: 15px;
+        }
+        .contain-clk
+        {
+            background-color: white;
+            width: fit-content;
+            margin: auto;
+            padding: 4px;
+            border: 5px solid grey;
+            border-radius: 15px;
+            font-size: 75px;
+            font-weight: bold;
+        }
+        .title
+        {
+            text-align: center;
+            color: #eb6c20;
+        }
+        .contain-button
+        {
+            width: fit-content;
+            margin: 20px auto;
+        }
+        .btn 
+        {
+            border: 3px solid grey;
+            border-radius: 10px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="contain-clk">
+            <div class="title">ĐỒNG HỒ</div>
+            <span id="hours">00</span> :
+            <span id="minutes">00</span> :
+            <span id="seconds">00</span>
+        </div>
+        <div class="contain-button">
+            <button class="btn btn-danger" id="stop">STOP</button>       
+            <button class="btn btn-success" id="start">START</button>    
+            <button class="btn btn-info" id="watch">XEM BÀI HỌC</button>  
+        </div>
+    </div>
+    <div id="myInfo">
+        PS18817 - TRẦN CAO MINH - 10đ
+    </div>
+    
+    <script>
+        // tao bien gio, phut, giay
+        var hours = 0;
+        var minutes = 0;
+        var seconds = 0;
+        // TAO CAC CHUC NANG CHO NUT START, STOP
+        var clkActivated = false; // ban dau dong ho chua chay
+        $('#stop').click
+        (
+            function()
+            {
+                if(clkActivated == true)
+                {
+                    clkActivated = false;
+                    clearInterval(clock);
+                }   
+            }
+        )
+        $('#start').click
+        (
+            function()
+            {
+                if(clkActivated == false)
+                {
+                    clkActivated = true;
+                    clock = setInterval(
+                        function()
+                        {
+                            // dem gio, phut, giay
+                            if(seconds == 60)
+                            {
+                                seconds = 0;
+                                minutes++;
+                                if(minutes == 60)
+                                {
+                                    minutes = 0;
+                                    hours++;
+                                }
+                            }
+                            // xu ly hien thi 
+                            if(seconds < 10)
+                            {  
+                                $('#seconds').text('0'+seconds);   
+                            }
+                            else
+                            {
+                                $('#seconds').text(seconds);
+                            }
+                            if(minutes < 10)
+                            {
+                                $('#minutes').text('0'+minutes);
+                            }
+                            else
+                            {
+                                $('#minutes').text(minutes);
+                            }
+                            if(hours < 10)
+                            {
+                                $('#hours').text('0'+hours);
+                            }
+                            else
+                            {
+                                $('#hours').text(hours);
+                            }
+                            seconds++;
+                        },1000
+                    )
+                }
+                
+            }
+        )
+        // KET THUC TAO CAC CHUC NANG CHO NUT START, STOP
+        // TAO CHUC NANG CHO NUT XEM BAI HOC
+        $('#watch').click
+        (
+            function()
+            {
+                window.location=" https://longnv.name.vn/lap-trinh-javascript";
+            }
+        )
+        // KET THUC TAO CHUC NANG CHO NUT XEM BAI HOC
+    </script>
+</body>
+</html>

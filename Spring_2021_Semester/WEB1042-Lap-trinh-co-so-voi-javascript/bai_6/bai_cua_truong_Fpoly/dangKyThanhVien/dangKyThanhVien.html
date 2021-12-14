@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dangKyThanhVien.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="title">
+                Form Đăng Ký
+            </div>
+        </div>
+        <div id="container">
+            <form action="#" onsubmit="return kiemTra()">
+                <div class="contain-total-form">
+                    <div class="contain-form">
+                        <div class="form-title">
+                            Họ:
+                        </div>
+                        <input type="text" id="ho">
+                    </div>
+                    <div class="contain-form">
+                        <div class="form-title">
+                            Tên:
+                        </div>
+                        <input type="text" id="ten">
+                    </div>
+                    <div class="contain-form">
+                        <div class="form-title" style="margin-top: 9px;">
+                            Ngày sinh:
+                        </div>
+                        Ngày:
+                        <input type="number" name="nNgay" min="1" max="31" id="ngay">
+                        Tháng:
+                        <input type="number" name="nThang" min="1" max="12" id="thang">
+                        Năm:
+                        <input type="number" name="nNam" min="1800" max="2021" id="nam">
+                    </div>
+                    <div class="contain-form">
+                        <div class="form-title">
+                            Giới tính:
+                        </div>
+                        <div class="contain-radios-input">
+                            <div class="contain-radio">
+                                <label for="nam">Nam</label>
+                                <input type="radio" name="nGioiTinh" value="nam" id="nam">
+                            </div>
+                            <div class="contain-radio">
+                                <label for="nu">Nữ</label>
+                                <input type="radio" name="nGioiTinh" value="nu" id="nu">
+                            </div>
+                            <div class="contain-radio">
+                                <label for="nam">Khác</label>
+                                <input type="radio" name="nGioiTinh" value="khac" id="khac">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contain-form">
+                        <div class="form-title">
+                            Số điện thoại:
+                        </div>
+                        <input type="text" name="nSDT" id="SDT">
+                    </div>
+                    <div class="contain-form" style="min-height: 85px;">
+                        <div class="form-title">
+                            Sở thích:
+                        </div>
+                        <div class="contain-checkboxs-input">
+                            <div class="contain-checkbox">
+                                <label for="docSach">Đọc sách</label>
+                                <input type="checkbox" name="nSoThich" value="docSach" id="docSach">
+                            </div>
+                            <div class="contain-checkbox">
+                                <label for="xemPhim">Xem phim</label>
+                                <input type="checkbox" name="nSoThich" value="xemPhim" id="xemPhim">
+                            </div>
+                            <div class="contain-checkbox">
+                                <label for="ngheNhac">Nghe nhạc</label>
+                                <input type="checkbox" name="nSoThich" value="ngheNhac" id="ngheNhac">
+                            </div>
+                            <div class="contain-checkbox">
+                                <label for="daBong">Đá bóng</label>
+                                <input type="checkbox" name="nSoThich" value="daBong" id="daBong">
+                            </div>
+                            <div class="contain-checkbox">
+                                <label for="mayVa">May vá</label>
+                                <input type="checkbox" name="nSoThich" value="mayVa" id="mayVa">
+                            </div>
+                            <div class="contain-checkbox">
+                                <label for="khac">Khác</label>
+                                <input type="checkbox" name="nSoThich" value="khac" id="khac" onclick="hienThi()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contain-form" id="soThichKhac">
+                        <div class="form-title" style="width: 160px;">
+                            Sở thích khác:
+                        </div>
+                        <input type="text" id="nhapSoThichKhac" style="width: calc(100% - 160px); float: right;">
+                    </div>
+                </div> 
+                <div class="contain-button">
+                    <button type="submit">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./dangKyThanhVien.js"></script>
+</body>
+</html>
