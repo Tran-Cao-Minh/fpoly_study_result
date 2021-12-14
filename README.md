@@ -1,4 +1,4 @@
-# The result I get when study at FPT Polytechnic College
+# The result I got when study at FPT Polytechnic College
 
 > **Fall 2020 Semester**: Java 1, Build Website with basic HTML and CSS
 
