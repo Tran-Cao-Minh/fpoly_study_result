@@ -1,0 +1,44 @@
+package ps18817_TranCaoMinh_Lab7;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class bai2_3_4 {
+
+	public static void main(String[] args) 
+	{
+
+		// Gioi thieu chuong trinh
+		System.out.print(" > QUAN LY SINH VIEN FPOLY\n\n");
+		
+		// Khai bao bien
+		Scanner s=new Scanner(System.in);
+		double diemJava,diemCss,diemHtml,diemMarketing,diemSales;
+		String hoTen;
+		int chon;
+		ArrayList<SinhVienPoly> dsSinhVien=new ArrayList<SinhVienPoly>();
+		// Thu nghiem
+		SinhVienPoly s1,s2; 
+		s1=new SinhVienBiz("1",1,1);
+		s1.xuatThongTin();
+		// Thu nghiem
+		
+		// Moi nhap	 
+		System.out.print("  + Moi ban nhap x: ");
+		
+		
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+

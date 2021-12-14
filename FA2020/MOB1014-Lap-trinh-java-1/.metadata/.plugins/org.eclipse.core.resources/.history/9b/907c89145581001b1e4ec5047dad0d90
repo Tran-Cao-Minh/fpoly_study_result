@@ -1,0 +1,23 @@
+package ps18817_TranCaoMinh_ThiJava1;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class baiLam {
+	
+	public static void main(String[] args) 
+	{
+
+		// Gioi thieu chuong trinh
+		System.out.print(" > X\n\n");
+		
+		// Khai bao bien
+		Scanner s=new Scanner(System.in);
+		ArrayList<Double> ds=new ArrayList<Double>();
+		
+		// Moi nhap	 
+		System.out.print("  + Moi ban nhap x: ");
+		
+	}
+	
+}

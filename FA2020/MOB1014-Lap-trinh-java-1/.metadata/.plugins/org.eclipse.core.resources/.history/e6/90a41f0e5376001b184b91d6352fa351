@@ -1,0 +1,38 @@
+package ps18817_TranCaoMinh_Lab7;
+
+public class Vuong extends ChuNhat {
+
+	// Khai bao bien 
+	int canh;
+	
+	// Ham tao khong doi so
+	public Vuong()
+	{
+		super();
+	}
+	
+	// Ham tao co doi so
+	public Vuong(int canh)
+	{
+		dai=rong=this.canh=canh;
+		
+	}
+	
+	// Phuong thuc xuat thong tin hinh Vuong ke thua hinh Chu Nhat
+	void xuatThongTin()
+	{
+		System.out.print("\nCanh: "+canh
+						+"  Chu vi: "+tinhChuVi()
+						+"  Dien tich: "+tinhDienTich()
+						+"\n");
+	}
+}
+
+
+
+
+
+
+
+
+

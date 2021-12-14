@@ -1,0 +1,14 @@
+package ps18817_TranCaoMinh;
+
+public class lab3bai3 {
+
+	public static void main(String[] args) {
+
+		// Gioi thieu chuong trinh
+		System.out.print(" > KIEM TRA SO NGUYEN\n\n");
+		
+		// Moi nhap
+
+	}
+
+}

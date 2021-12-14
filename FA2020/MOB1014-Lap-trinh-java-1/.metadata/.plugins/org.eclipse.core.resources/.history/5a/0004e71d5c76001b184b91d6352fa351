@@ -1,0 +1,103 @@
+package ps18817_TranCaoMinh_Lab7;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class bai2_3_4 {
+
+	public static void main(String[] args) 
+	{
+
+		// Gioi thieu chuong trinh
+		System.out.print(" > QUAN LY SINH VIEN FPOLY\n\n");
+		
+		// Khai bao bien
+		Scanner s=new Scanner(System.in);
+		double diemJava,diemCss,diemHtml,diemMarketing,diemSales;
+		String hoTen;
+		int chon,thoat;
+		ArrayList<SinhVienPoly> dsSinhVien=new ArrayList<SinhVienPoly>();
+		
+		// Thu nghiem
+		SinhVienPoly s1,s2; 
+		s1=new SinhVienBiz("1",1,1);
+		s1.xuatThongTin();
+		// Thu nghiem
+		
+		// Tao menu
+		System.out.print("       ...>~DANH SACH CHUONG TRINH~<...          \n"
+			       + " +--------------------------------------------------+\n"
+			       + " |   (1).Nhap danh sach sinh vien                   |\n"
+			       + " |                                                  |\n"
+			       + " |   (2).Xuat thong tin danh sach sinh vien         |\n"
+			       + " |                                                  |\n"
+			       + " |   (3).Xuat danh sach sinh vien co hoc luc Gioi   |\n"
+			       + " |                                                  |\n"
+			       + " |   (4).Sap xep danh sach sinh vien theo diem      |\n"
+			       + " |                                                  |\n"
+			       + " |   (5).Ket thuc                                   |\n"
+			       + " +--------------------------------------------------+\n");
+		
+		// Moi chon chuong trinh va thuc hien		
+		while(true) 
+		{
+			thoat=1;		
+			System.out.print("\n - - - - - - - - - - - - - - - - - - - - - - - - -");
+			System.out.print("\n  -> Moi ban chon chuong trinh: ");
+			// Dung try-catch de bat loi khong mong muon
+			try
+			{
+				s=new Scanner(System.in); // Tao moi bien s tranh loi vong lap vo han
+				chon=s.nextInt();
+				switch(chon) 
+				{
+					case 0:
+						System.out.print("  --> Ban co thuc su muon thoat chuong trinh khong [1.Khong/2.Co]_nhap so: ");
+						thoat=s.nextInt();	
+					    if(thoat == 2) {
+							System.out.print("\n  THANKS FOR USING MY PROGRAM _ @CREATED BY TRAN CAO MINH");
+							System.exit(0);
+						}
+					    break;
+					case 1:				
+						
+						break;
+					case 2:
+						
+						break;
+					case 3:
+						timTheoMaNhap();
+						break;	
+					case 4:
+						
+						break;
+					case 5:
+						
+						break;
+					default:
+						System.out.print("  ** Ban vui long chi nhap so trong pham vi [1 --> 5]\n");
+						break;
+				}			
+			}
+			catch(Exception e)
+			{
+				System.out.print("  ** Ban vui long khong nhap chu\n");
+				continue;
+			}		
+		}
+
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+package ps18817_TranCaoMinh_ThiJava1;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class baiLam {
+	
+	public static void main(String[] args) 
+	{
+
+		// Gioi thieu chuong trinh
+		System.out.print(" > De Tu Cua Thay Khoa - ps18817 Tran Cao Minh - Mong duoc 10 diem :D\n\n");
+		System.out.print(" > X\n\n");
+		
+		// Khai bao bien
+		Scanner s=new Scanner(System.in);
+		ArrayList<Double> ds=new ArrayList<Double>();
+		
+		// Moi nhap	 
+		System.out.print("  + Moi ban nhap x: ");
+		while(true)
+		{
+			System.out.print("  *Ban co muon nhap tiep khong (Yes[Mac dinh]/No): ");
+			String tiepTuc=s.nextLine();
+			if(tiepTuc.startsWith("N") || tiepTuc.startsWith("n"))
+			{
+				break;
+			}
+		}
+		
+		for(int i=0; i<ds.size(); i++)
+		{
+			
+		}
+		
+	}
+	
+}

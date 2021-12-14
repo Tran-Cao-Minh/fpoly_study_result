@@ -1,0 +1,21 @@
+package ps18817_TranCaoMinh_Lab7;
+
+ abstract public class SinhVienBiz extends SinhVienPoly{
+	// Khai bao bien
+	double diemMarketing,diemSales;
+	
+	// Ham tao co doi so (ham cha da co ham tao khong doi so)
+	public SinhVienIT(String hoTen, int diemMarketing, int diemSales)
+	{
+		super(hoTen,"Biz");
+		this.diemMarketing=diemMarketing;
+		this.diemSales=diemSales;
+	}
+	
+	// Ghi de phuong thuc Diem cua sinh vien poly
+	double diemTB()
+	{
+		return (2*diemMarketting + diemSales)/3;
+	}
+
+}
