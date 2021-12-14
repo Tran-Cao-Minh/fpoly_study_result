@@ -1,0 +1,70 @@
+/* phan footer cua trang*/
+footer
+{
+    border-top: 4px solid rgb(238, 77, 45);
+}
+    .footer1
+    {
+        width: 100%-320px;
+        height: fit-content;
+        padding: 65px 160px;
+        background-color: rgb(255, 255, 255);
+        color: grey;
+        font-family: Helvetica Neue,Helvetica,Arial;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    /*.footer2
+    {
+        width: 100%;
+        /* height: 524px;*|
+        height: fit-content;
+        background-color: rgb(251, 251, 251);
+    }*/   
+    .footer3
+    {
+        width: 100%;
+        /* height: 288px;*/
+        height: 220px;
+        background-color: rgb(245, 245, 245);
+        padding: 40px 0px;
+        position: relative;
+    }
+        .divTheoHangFooter3
+        {
+            float: center; 
+            width: fit-content; 
+            height: fit-content;
+        }
+            .navFooter3
+            {
+                width: fit-content;
+                height: fit-content; 
+                float: left;
+                padding: 0px 25px 0px 25px;
+                border-right: 1px solid grey;
+            }
+            .imageFooter3
+            {
+                width: fit-content;
+                height: fit-content; 
+                float: left;
+                padding: 40px 25px 10px 25px;
+            }
+            .navFooter3 a
+            {
+                font-family: Helvetica Neue,Helvetica,Arial;
+                text-decoration: none;
+                color: grey;
+                font-size: 12.25px;
+            }       
+            .footer3 div p
+            {
+                font-family: Helvetica Neue,Helvetica,Arial;
+                font-size: 11.75px;
+                color: grey;
+            }
+.navFooter3 a:hover
+{
+    color: orangered;
+}

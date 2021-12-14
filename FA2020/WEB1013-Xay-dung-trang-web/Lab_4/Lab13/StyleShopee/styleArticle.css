@@ -1,0 +1,271 @@
+/* phan noi dung cua trang*/
+article
+{
+    width: 79%;
+    height: auto;
+    padding: 150px 0px;
+}
+    .containInnerArticle
+    {
+        width: 1200px;
+        background-color: rgb(245, 245, 245);
+    }
+    .innerArticle
+    {
+        background-color: blue;
+        color: white;
+    }
+    .itemTitle
+    {
+        width: 1180px; 
+        height: 40px; 
+        margin-bottom: 0.5px;
+        background-color: white;
+        position: relative;
+        padding: 20px 0px 0px 20px;
+        font-size: 16px;
+        color: grey;
+        font-family: Helvetica Neue,Helvetica,Arial;
+    }
+    /*22222*/
+    .items2
+    {
+        width: 120px; 
+        height: 110px;  
+        background-color: white;
+        float: left;
+        border-radius: 10px;
+        color: rgb(238, 77, 45);
+    }
+        .items2 img
+        {
+            width: 46px;
+            height: 46px;
+            margin-top: 20px;
+            margin-left: 37px;
+            box-shadow: none !important;
+        }
+        .chuItems2
+        {
+            width: 90px;
+            height: fit-content;
+            font-size: 13px;
+            font-family: Helvetica Neue,Helvetica,Arial;
+            color: black;
+            margin-top: 2px;
+            padding: 0px 15px 0px 15px;
+            text-align: center;
+        }
+    .items2:hover
+    {
+        box-shadow: 0 0 5px black; 
+        margin-top: -1px;
+        opacity: 0.9;
+    }
+    /*44444*/
+    .items4
+    {
+        width: 119px; 
+        height: 150px;  
+        background-color: white;
+        float: left;
+        margin: 0px 1px 0.5px 0px;
+    }
+        .items4 img
+        {
+            width: 79px;
+            height: 79px;
+            margin-top: 15px;
+            margin-left: 20px;
+            box-shadow: none !important;
+        
+        }
+        .chuItems4
+        {
+            width: 107.1px;
+            height: fit-content;
+            font-size: 14px;
+            font-family: Helvetica Neue,Helvetica,Arial;
+            color: black;
+            margin-top: 9px;
+            margin-left: 5.75px;
+            text-align: center;
+        }
+    .items4:hover
+    {
+        box-shadow: 0 0 1px black; 
+        opacity: 0.975;
+    }
+    /* DANG PHAT TRIEN
+    .items6
+    {
+        width: 200px;
+        height: 237.5px;
+        border-radius: 1.5px;
+        float: left;
+        color: orangered;
+        background-color: blue;
+    }
+    .items9
+    {
+        width: 239px;
+        height: 98.5px;
+        float: left;
+        color: orangered;
+        background-color: blue;
+    }
+    .items10
+    {
+        width: 399px;
+        height: 323.5px;
+        float: left;
+        color: orangered;
+        background-color: blue;
+        margin-right: 0.5px;
+    }
+    */ 
+    /*10.10.10*/
+    .title10
+    {
+        width: 220px;
+        height: 38px;
+        background-color: white;
+        float: left;
+        border-bottom: inset 4px rgb(238, 77, 45);
+        color: rgb(238, 77, 45);
+        font-size: 16px;
+        font-family: Helvetica Neue,Helvetica,Arial;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .containItems10
+    {
+        width: 190px;
+        height: 283.5px;
+        margin: 5px;
+        float: left;
+        background-color: white;
+        position: relative;
+        z-index: 0;
+        box-shadow: 0 0 1px rgb(168, 168, 168);
+        border-radius: 2px;
+    }
+    .items10
+    {
+        width: 188px; 
+        height: 282px; 
+        float: center;
+        background-color: white;
+        color: rgb(238, 77, 45);
+        margin-top: 0.5px;
+        z-index: 0;
+    }
+        .hinhItems10
+        {
+            width: 188px;
+            height: 188px;
+            background-image: url('Hinh shopee/HinhSanPham/hoodieNam/1.jfif');
+            background-size:  cover;       
+        }
+            .quangCaoBenDuoiPhiaTraiHinhItems10
+            {
+                width: auto; 
+                height: 188px;
+            }
+        .thongTinItems10
+        {
+            width: 188px;
+            height: 94px;      
+        }
+            .chuItems10
+            {
+                width: 178px;
+                height:35px;
+                font-size: 13px;
+                font-family: Helvetica Neue,Helvetica,Arial;
+                color: rgb(70, 70, 70);           
+                padding: 7px 5px 0px 5px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .giaItems10
+            {
+                width: 90px;
+                height: 25px;              
+                text-align: left;
+                float: left;
+                margin: 23px 0px 0px 7px;
+                font-size: 17.5px;
+                color: rgb(238, 77, 45);
+                font-family: Helvetica Neue,Helvetica,Arial;
+            }
+            .giaItems10 u
+            {
+                font-size: 12.5px;
+                font-family: Helvetica Neue,Helvetica,Arial;
+            }
+            .daBanItems10
+            {
+                width: 84px;
+                height: 20px;            
+                text-align: right;
+                float: right;
+                margin: 25px 7px 0px 0px;
+                font-size: 14px;
+                color: grey;
+                font-family: Helvetica Neue,Helvetica,Arial;
+            }
+            .timSanPhamTuongTu
+            {
+                float: left;
+                width: 190px;
+                height: 24px;           
+                color: white;
+                background-color: rgb(238, 77, 45);
+                opacity: 0;
+                margin-left: -1px;
+                text-align: center;
+                padding-top: 7px;
+                font-size: 14px;
+                font-family: Helvetica Neue,Helvetica,Arial;
+            }
+    .nutXemThem10
+    {
+        width: 388px; 
+        height: 18px; 
+        margin: 30px 406px 0px 406px; 
+        float: left;
+        background-color: white;
+        text-align: center;
+        padding: 10px;
+        font-family: Helvetica Neue,Helvetica,Arial;
+        box-shadow: 0 0 1.5px rgb(168, 168, 168);
+        color: grey;
+    }
+    .nutXemThem10:hover
+    {
+        opacity: 0.8;
+        color:  rgb(238, 77, 45);
+        background-color: rgb(238, 238, 238);
+    }
+    .items10:hover
+    {
+        border: solid 1px rgb(238, 77, 45);    
+    }
+    .containItems10:hover
+    {
+        z-index: 1;
+    }
+    .containItems10:hover .timSanPhamTuongTu
+    {       
+        opacity: 1; 
+    }
+
+article a img:hover
+{
+    box-shadow: 0 0 10px black;
+}
+.hoverNone
+{
+    box-shadow: none !important;
+}

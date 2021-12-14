@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps18817_TranCaoMinh_Lab7_Bai3</title>
+    <style>
+        body
+        {
+            padding: 0px;
+            margin: 0px;          
+        }
+        .container
+        {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .container > header
+        {
+            background-image: url('anh1phan4.png');
+            background-size: 100% 100%;
+            height: 0px;
+            padding-bottom: 25%;
+            position: relative;
+        }
+        .container > nav
+        {
+            line-height: 40px;
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            width: 1000px;
+            height: 40px;
+        }
+        .container > article
+        {
+            min-height: 400px;
+            width: 75%;
+            background-color: white;
+            float: left;
+        }
+        .container > aside
+        {
+            min-height: 400px;
+            width: 25%;
+            background-color: lightgray;
+            float: right;
+        }
+        .container > footer
+        {
+            border-top: 5px double orangered;
+            line-height: 50px;
+            background-color: lightcyan;
+            text-align: center;
+            font-variant: small-caps;
+            clear: both;
+        }
+        .aBlock > a:hover
+        {
+            color: black;
+            text-decoration: underline;
+        }
+        .aBlock > a
+        {
+            color: white; 
+            text-decoration: none;
+        }
+        .aBlock
+        {
+            height: fit-content;
+            width: fit-content;
+            margin: 0px 8px 0px 8px;
+            float: left;
+            font-variant: small-caps;
+        }
+        .menuTopRight
+        {
+            width: 360px;
+            height: 25px;
+            background-color: orangered;
+            border-bottom-left-radius: 30px;
+            padding-top: 10px;
+            box-shadow: 0 0 10px white;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .huyHieuFpoly
+        {
+            width: 425px;
+            height: fit-content;
+            position: absolute;
+            top: 150px;
+            left: 30px;      
+        }
+        .font1
+        {
+            font-size: 40px;
+            font-weight: 1000;
+            font-variant: small-caps;
+            font-family:  Helvetica ;
+            color: white;
+            text-shadow: 0 0 10px orangered;
+        }
+        .font2
+        {
+            font-weight: 1000;
+            font-variant: small-caps;
+            letter-spacing: 9.25px;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menuTopRight">
+                <div class="aBlock" style="padding-left: 30px;"><a href="#" >  Đăng nhập  </a></div>
+                <div class="aBlock"><a href="#">  Đăng ký </a></div>
+                <div class="aBlock"><a href="#">  Quên mật khẩu  </a></div>
+            </div>
+            <div class="huyHieuFpoly">
+                <div class="font1">FPT Polytechnic</div>              
+                <div class="font2">Thực học - Thực nghiệp</div> 
+            </div>
+        </header>
+        <nav>
+            <div class="aBlock"><a href="#" >  Trang chủ  </a></div>
+            <div class="aBlock"><a href="#">  Giới thiệu  </a></div>
+            <div class="aBlock"><a href="#">  Liên hệ  </a></div>
+            <div class="aBlock"><a href="#">  Góp ý  </a></div>
+            <div class="aBlock"><a href="#">  Hỏi - đáp  </a></div> 
+            <div class="aBlock"><a href="#">  Sản phẩm  </a></div> 
+            <div class="aBlock" style="float: right;"><a href="#">  Tiếng Việt  </a></div>
+            <div class="aBlock" style="float: right;"><a href="#"> English  </a></div>      
+        </nav>
+        <article></article>
+        <aside>
+            <ul>
+                <li><a href="#">Máy tính xách tay</a></li>
+                <li><a href="#">Điện thoại di động</a></li>
+                <li><a href="#">Máy quay phim</a></li>
+                <li><a href="#">Máy chụp ảnh</a></li>
+            </ul>
+        </aside>
+        <footer>
+            FPT Polytechnic © 2017. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

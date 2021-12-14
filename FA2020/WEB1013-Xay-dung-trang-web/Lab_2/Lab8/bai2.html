@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps18817_TranCaoMinh_Lab8_Bai2</title>
+    <style>
+        .menu > ul > li
+        {
+            display: inline-block;
+            position: relative;
+        }
+        .menu > ul > li > a
+        {
+            display: block;
+            text-decoration: none;
+            font-variant: small-caps;
+            font-size: larger;
+            color: white;
+            padding: 0px 10px;
+            line-height: 40px;
+        }
+        .menu > ul > li > a:hover
+        {
+            color: black;
+        }
+        .menu > ul
+        {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            border-radius: 3px;
+            background-color: orangered;
+            text-align: center;
+        }
+        .menu ul ul
+        {
+            position: absolute;
+            display: none;
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            border-radius: 3px;
+            width: 200px;
+            background-color: white;
+            box-shadow: 0px 0px 1px gray;
+        }
+        .menu ul ul a
+        {
+            display: block; 
+            line-height: 30px;
+            color: orangered;
+            text-decoration: none;
+            font-variant: small-caps;
+            font-size: larger;
+            padding: 0px 10px;
+        }
+        .menu ul ul a:hover
+        {
+            background-color: orangered;
+            color: white;
+        }
+        .menu > ul > li:hover > ul
+        {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li>
+                <a href="#">Liên hệ</a>
+                <ul>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Góp ý</a></li>
+            <li><a href="#">Hỏi đáp</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

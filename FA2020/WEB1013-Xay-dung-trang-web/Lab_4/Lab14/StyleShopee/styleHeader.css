@@ -1,0 +1,77 @@
+/* phan header cua trang chinh*/
+header
+{
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(rgb(245,60,45),rgb(255, 105,55));
+    position: fixed;
+    z-index: 2;     /* cap do len tren 2*/
+}
+    .innerHeader
+    {
+        width: 1200px; 
+        height: 120px; 
+        background-image: linear-gradient(rgb(245,60,45),rgb(255, 105,55));
+        float: center;
+    }
+        .searchBox
+        {
+            clear: both;          
+            width: 840px; 
+            height: 40px; 
+            background-color: rgb(255, 255, 255);
+            float: center;
+            margin: 0px 0px 0px 203px;
+            border-radius: 2px;
+            color: black;
+        }
+        .menu
+        {
+            width: 350px;
+            height: 20px;
+            color: white;
+            background-color: none;
+            padding: 9px;
+            letter-spacing: 0.25px;
+            margin-bottom: 12px;
+        }
+        .nav
+        {
+            width: fit-content;
+            height: 20px;
+            padding: 0px 4px 0px 4px;
+            float: left;
+        }
+        .styleNavBenPhaiPhiaTren
+        {
+            margin-right: 10px;
+            font-family: Helvetica Neue,Helvetica,Arial;
+            color: white;
+            text-decoration: none;
+            font-size: 12.5px;
+        }
+        .styleNavBenTraiPhiaTren
+        {
+            font-family: Helvetica Neue,Helvetica,Arial;
+            color: white;
+            text-decoration: none;
+            font-size: 12.5px;
+        }
+        .styleNavBenDuoi
+        {
+            font-size: 11.5px;
+            margin-right: 2px;
+            font-family: Helvetica Neue,Helvetica,Arial;
+            color: white;
+            text-decoration: none;
+        }
+header a:hover
+{
+    color: black;
+    opacity: 0.5;
+}
+header input:focus
+{
+    border: none;
+    outline: none;
+}

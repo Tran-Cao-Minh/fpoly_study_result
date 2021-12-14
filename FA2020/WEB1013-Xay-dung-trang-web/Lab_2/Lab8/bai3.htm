@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps18817_TranCaoMinh_Lab6_Bai1</title>
+    <style>
+        body
+        {
+            padding: 0px;
+            margin: 0px;          
+        }
+        .container
+        {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .container > header
+        {
+            background-image: url('anh1phan4.png');
+            background-size: 100% 100%;
+            height: 0px;
+            padding-bottom: 25%;
+            position: relative;
+        }
+        .container > nav
+        {
+            line-height: 40px;
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            font-variant: small-caps;
+        }
+        .container > article
+        {
+            min-height: 400px;
+            width: 75%;
+            background-color: white;
+            float: left;
+        }
+        aside
+        {
+            min-height: 400px;
+            width: 25%;
+            background-color: none;
+            float: right; 
+            position: relative;   
+            margin-top: -10px;       
+        }
+        .container > footer
+        {
+            border-top: 5px double orangered;
+            line-height: 50px;
+            background-color: lightcyan;
+            text-align: center;
+            font-variant: small-caps;
+            clear: both;
+        }
+        .container > nav > a:hover
+        {
+            color: yellow;
+            text-decoration: underline;
+        }
+        .menu > ul > li
+        {
+            display: inline-block;
+            position: relative;
+        }
+        .menu > ul > li > a
+        {
+            display: block;
+            text-decoration: none;
+            font-variant: small-caps;
+            font-size: larger;
+            color: white;
+            padding: 0px 10px;
+            line-height: 40px;
+        }
+        .menu > ul > li > a:hover
+        {
+            color: black;
+        }
+        .menu > ul
+        {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            border-radius: 3px;
+            background-color: orangered;
+            text-align: center;
+        }
+        .menu ul ul
+        {
+            position: absolute;
+            display: none;
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            border-radius: 3px;
+            width: 200px;
+            background-color: white;
+            box-shadow: 0px 0px 1px gray;
+        }
+        .menu ul ul a
+        {
+            display: block; 
+            line-height: 30px;
+            color: orangered;
+            text-decoration: none;
+            font-variant: small-caps;
+            font-size: larger;
+            padding: 0px 10px;
+        }
+        .menu ul ul a:hover
+        {
+            background-color: orangered;
+            color: white;
+        }
+        .menu > ul > li:hover > ul
+        {
+            display: block;
+        }
+        .huyHieuFpoly
+        {
+            width: 425px;
+            height: fit-content;
+            position: absolute;
+            top: 185px;
+            left: 20px;      
+        }
+        .font1
+        {
+            font-size: 40px;
+            font-weight: 1000;
+            font-variant: small-caps;
+            font-family:  Helvetica ;
+            color: white;
+            text-shadow: 0 0 10px orangered;
+        }
+        .liAside
+        {
+            list-style: none;
+            border-radius: 3px;
+            box-shadow: 0 0 2px gray;
+            width: 247px;
+            margin-left: -39px;
+            position: relative;
+        }
+        .linkAside 
+        {                                  
+            background: url('/anh1.png') no-repeat;
+            background-size: 15px 15px;
+            background-position: 10px 10px;
+            display: block;
+            border-bottom: 1px dotted orangered;
+            color: orangered;
+            font-variant: small-caps;
+            font-size: larger;
+            text-decoration: none;
+            padding: 8px 5px 8px 30px;
+        }
+        .linkAside:hover
+        {
+            background: url('/anh3.png') no-repeat;
+            background-size: 15px 15px;
+            background-position: 10px 10px;
+            border-bottom: 1px dotted white;
+            background-color: orangered;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="huyHieuFpoly">
+                <div class="font1">FPT Polytechnic</div>                             
+            </div>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                    <ul>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+        </nav>
+        <article></article>
+        <aside>
+            <ul>
+                <li class="liAside"><a href="#" class="linkAside">Máy tính xách tay</a></li>
+                <li class="liAside"><a href="#" class="linkAside">Điện thoại di động</a></li>
+                <li class="liAside"><a href="#" class="linkAside">Máy quay phim</a></li>
+                <li class="liAside"><a href="#" class="linkAside">Máy chụp ảnh</a></li>
+                <li class="liAside"><a href="#" class="linkAside">Tủ lạnh</a></li>
+                <li class="liAside"><a href="#" class="linkAside">Đồng hồ đeo tay</a></li>
+                <li class="liAside"><a href="#" class="linkAside">Đồng hồ treo tường</a></li>
+                <li class="liAside"><a href="#" class="linkAside">Máy giặt</a></li>
+                <li class="liAside"><a href="#" class="linkAside">Bàn là</a></li>
+            </ul>
+        </aside>
+        <footer>
+            FPT Polytechnic © 2017. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps18817_TranCaoMinh_Lab10_Bai1</title>
+    <style>
+        .formGroup
+        {
+            padding: 10px;
+            font-weight: bold;
+            font-variant: small-caps;
+            font-family: Helvetica;
+        }
+        .formControl
+        {
+            width: 98%;
+            padding: 5px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+        } 
+        .formControl:focus
+        {
+            background-color: yellow;
+            box-shadow: 0 0 3px red;
+            border: 1px solid yellow;
+        }
+        .formButton
+        {
+            padding: 8px 30px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            font-weight: bold;
+            background-color: white;
+            color: orangered;
+            box-shadow: inset 0 0 20px blue;
+        }
+        .formButton:hover
+        {
+            color: blue;
+            box-shadow: inset 0 0 20px orangered;
+        }
+        .formButton:disabled
+        {
+            color: darkgray;
+            box-shadow: inset 0 0 20px gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="width: 500px;">
+        <div class="formGroup">
+            <div>Họ và tên:</div>
+            <form">
+                <input type="text" name="userName" class="formControl"
+                tabindex="1"/>    
+            </form>
+        </div>
+        <div class="formGroup">
+            <div>Quốc tịch:</div>
+            <form">
+                <input type="text" name="userName" class="formControl"
+                value="Việt Nam" readonly />    
+            </form>                   
+        </div>
+        <div class="formGroup">
+            <div>Ghi chú:</div>
+            <form>         
+                <textarea rows="3" cols="47" tabindex="2" class="formControl"></textarea>
+            </form>                   
+        </div>
+        <hr>
+        <div class="formGroup">
+            <form>
+                <input type="button" class="formButton" value="Thêm" tabindex="3" />
+                <input type="button" class="formButton" value="Sửa" tabindex="4" />
+                <input type="reset" class="formButton" value="Xóa" disabled/>
+            </form>           
+        </div>
+    </div>
+    
+</body>
+</html>
