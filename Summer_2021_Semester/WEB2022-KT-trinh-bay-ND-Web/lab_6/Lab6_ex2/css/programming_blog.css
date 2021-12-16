@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #216353;
+    --contrast-primary-color: #7a4d1d;
+    --secondary-color: #75daad;
+    --tertiary-color: #edffea;
+    --black-text: #333;
+    --gray-text: #888;
+    --white: #fff;
+    --black: #000;
+    --gray: #f4f4f4;
+}
+
+header {
+    background-color: var(--black-text);
+}
+
+main {
+    max-width: 1024px;
+    height: auto;
+    margin: auto;
+    padding: 7rem 0 1rem;
+
+    background-color: var(--gray);
+    box-shadow: 0 0 1rem var(--black);
+}
+
+main .blog-list {
+    max-width: 1024px;
+    height: auto;
+    padding: 2rem;
+}
+
+main .heading {
+    width: 100%;
+    height: 10rem;
+
+    font-size: 4rem;
+    font-family: 'Open Sans Bold';
+    text-align: center;
+    line-height: 10rem;
+
+}
+
+main .blog-item {
+    width: 100%;
+    height: 15rem;
+    margin: 2rem 0 0;
+
+    border: 0.2rem solid var(--secondary-color);
+    border-radius: 0.5rem;
+
+    background-color: var(--white);
+}
+
+main .blog-item:hover {
+    border-color: var(--primary-color);
+}
+
+main .contain-img {
+    display: flex;
+    justify-content: space-around;
+    float: left;
+
+    width: 25rem;
+    height: 15rem;
+    margin: -0.2rem 0 0 -0.2rem;
+    overflow: hidden;
+
+    border: 0.5rem solid var(--secondary-color);
+    border-radius: 0.5rem;
+}
+
+main .blog-item:hover .contain-img {
+    border-color: var(--primary-color);
+}
+
+main .contain-img img {
+    width: 25rem;
+    height: auto;
+
+    object-fit: cover;
+}
+
+main .blog-item:hover img {
+    width: 50rem;
+    height: auto;
+}
+
+main .contain-content {
+    float: left;
+
+    width: calc(100% - 25rem);
+    height: 14.6rem;
+    padding: 0.5rem 1rem;
+}
+
+main .contain-content .title {
+    display: block;
+
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+
+    font-size: 1.8rem;
+    line-height: 3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+}
+
+main .contain-content .content {
+    display: block;
+
+    width: 100%;
+    height: 8rem;
+    overflow: hidden;
+
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: justify;
+
+    /* background-color: blue; */
+}
+
+main .contain-content .thanks {
+    display: block;
+
+    width: 100%;
+    height: 2.6rem;
+    padding-right: 0.2rem;
+    overflow: hidden;
+
+    font-size: 1.6rem;
+    font-style: italic;
+    line-height: 2.6rem;
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+    text-align: right;
+
+    /* background-color: green; */
+}
+
+main .blog-item:hover .title {
+    color: var(--primary-color);
+}

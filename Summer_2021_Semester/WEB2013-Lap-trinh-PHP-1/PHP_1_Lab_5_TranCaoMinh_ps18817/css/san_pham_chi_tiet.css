@@ -1,0 +1,48 @@
+/* chi-tiet-san-pham css */
+.chi-tiet-san-pham {
+    width: auto;
+    height: auto;
+    padding: 0.6rem 0.5rem 0.1rem;
+    margin-bottom: 0.5rem;
+
+    background: lightpink;
+}
+
+.chi-tiet-san-pham .ten-san-pham {
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    
+    background: lightcyan;
+}
+
+.chi-tiet-san-pham .thong-tin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: auto;
+    height: auto;
+    padding: 1rem 0.5rem;
+
+    background: lightcyan;
+
+    font-size: 1.1rem;
+}
+
+.chi-tiet-san-pham .anh-san-pham {
+    max-width: 20rem;
+    height: 20rem;
+}
+
+.chi-tiet-san-pham .mo-ta {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 0.5rem 1rem;
+
+    background: lightcyan;
+
+    text-align: justify;
+}
+
+/* end chi-tiet-san-pham css */

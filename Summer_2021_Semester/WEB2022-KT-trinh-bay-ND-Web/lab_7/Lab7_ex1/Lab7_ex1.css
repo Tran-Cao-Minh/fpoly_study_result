@@ -1,0 +1,136 @@
+body,
+td,
+th {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    color: #000;
+    background-color: #CCC;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+/*-----------------------------------------------------DIV_TAGS----------------------------------------------*/
+#wrap {
+    width: 980px;
+    margin: 0pt auto 0pt auto;
+    background-color: #FFF;
+    overflow: auto;
+    padding: 10px;
+}
+
+aside {
+    width: 210px;
+    height: auto;
+    margin-right: 120px;
+    float: right;
+    /* background-color: blue; */
+}
+.box {
+    width: 210px;
+    border: #CCC 1px solid;
+    padding: 5px;
+    overflow: auto;
+}
+
+.box_box {
+    width: 210px;
+    border: #CCC 1px solid;
+    padding: 5px;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.box_content {
+    width: 490px;
+    padding: 5px;
+    margin: 0 10px 0 100px;
+    float: left;
+}
+
+.box_footer {
+    width: 980px;
+    height: 50px;
+    border-top: #CCC solid 1px;
+    padding-top: 5px;
+    margin-top: 5px;
+    float: left;
+}
+
+.line_title {
+    width: 205px;
+    padding: 5px 0px 5px 5px;
+    float: left;
+    background-color: #CCC;
+    color: #900;
+    font: Verdana, Geneva, sans-serif;
+    font-size: 13pt
+}
+
+.line_title_long {
+    width: 485px;
+    padding: 5px 0px 5px 5px;
+    float: left;
+    background-color: #CCC;
+    color: #900;
+    font: Verdana, Geneva, sans-serif;
+    font-size: 13pt
+}
+
+.line_show {
+    width: 485px;
+    float: left
+}
+
+.menu_links {
+    width: 200px;
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.menu_links ul {
+    list-style: none;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.menu_links ul li {
+    width: 200px;
+    line-height: 18px;
+    float: left;
+    padding-bottom: 4px;
+    list-style: none;
+    border-bottom: #CCC 1px dotted
+}
+
+.menu_links ul li a {
+    color: #000;
+    text-decoration: none
+}
+
+.menu_links ul li a:hover {
+    color: #CC0000;
+    font-weight: bold
+}
+
+/*-----------------------------------------------------STYLE_TAGS----------------------------------------------*/
+.text_bold {
+    font-weight: bold;
+    color: #900;
+    text-decoration: none
+}
+
+.text_cent {
+    text-align: center
+}
+
+h1 {
+    font-size: 40px;
+    color: #333;
+    line-height: 100px;
+}

@@ -1,0 +1,44 @@
+#wrap{
+    background-color: #999999;
+    max-width: 900px;
+    height: fit-content;
+    margin: 80px auto 0;
+    padding: 35px 1%;
+    font-family: serif;
+    color: #000;
+    border-radius: 10px;
+}
+h1{
+    width: 100%;
+    font-size: 45px;
+    margin: 0 0 25px;
+}
+p{
+    width: 100%;
+    font-size: 22px;
+    margin: 0;
+    line-height: 35px;
+}
+.float-left{
+    text-align: left;
+}
+.float-right{
+    text-align: right;
+}
+.small-caps{
+    font-variant: small-caps;
+}
+#about-me{
+    max-width: 310px;
+    height: 40px;
+    margin: 15px auto 0;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: monospace;
+    font-weight: bolder;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px double #440a67;
+    color: #440a67;
+}

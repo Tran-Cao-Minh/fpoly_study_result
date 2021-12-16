@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <!-- link font gg chung -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- link font montserrat in nghieng -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!-- link font lora -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <!-- link font spacemono -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="./general.css">
+    <link rel="stylesheet" href="./layout_trang_chu.css">
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header-bar">
+                <a href="./layout_trang_chu.html">
+                    <div class="logo">
+                        <svg width="52.64" height="60.37">
+                            <path fill="white" d="M19,51.76a4.75,4.75,0,0,0,1.21-.12,1.21,1.21,0,0,0,.66-.48,2.26,2.26,0,0,0,.31-1,13.37,13.37,0,0,0,.09-1.78v-.94a13.37,13.37,0,0,0-.09-1.78,2.31,2.31,0,0,0-.31-1,1.14,1.14,0,0,0-.66-.47A4.27,4.27,0,0,0,19,44.1v-.83l5.51-.72V48.4a13.37,13.37,0,0,0,.09,1.78,2.25,2.25,0,0,0,.33,1,1.24,1.24,0,0,0,.66.48,4.52,4.52,0,0,0,1.19.12v.84H19Z"></path>
+                            <path fill="white" d="M52.64,52.71H46v-.83a.9.9,0,0,0,.86-.68,9.05,9.05,0,0,0,.26-2.69V47.3A4.47,4.47,0,0,0,46.64,45,1.76,1.76,0,0,0,45,44.25a2.74,2.74,0,0,0-2.65,2.85v1.41a13.65,13.65,0,0,0,.09,1.79,2.25,2.25,0,0,0,.33,1,1.24,1.24,0,0,0,.66.48,4.53,4.53,0,0,0,1.2.13v.83h-7.8v-.83a4.67,4.67,0,0,0,1.21-.13,1.24,1.24,0,0,0,.66-.48,2.4,2.4,0,0,0,.32-1,16.12,16.12,0,0,0,.08-1.79v-.95A15.78,15.78,0,0,0,39,45.78a2.45,2.45,0,0,0-.32-1,1.24,1.24,0,0,0-.66-.48,4.75,4.75,0,0,0-1.21-.12v-.84l5-.72a4.08,4.08,0,0,1,.25.72,4.68,4.68,0,0,1,.16.92,4.28,4.28,0,0,1,1.54-1.19,4.66,4.66,0,0,1,2-.45,4.45,4.45,0,0,1,3.2,1.22,4.11,4.11,0,0,1,1.26,3.07v1.58a13.21,13.21,0,0,0,.1,1.77,2.43,2.43,0,0,0,.34,1,1.17,1.17,0,0,0,.66.48,4.62,4.62,0,0,0,1.21.13Z"></path>
+                            <path fill="white" d="M32.9,0h-18A15.76,15.76,0,0,0,8.41,1.32C6.36,2.25,5,3.73,4.9,5.21A3.06,3.06,0,0,0,8,8.79a3.18,3.18,0,0,0,2.91-2.25c.14-.64.12-1.95.32-2.44.7-1.68,2.43-2.36,4.26-2.36,2.76,0,3.88.92,4.33,2.36A19.65,19.65,0,0,1,20.08,8v16.8c0,5.49-.59,6.36-5,6.39-3.58,0-4.16-.9-4.16-6.39V13.64L.44,15v1.59c3.77,0,4.31.81,4.31,6.38v1.8c0,5.57-.54,6.39-4.31,6.39v1.58H32.9c12.44,0,18.17-7.2,18.17-16.37S45.34,0,32.9,0Zm-.22,30.28h-.54c-4.59,0-5.24-.81-5.24-6.16V2.46h5.78c8.57,0,10.64,7.31,10.64,13.91S41.25,30.28,32.68,30.28Z"></path>
+                            <path fill="white" d="M24.48,38a.64.64,0,0,0,0-.07v0a1.72,1.72,0,0,0-.25-.43c-.83-1.17-2.41-1.44-4.52-1.44a4.82,4.82,0,0,0-3.58,1.49,5.36,5.36,0,0,0-1.45,4,7.41,7.41,0,0,0,.08,1.15,3.47,3.47,0,0,0-.63,0c-1.51,0-3.37.77-3.37,2.86a3.36,3.36,0,0,0,2.14,2.92l1.6.71c1.29.6,1.84,1,1.84,1.69s-.58,1.11-1.49,1.11c-1.83,0-3.49-1.65-3.49-3H10.5A5.93,5.93,0,0,1,8.22,51a5.68,5.68,0,0,1-1.89.32,2.58,2.58,0,0,1-2-1,4.24,4.24,0,0,1-.84-2.82l0-.26V47H9.82a3.7,3.7,0,0,0,.11-.87,3.76,3.76,0,0,0-1.19-2.72,4.21,4.21,0,0,0-3.13-1.2,5.94,5.94,0,0,0-2.15.39,5.55,5.55,0,0,0-1.81,1.12,5.13,5.13,0,0,0-1.21,1.7A4.94,4.94,0,0,0,0,47.55a5.19,5.19,0,0,0,.42,2.08,5.13,5.13,0,0,0,1.21,1.71A5.31,5.31,0,0,0,3.5,52.49a6.74,6.74,0,0,0,2.37.41,5.83,5.83,0,0,0,2.41-.56,6.49,6.49,0,0,0,2.22-1.92v2.71h.83c0-.61.11-.92.37-.92a1.84,1.84,0,0,1,.77.29,5.49,5.49,0,0,0,2.38.63,4.5,4.5,0,0,0,2.71-.81,2.81,2.81,0,0,0,1.18-2.43A3.39,3.39,0,0,0,16.53,47l-1.4-.66c-1.57-.69-2-1-2-1.58s.6-1,1.4-1a1.36,1.36,0,0,1,.43.06,1.37,1.37,0,0,1,.11.31.23.23,0,0,1,0,.12c.35.94.86,1.57,1.63,1.57a1.11,1.11,0,0,0,1.12-1.06c0-.83-.55-1.25-1.49-1.74a6.21,6.21,0,0,1-.49-2.29A3.76,3.76,0,0,1,17,37.91a3.66,3.66,0,0,1,2.6-1.12,4.82,4.82,0,0,1,1.56.24.64.64,0,0,1,.35.82v0a1.73,1.73,0,0,0-.11.6,1.64,1.64,0,0,0,.45,1.14,1.44,1.44,0,0,0,1.1.48,1.53,1.53,0,0,0,1.12-.48,1.62,1.62,0,0,0,.47-1.14A1.45,1.45,0,0,0,24.48,38ZM5.75,43.63c1.2,0,1.8.71,1.8,2.12H3.69C4,44.34,4.71,43.63,5.75,43.63Z"></path>
+                            <path fill="white" d="M36.66,38.46A3.25,3.25,0,0,0,33.33,42a6.84,6.84,0,0,0,.17,1.42,4.46,4.46,0,0,0-2.72-.92,4.18,4.18,0,0,0-4.31,3.93,3.82,3.82,0,0,0,2.18,3.42,6.14,6.14,0,0,0,2.42.52c1.57.07,2.55.41,2.55,1s-.52.55-2.46.76l-.61,0c-3.56.41-4.92,2.35-4.92,4.08a3.5,3.5,0,0,0,1.59,3,6.64,6.64,0,0,0,3.94,1.13A7.55,7.55,0,0,0,35,59.51a2.43,2.43,0,0,0,1.42-2c0-1-.64-1.74-1.91-2.38l-.55.32a2.83,2.83,0,0,1,.92,1.77,1.56,1.56,0,0,1-1.1,1.42,5.42,5.42,0,0,1-2.34.52c-2.06,0-3.44-.78-3.44-2a1.39,1.39,0,0,1,.86-1.24,12.25,12.25,0,0,1,3.45-.73c2.4-.26,3.62-1.21,3.62-2.89a3.07,3.07,0,0,0-2.13-2.38,4.17,4.17,0,0,0-.73-.14,5.76,5.76,0,0,0,.89-.67,3.71,3.71,0,0,0,1.13-2.66,2.88,2.88,0,0,0-.7-2.11,10.22,10.22,0,0,1-.2-1.94c0-1.62.52-2.58,1.65-2.58.55,0,.69.24.84.73s.34.72.81.84a.27.27,0,0,1,.14,0h.12a1.08,1.08,0,0,0,1-1.19A1.86,1.86,0,0,0,36.66,38.46ZM31.58,48.8c-1,0-1.63-1.12-1.63-2.74s.58-2.76,1.63-2.76,1.62,1.11,1.62,2.76S32.65,48.8,31.58,48.8Z"></path>
+                        </svg>
+                    </div>
+                </a>
+                <nav class="menu">
+                    <div class="menu-list">LOẠT BÀI</div>
+                    <div class="menu-list">THIẾT KẾ</div>
+                    <div class="menu-list">NGHỆ THUẬT</div>
+                    <div class="menu-list">SÁNG TẠO</div>
+                    <div class="menu-list">ĐIỂM NHÌN</div>
+                </nav>
+                <div class="weDesign">
+                    <svg width="111.7" height="25" viewBox="0 0 452.37 101.25">
+                        <path d="M27.78,58.38h0.21c2.93-7.55,6.71-16.56,9.43-23.79c-1.26-3.14-2.73-5.87-3.98-8.17v-2.1
+                            c2.83,0.11,5.97,0.21,8.91,0.21c3.35,0,6.81-0.1,10.27-0.21v2.93c-3.77,0.1-6.18,0.52-6.18,2.62c0,1.15,0.52,2.62,1.47,5.24
+                            c2.52,6.92,5.76,15.51,8.91,23.27h0.21c2.93-7.13,6.18-15.2,8.59-21.49c1.47-3.67,2.41-6.18,2.41-7.23c0-1.47-1.26-2.2-5.87-2.41
+                            v-2.94c2.94,0.21,5.87,0.21,8.8,0.21c2.93,0,6.18,0,8.91-0.21v2.93c-4.51,0.21-6.29,0.84-7.65,4.19
+                            c-3.88,9.43-9.54,23.16-16.56,40.88h-3.04c-4.19-10.8-8.49-21.49-13-32.28h-0.21c-4.4,10.69-8.7,21.38-12.89,32.28h-3.04
+                            C17.71,57.75,13.1,46.43,7.34,32.49C5.97,29.14,4.93,27.46,0,27.25v-2.94c3.98,0.21,7.97,0.21,11.95,0.21
+                            c3.98,0,7.44,0,11.42-0.21v2.93c-3.35,0-5.97,0.63-5.97,2.72c0,0.94,0.31,2.31,1.36,5.14C21.28,41.82,24.74,50.83,27.78,58.38z"></path>
+                        <path d="M126.4,62.78c-3.56,4.61-9.64,9.75-19.49,9.75c-13.63,0-24.21-9.75-24.21-24.11
+                            c0-12.79,8.49-24.95,23.58-24.95c10.06,0,19.29,5.14,19.39,18.66l-0.63,1.05H92.97c-0.11,0.84-0.11,1.68-0.11,2.41
+                            c0,11.21,5.66,21.7,17.61,21.7c6.18,0,10.59-2.83,13.84-6.6L126.4,62.78z M93.39,39.62h20.02c1.47,0,1.99-0.11,1.99-2.41
+                            c0-5.76-3.25-10.27-9.75-10.27C98.11,26.94,94.65,33.23,93.39,39.62z"></path>
+                        <path d="M148.21,71.38c-4.3,0-7.97,0.1-12.68,0.21v-2.93c5.55-0.1,7.23-0.63,7.97-4.4
+                            c0.52-2.41,0.63-6.18,0.63-27.46c0-21.28-0.11-24.74-0.63-27.46c-0.84-4.61-2.93-5.35-7.97-5.66l0.1-2.93
+                            c4.72,0.31,9.43,0.42,12.68,0.42c5.35,0,13.31-0.84,18.87-0.84c25.57,0,39.51,14.15,39.51,35.53c0,21.59-14.46,35.95-40.04,35.95
+                            C161.62,71.8,154.39,71.38,148.21,71.38z M195.48,36.79c0-18.55-10.38-32.91-28.51-32.91c-3.98,0-9.64,0.73-12.47,1.78
+                            c-0.21,5.24-0.31,13.42-0.31,29.14c0,21.49,0.21,24.84,0.73,27.36c1.15,5.03,5.87,6.18,11.32,6.18
+                            C187.3,68.34,195.48,53.04,195.48,36.79z"></path>
+                        <path d="M261.3,62.78c-3.56,4.61-9.64,9.75-19.49,9.75c-13.63,0-24.21-9.75-24.21-24.11
+                            c0-12.79,8.49-24.95,23.58-24.95c10.06,0,19.29,5.14,19.39,18.66l-0.63,1.05h-32.07c-0.11,0.84-0.11,1.68-0.11,2.41
+                            c0,11.21,5.66,21.7,17.61,21.7c6.18,0,10.59-2.83,13.84-6.6L261.3,62.78z M228.28,39.62h20.02c1.47,0,1.99-0.11,1.99-2.41
+                            c0-5.76-3.25-10.27-9.75-10.27C233,26.94,229.54,33.23,228.28,39.62z"></path>
+                        <path d="M270.63,69.6c0.42-4.82,0.52-9.33,0.21-14.57l2.93-0.21c1.05,8.8,5.76,14.05,13.84,14.05
+                            c5.45,0,9.33-2.31,9.33-6.6c0-5.24-5.87-8.07-12.47-11.42c-7.55-3.77-13.21-6.71-13.21-13.94c0-7.34,5.77-13.42,17.09-13.42
+                            c4.72,0,9.64,1.05,13.94,2.62c-0.21,4.51,0,9.01,0.42,13.63l-2.83,0.21c-1.36-8.28-5.76-12.79-12.89-12.79
+                            c-4.82,0-8.07,2.1-8.07,5.87c0,4.4,4.09,6.39,11.21,9.85c8.39,4.09,14.78,7.34,14.78,15.51c0,7.97-6.08,14.15-18.66,14.15
+                            C280.8,72.53,275.35,71.38,270.63,69.6z"></path>
+                        <path d="M313.6,27.88c5.45-0.63,10.8-2.1,15.41-4.4l0.94,0.73c-0.21,4.82-0.32,11.84-0.32,24.42
+                            c0,11.11,0.1,13.83,0.32,15.2c0.52,3.98,2.31,4.72,7.34,4.82v2.93c-3.98-0.1-8.07-0.21-12.16-0.21c-4.19,0-8.39,0.1-12.26,0.21
+                            v-2.93c4.3-0.1,6.39-0.42,7.02-2.83c0.42-1.57,0.52-3.25,0.52-16.67c0-11.32,0-13.42-0.42-15.09c-0.52-2.31-2.51-3.04-6.39-3.46
+                            V27.88z M324.92,0c3.67,0,6.5,2.93,6.5,6.6s-2.83,6.6-6.5,6.6s-6.6-2.93-6.6-6.6S321.25,0,324.92,0z"></path>
+                        <path d="M355.95,71.9v-0.21c-3.25-1.36-6.29-3.77-6.29-7.23c0-3.67,2.62-7.34,11.53-9.12v-0.21
+                            c-8.49-1.15-14.78-6.92-14.78-14.67c0-8.7,7.34-16.14,19.18-16.87c1.36-0.1,5.45,0,7.86-1.05c1.68-0.73,3.98-2.31,3.98-6.29
+                            c0-1.78-0.52-3.25-1.15-3.98c0.31-1.57,2.1-3.04,4.51-3.04c3.35,0,5.97,2.62,5.97,6.39c0,5.97-7.44,9.33-14.36,9.75v0.21
+                            c6.08,1.05,13.52,5.76,13.52,14.25c0,8.7-6.39,14.25-16.56,16.56c-3.56,0.73-6.81,1.36-9.22,2.1c-2.1,0.63-3.25,1.47-3.25,2.83
+                            c0,1.36,1.26,2.2,3.46,3.04c4.4,1.57,11.74,2.52,16.77,3.98c9.01,2.73,12.58,7.23,12.58,13.63c0,10.59-9.75,19.29-24.84,19.29
+                            c-12.79,0-21.59-6.39-21.59-14.99C343.26,78.71,350.5,73.79,355.95,71.9z M359.41,72.95c-5.76,2.41-8.49,7.55-8.49,12.16
+                            c0,7.02,6.29,12.26,16.35,12.26c9.85,0,15.3-5.14,15.3-11.22c0-5.76-4.09-8.28-10.8-10.17C367.37,74.73,362.97,74,359.41,72.95z
+                            M366.85,53.35c6.92,0,9.64-6.81,9.64-12.79c0-7.55-4.51-13.63-10.9-13.63c-6.92,0-9.85,7.02-9.85,12.79
+                            C355.74,47.38,360.35,53.35,366.85,53.35z"></path>
+                        <path d="M412.13,33.64l0.31,0.1c3.56-6.39,9.64-10.27,17.4-10.27c5.87,0,10.06,2.2,12.47,6.08
+                            c2.41,3.98,2.73,9.33,2.73,14.46c0,5.24-0.31,10.06-0.31,14.78c0,8.59,1.05,9.64,7.65,9.85v2.93c-3.98-0.1-8.07-0.21-12.16-0.21
+                            c-4.19,0-8.17,0.1-12.16,0.21v-2.93c5.45-0.1,6.92-0.84,7.34-6.81c0.1-1.89,0.1-6.08,0.1-10.69c0-6.08-0.21-12.47-1.99-16.87
+                            c-1.36-3.46-3.67-5.56-7.76-5.56c-4.72,0-8.39,3.14-10.38,6.6c-2.1,3.56-3.04,8.18-3.04,14.67c0,9.75,0.1,13,0.42,14.57
+                            c0.73,3.35,2.62,4.09,6.92,4.09v2.93c-3.88-0.1-7.97-0.21-12.05-0.21c-4.19,0-8.28,0.1-12.05,0.21v-2.93
+                            c4.51-0.1,6.29-0.42,7.02-2.83c0.42-1.57,0.52-3.35,0.52-16.35c0-13.31-0.11-14.78-0.52-16.04c-0.63-1.68-1.99-2.52-5.87-2.83
+                            v-2.73c6.6-0.84,11.11-2.83,14.05-4.4l1.05,0.63L412.13,33.64z"></path>
+                    </svg>
+                </div>
+                <div class="contain-search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </header>
+        <section class="cont-main-post">
+            <div class="main-post">
+                <div class="cont-content">
+                    <div class="title">
+                        Sound of Metal - Một bộ phim âm nhạc <br>
+                        'yên lặng'	
+                    </div>
+                    <div class="content">
+                        Cùng tìm hiểu bộ phim Sound of Metal đã đạt được những thành tựu điện ảnh nào!
+                    </div>
+                    <a href="./layout_bai_viet.html">
+                        <div class="read-more-btn">
+                            ĐỌC BÀI
+                        </div>
+                    </a>
+                </div>
+                <div class="cont-img">
+                    <img src="./images/m1.webp" alt="">
+                </div>
+                <div class="next"></div>
+                <div class="prev"></div>
+                <div class="cur-index">
+                    <!-- them may cai index vo -->
+                    <div class="index-dot"></div>
+                    <div class="index-dot"></div>
+                    <div class="index-dot"></div>
+                    <div class="index-dot"></div>
+                    <div class="index-dot"></div>
+                </div>
+            </div>
+        </section>
+        <section class="new-post">
+            <div class="title">
+                Mới viết /
+            </div>
+            <div class="post-bar">
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/n1.webp" alt="">
+                    </div>
+                    <div class="author">
+                        <img src="./images/a1.jpeg" alt="">
+                        <span>Thao Lee</span>
+                    </div>
+                    <div class="cont-tags">
+                        <span class="tag-list">     
+                            Sáng tạo                                        
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            Thiết kế                                     
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            Tutorial                                   
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            UX-UI                                    
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            ...                                       
+                        </span>
+                    </div>
+                    <div class="title">
+                        10 xu hướng thiết kế UX dành cho mobile không nên bỏ qua                    
+                    </div>
+                    <div class="content">
+                        UX (User Experience) là khái niệm đã rất quen thuộc 
+                        và đặc biệt quan trọng mà các nhà phát triển app luôn 
+                        quan tâm tới. Trong bài viết này là…                
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/n2.jpg" alt="">
+                    </div>
+                    <div class="author">
+                        <img src="./images/a2.jpg" alt="">
+                        <span>19 August</span>
+                    </div>
+                    <div class="cont-tags">
+                        <span class="tag-list">     
+                            Hội họa      
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            Minh họa  
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            Nghệ thuật    
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            Thiết kế 
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                    </div>
+                    <div class="title">
+                        Nhân vật Rohan Dahotre, hoạ sĩ đam mê thiên nhiên và muông thú                    
+                    </div>
+                    <div class="content">
+                        Hoạ sĩ kiêm nhà thiết kế đồ hoạ người Ấn Độ Rohan Dahotre 
+                        rất đam mê thiên nhiên và thế giới hoang dã. Những tác phẩm
+                        của anh thể hiện…                
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/n3.jpg" alt="">
+                    </div>
+                    <div class="author">
+                        <img src="./images/a3.jpg" alt="">
+                        <span>Navi Nguyễn</span>
+                    </div>
+                    <div class="cont-tags">
+                        <span class="tag-list">     
+                            Cảm hứng                                 
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            Minh họa                 
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            Nghệ thuật                  
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            Sáng tạo              
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            ...                                       
+                        </span>
+                    </div>
+                    <div class="title">
+                        Shingo Tamagawa - Dành 3 năm tìm lại bản thân với Puparia                    
+                    </div>
+                    <div class="content">
+                        Vào đầu năm 2021, tác phẩm Puparia đã trở thành một
+                        hiện tượng trên các diễn đàn anime. Cùng tìm hiểu trong 
+                        bộ phim này có gì thú vị nhé!                
+                    </div>
+                </div>
+                <!-- de sau nay do them du lieu vao -->
+                <div class="cont-post" style="display: none;">
+                    <div class="cont-img">
+                        <img src="./images/n.webp" alt="">
+                    </div>
+                    <div class="author">
+                        <img src="./images/a.jpeg" alt="">
+                        <span></span>
+                    </div>
+                    <div class="cont-tags">
+                        <span class="tag-list">     
+                                   
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                                 
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                                  
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                               
+                        </span>
+                        <span class="slash">
+                            /
+                        </span>
+                        <span class="tag-list">     
+                            ...                                       
+                        </span>
+                    </div>
+                    <div class="title">
+                  
+                    </div>
+                    <div class="content">
+              
+                    </div>
+                </div>
+                <div class="next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </section>
+        <section class="top-post">
+            <div class="title">
+                Top bài viết /
+            </div>
+            <div class="top-post-bar">
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/t1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        8 tư duy ngăn cản sự sáng tạo của bạn                       
+                    </div>
+                    <div class="author-name">
+                        Đáo
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/t2.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Siêu hình tròn - Công thức toán học mà 
+                        Kenya Hara áp dụng để thực hiện logo mới của Xiaomi                                                    
+                    </div>
+                    <div class="author-name">
+                        Navi Nguyễn
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/t3.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Victo Ngai: Nếu phải trung thực khi vẽ, tại sao ta không chụp một bức ảnh?
+                    </div>
+                    <div class="author-name">
+                        19 August
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/t4.gif" alt="">
+                    </div>
+                    <div class="title">
+                        Bộ nhận diện thương hiệu cho không gian 
+                        tối giản xanh mát của phòng học Green Study                            
+                    </div>
+                    <div class="author-name">
+                        19 August
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/t5.jpg" alt="">
+                    </div>
+                    <div class="title">         
+                        Viết một tay: Những ‘cá lớn’ trong nghệ thuật có lẽ bạn đã mắc câu?                            
+                    </div>
+                    <div class="author-name">
+                        Y.ink
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/t6.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Trào lưu Art Deco (Phần 1): 
+                        Tóm lược, lịch sử, khái niệm, phong cách, và xu hướng                            
+                    </div>
+                    <div class="author-name">
+                        Hương Mi Lê
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-btn">
+              XEM THÊM  
+            </div>
+        </section>
+        <section class="suggest-post">
+            <div class="title">
+                Đọc là ghiền
+                <div class="topic">
+                    Phát triển bản thân
+                </div>
+                <div class="topic">
+                    Kiến thức
+                </div>
+                <div class="topic">
+                    Truyền cảm hứng 
+                </div>
+            </div>
+            <div class="post-area">
+                <div class="cont-odd-post">
+                    <div class="cont-img">
+                        <img src="./images/s1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Tổng hợp những bức ảnh kinh ngạc về Trái Đất dưới góc nhìn ngoài không gian
+                    </div>
+                    <div class="content">
+                        Nhìn thấy thời tiết rõ ràng trên khắp châu Âu là một việc hiếm khi xảy ra, 
+                        vì vậy khi bầu trời Đan Mạch trở nên quang đãng, phi hành đoàn của Trạm Vũ trụ Quốc tế 
+                        đã nhanh chóng tận dụng cơ hội.
+                        Hình ảnh được chụp vào ngày 26 tháng 2 năm 2003, từ Trạm Vũ trụ Quốc tế. 
+                        Đan Mạch, cũng như phần lớn những khu vực khác của châu Âu có thể được quan sát 
+                        một cách dễ dàng. Lưu ý phần tuyết của mùa đông và đỉnh núi ...
+                    </div>
+                </div>
+                <div class="cont-even-post">
+                    <div class="cont-img">
+                        <img src="./images/s2.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Những hình xăm tinh tế đầy chi tiết của Sol Studio đến từ Hàn Quốc                    </div>
+                    <div class="content">
+                        Nghĩ về Hàn Quốc, bạn sẽ nhớ đến một đất nước đẹp đẽ giàu truyền thống, văn hoá, 
+                        thịnh vượng, nhưng hãy thử nghĩ về một thứ khác nữa, chẳng hạn như hình xăm. 
+                        Đúng vậy, hãy thử bước ra ngoài hình ảnh quen thuộc của Hàn Quốc một chút nhé.
+                        Những tác phẩm của cửa hàng xăm Sol Studio trông thật sáng tạo, đáng yêu và gọn gàng 
+                        làm sao! Chúng mới lạ vì được đóng khung, thật là những thiết kế đặc biệt. Bạn chắc chắn 
+                        sẽ thích độ tỉ mỉ trong từng chi tiết cho một hình nhỏ như vậy ...
+                    </div>
+                </div>
+                <div class="cont-odd-post">
+                    <div class="cont-img">
+                        <img src="./images/s3.png" alt="">
+                    </div>
+                    <div class="title">
+                        Đơn giản và đáng yêu nhưng lại “not simple”?                    
+                    </div>
+                    <div class="content">
+                        Dạo gần đây khi biểu tượng cảm xúc “thương thương” xuất hiện, 
+                        nghe nói mọi người thay nhau thả “thương thương” rất nhiều. Sao vậy ta? 
+                        Nguyên nhân chính mình nghĩ có lẽ vì biểu tượng siết vào lòng trái tim quá đáng yêu, 
+                        khi nhìn vào cứ muốn đáng yêu theo luôn, phải vậy không?
+                        Thật ra, ai trong chúng ta cũng dễ mềm lòng với những thứ đáng yêu, 
+                        đặc biệt là khi trông chúng có vẻ tròn tròn, mắt to to, và vô hại. Thế còn những 
+                        thứ trông có vẻ bông mịn, hơi màu sắc và mặt mũi ...
+                    </div>
+                </div>
+                <div class="view-more-btn">
+                  XEM THÊM  
+                </div>
+            </div>
+        </section>
+        <section class="topic-post">
+            <div class="title">
+                Thiết kế
+            </div>
+            <div class="post-bar">
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/tk1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Thuật ngữ UX/UI kỳ 4: Website (Phần 1)
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/tk2.png" alt="">
+                    </div>
+                    <div class="title">
+                        Gamification trong thiết kế và những điều bạn cần biết! (Phần 2)
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/tk3.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Họa sĩ Kim Salt: ‘Tôi khám phá về chuyển động nhân vật qua việc học khiêu vũ và trượt băng’
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-btn">
+              XEM THÊM  
+            </div>
+        </section>
+        <section class="topic-post">
+            <div class="title">
+                Nghệ thuật
+            </div>
+            <div class="post-bar">
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/nt1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Luca, bộ phim mới nhất của Pixar tung trailer siêu đáng yêu về làng chài ven biển nước Ý
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/nt2.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Căn hộ tầng 39 tại Nha Trang đẹp lãng mạn như một buổi hoàng hôn của studio Cao Minh
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/nt3.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Trào lưu Art Deco (Phần 2): Các tác phẩm và nghệ sĩ nổi bật
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-btn">
+              XEM THÊM  
+            </div>
+        </section>
+        <section class="topic-post">
+            <div class="title">
+                Sáng tạo
+            </div>
+            <div class="post-bar">
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/st1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        5 bức họa theo trường phái Ấn tượng nổi tiếng nhất của Renoir
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/st2.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Checklist các câu hỏi giúp nhà thiết kế website kiểm tra sản phẩm của mình
+                    </div>
+                </div>
+                <div class="cont-post">
+                    <div class="cont-img">
+                        <img src="./images/st3.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Bộ nhận diện mộc mạc của thương hiệu đồ gỗ thủ công
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-btn">
+              XEM THÊM  
+            </div>
+        </section>
+        <section class="banner">
+            <img src="./images/banner.jpg" alt="">
+        </section>
+        <footer>
+            <div class="footer-bar">
+                <div class="title">
+                    LIÊN LẠC
+                </div>
+                <div class="email">
+                    trancaominh932016@gmail.com
+                </div>
+                <div class="social-media">
+                    <div class="logo">
+                        <svg width="52.64" height="60.37">
+                            <path fill="white" d="M19,51.76a4.75,4.75,0,0,0,1.21-.12,1.21,1.21,0,0,0,.66-.48,2.26,2.26,0,0,0,.31-1,13.37,13.37,0,0,0,.09-1.78v-.94a13.37,13.37,0,0,0-.09-1.78,2.31,2.31,0,0,0-.31-1,1.14,1.14,0,0,0-.66-.47A4.27,4.27,0,0,0,19,44.1v-.83l5.51-.72V48.4a13.37,13.37,0,0,0,.09,1.78,2.25,2.25,0,0,0,.33,1,1.24,1.24,0,0,0,.66.48,4.52,4.52,0,0,0,1.19.12v.84H19Z"></path>
+                            <path fill="white" d="M52.64,52.71H46v-.83a.9.9,0,0,0,.86-.68,9.05,9.05,0,0,0,.26-2.69V47.3A4.47,4.47,0,0,0,46.64,45,1.76,1.76,0,0,0,45,44.25a2.74,2.74,0,0,0-2.65,2.85v1.41a13.65,13.65,0,0,0,.09,1.79,2.25,2.25,0,0,0,.33,1,1.24,1.24,0,0,0,.66.48,4.53,4.53,0,0,0,1.2.13v.83h-7.8v-.83a4.67,4.67,0,0,0,1.21-.13,1.24,1.24,0,0,0,.66-.48,2.4,2.4,0,0,0,.32-1,16.12,16.12,0,0,0,.08-1.79v-.95A15.78,15.78,0,0,0,39,45.78a2.45,2.45,0,0,0-.32-1,1.24,1.24,0,0,0-.66-.48,4.75,4.75,0,0,0-1.21-.12v-.84l5-.72a4.08,4.08,0,0,1,.25.72,4.68,4.68,0,0,1,.16.92,4.28,4.28,0,0,1,1.54-1.19,4.66,4.66,0,0,1,2-.45,4.45,4.45,0,0,1,3.2,1.22,4.11,4.11,0,0,1,1.26,3.07v1.58a13.21,13.21,0,0,0,.1,1.77,2.43,2.43,0,0,0,.34,1,1.17,1.17,0,0,0,.66.48,4.62,4.62,0,0,0,1.21.13Z"></path>
+                            <path fill="white" d="M32.9,0h-18A15.76,15.76,0,0,0,8.41,1.32C6.36,2.25,5,3.73,4.9,5.21A3.06,3.06,0,0,0,8,8.79a3.18,3.18,0,0,0,2.91-2.25c.14-.64.12-1.95.32-2.44.7-1.68,2.43-2.36,4.26-2.36,2.76,0,3.88.92,4.33,2.36A19.65,19.65,0,0,1,20.08,8v16.8c0,5.49-.59,6.36-5,6.39-3.58,0-4.16-.9-4.16-6.39V13.64L.44,15v1.59c3.77,0,4.31.81,4.31,6.38v1.8c0,5.57-.54,6.39-4.31,6.39v1.58H32.9c12.44,0,18.17-7.2,18.17-16.37S45.34,0,32.9,0Zm-.22,30.28h-.54c-4.59,0-5.24-.81-5.24-6.16V2.46h5.78c8.57,0,10.64,7.31,10.64,13.91S41.25,30.28,32.68,30.28Z"></path>
+                            <path fill="white" d="M24.48,38a.64.64,0,0,0,0-.07v0a1.72,1.72,0,0,0-.25-.43c-.83-1.17-2.41-1.44-4.52-1.44a4.82,4.82,0,0,0-3.58,1.49,5.36,5.36,0,0,0-1.45,4,7.41,7.41,0,0,0,.08,1.15,3.47,3.47,0,0,0-.63,0c-1.51,0-3.37.77-3.37,2.86a3.36,3.36,0,0,0,2.14,2.92l1.6.71c1.29.6,1.84,1,1.84,1.69s-.58,1.11-1.49,1.11c-1.83,0-3.49-1.65-3.49-3H10.5A5.93,5.93,0,0,1,8.22,51a5.68,5.68,0,0,1-1.89.32,2.58,2.58,0,0,1-2-1,4.24,4.24,0,0,1-.84-2.82l0-.26V47H9.82a3.7,3.7,0,0,0,.11-.87,3.76,3.76,0,0,0-1.19-2.72,4.21,4.21,0,0,0-3.13-1.2,5.94,5.94,0,0,0-2.15.39,5.55,5.55,0,0,0-1.81,1.12,5.13,5.13,0,0,0-1.21,1.7A4.94,4.94,0,0,0,0,47.55a5.19,5.19,0,0,0,.42,2.08,5.13,5.13,0,0,0,1.21,1.71A5.31,5.31,0,0,0,3.5,52.49a6.74,6.74,0,0,0,2.37.41,5.83,5.83,0,0,0,2.41-.56,6.49,6.49,0,0,0,2.22-1.92v2.71h.83c0-.61.11-.92.37-.92a1.84,1.84,0,0,1,.77.29,5.49,5.49,0,0,0,2.38.63,4.5,4.5,0,0,0,2.71-.81,2.81,2.81,0,0,0,1.18-2.43A3.39,3.39,0,0,0,16.53,47l-1.4-.66c-1.57-.69-2-1-2-1.58s.6-1,1.4-1a1.36,1.36,0,0,1,.43.06,1.37,1.37,0,0,1,.11.31.23.23,0,0,1,0,.12c.35.94.86,1.57,1.63,1.57a1.11,1.11,0,0,0,1.12-1.06c0-.83-.55-1.25-1.49-1.74a6.21,6.21,0,0,1-.49-2.29A3.76,3.76,0,0,1,17,37.91a3.66,3.66,0,0,1,2.6-1.12,4.82,4.82,0,0,1,1.56.24.64.64,0,0,1,.35.82v0a1.73,1.73,0,0,0-.11.6,1.64,1.64,0,0,0,.45,1.14,1.44,1.44,0,0,0,1.1.48,1.53,1.53,0,0,0,1.12-.48,1.62,1.62,0,0,0,.47-1.14A1.45,1.45,0,0,0,24.48,38ZM5.75,43.63c1.2,0,1.8.71,1.8,2.12H3.69C4,44.34,4.71,43.63,5.75,43.63Z"></path>
+                            <path fill="white" d="M36.66,38.46A3.25,3.25,0,0,0,33.33,42a6.84,6.84,0,0,0,.17,1.42,4.46,4.46,0,0,0-2.72-.92,4.18,4.18,0,0,0-4.31,3.93,3.82,3.82,0,0,0,2.18,3.42,6.14,6.14,0,0,0,2.42.52c1.57.07,2.55.41,2.55,1s-.52.55-2.46.76l-.61,0c-3.56.41-4.92,2.35-4.92,4.08a3.5,3.5,0,0,0,1.59,3,6.64,6.64,0,0,0,3.94,1.13A7.55,7.55,0,0,0,35,59.51a2.43,2.43,0,0,0,1.42-2c0-1-.64-1.74-1.91-2.38l-.55.32a2.83,2.83,0,0,1,.92,1.77,1.56,1.56,0,0,1-1.1,1.42,5.42,5.42,0,0,1-2.34.52c-2.06,0-3.44-.78-3.44-2a1.39,1.39,0,0,1,.86-1.24,12.25,12.25,0,0,1,3.45-.73c2.4-.26,3.62-1.21,3.62-2.89a3.07,3.07,0,0,0-2.13-2.38,4.17,4.17,0,0,0-.73-.14,5.76,5.76,0,0,0,.89-.67,3.71,3.71,0,0,0,1.13-2.66,2.88,2.88,0,0,0-.7-2.11,10.22,10.22,0,0,1-.2-1.94c0-1.62.52-2.58,1.65-2.58.55,0,.69.24.84.73s.34.72.81.84a.27.27,0,0,1,.14,0h.12a1.08,1.08,0,0,0,1-1.19A1.86,1.86,0,0,0,36.66,38.46ZM31.58,48.8c-1,0-1.63-1.12-1.63-2.74s.58-2.76,1.63-2.76,1.62,1.11,1.62,2.76S32.65,48.8,31.58,48.8Z"></path>
+                        </svg>
+                    </div>
+                    <div class="social-media-list">
+                        / Facebook<br>
+                        / Instagram<br>
+                        / Group Cộng Đồng Sinh Viên Fpoly
+                    </div>
+                </div>
+                <div class="about-me">
+                    © REDESIGN BY - TRAN CAO MINH ☞ DO NOT REUP
+                </div>
+            </div>
+        </footer>
+        <section class="change-color">
+            <svg viewBox="0 0 52.64 60.37" width="25px" height="28.66px">
+                <path fill="white" d="M19,51.76a4.75,4.75,0,0,0,1.21-.12,1.21,1.21,0,0,0,.66-.48,2.26,2.26,0,0,0,.31-1,13.37,13.37,0,0,0,.09-1.78v-.94a13.37,13.37,0,0,0-.09-1.78,2.31,2.31,0,0,0-.31-1,1.14,1.14,0,0,0-.66-.47A4.27,4.27,0,0,0,19,44.1v-.83l5.51-.72V48.4a13.37,13.37,0,0,0,.09,1.78,2.25,2.25,0,0,0,.33,1,1.24,1.24,0,0,0,.66.48,4.52,4.52,0,0,0,1.19.12v.84H19Z"></path>
+                <path fill="white" d="M52.64,52.71H46v-.83a.9.9,0,0,0,.86-.68,9.05,9.05,0,0,0,.26-2.69V47.3A4.47,4.47,0,0,0,46.64,45,1.76,1.76,0,0,0,45,44.25a2.74,2.74,0,0,0-2.65,2.85v1.41a13.65,13.65,0,0,0,.09,1.79,2.25,2.25,0,0,0,.33,1,1.24,1.24,0,0,0,.66.48,4.53,4.53,0,0,0,1.2.13v.83h-7.8v-.83a4.67,4.67,0,0,0,1.21-.13,1.24,1.24,0,0,0,.66-.48,2.4,2.4,0,0,0,.32-1,16.12,16.12,0,0,0,.08-1.79v-.95A15.78,15.78,0,0,0,39,45.78a2.45,2.45,0,0,0-.32-1,1.24,1.24,0,0,0-.66-.48,4.75,4.75,0,0,0-1.21-.12v-.84l5-.72a4.08,4.08,0,0,1,.25.72,4.68,4.68,0,0,1,.16.92,4.28,4.28,0,0,1,1.54-1.19,4.66,4.66,0,0,1,2-.45,4.45,4.45,0,0,1,3.2,1.22,4.11,4.11,0,0,1,1.26,3.07v1.58a13.21,13.21,0,0,0,.1,1.77,2.43,2.43,0,0,0,.34,1,1.17,1.17,0,0,0,.66.48,4.62,4.62,0,0,0,1.21.13Z"></path>
+                <path fill="white" d="M32.9,0h-18A15.76,15.76,0,0,0,8.41,1.32C6.36,2.25,5,3.73,4.9,5.21A3.06,3.06,0,0,0,8,8.79a3.18,3.18,0,0,0,2.91-2.25c.14-.64.12-1.95.32-2.44.7-1.68,2.43-2.36,4.26-2.36,2.76,0,3.88.92,4.33,2.36A19.65,19.65,0,0,1,20.08,8v16.8c0,5.49-.59,6.36-5,6.39-3.58,0-4.16-.9-4.16-6.39V13.64L.44,15v1.59c3.77,0,4.31.81,4.31,6.38v1.8c0,5.57-.54,6.39-4.31,6.39v1.58H32.9c12.44,0,18.17-7.2,18.17-16.37S45.34,0,32.9,0Zm-.22,30.28h-.54c-4.59,0-5.24-.81-5.24-6.16V2.46h5.78c8.57,0,10.64,7.31,10.64,13.91S41.25,30.28,32.68,30.28Z"></path>
+                <path fill="white" d="M24.48,38a.64.64,0,0,0,0-.07v0a1.72,1.72,0,0,0-.25-.43c-.83-1.17-2.41-1.44-4.52-1.44a4.82,4.82,0,0,0-3.58,1.49,5.36,5.36,0,0,0-1.45,4,7.41,7.41,0,0,0,.08,1.15,3.47,3.47,0,0,0-.63,0c-1.51,0-3.37.77-3.37,2.86a3.36,3.36,0,0,0,2.14,2.92l1.6.71c1.29.6,1.84,1,1.84,1.69s-.58,1.11-1.49,1.11c-1.83,0-3.49-1.65-3.49-3H10.5A5.93,5.93,0,0,1,8.22,51a5.68,5.68,0,0,1-1.89.32,2.58,2.58,0,0,1-2-1,4.24,4.24,0,0,1-.84-2.82l0-.26V47H9.82a3.7,3.7,0,0,0,.11-.87,3.76,3.76,0,0,0-1.19-2.72,4.21,4.21,0,0,0-3.13-1.2,5.94,5.94,0,0,0-2.15.39,5.55,5.55,0,0,0-1.81,1.12,5.13,5.13,0,0,0-1.21,1.7A4.94,4.94,0,0,0,0,47.55a5.19,5.19,0,0,0,.42,2.08,5.13,5.13,0,0,0,1.21,1.71A5.31,5.31,0,0,0,3.5,52.49a6.74,6.74,0,0,0,2.37.41,5.83,5.83,0,0,0,2.41-.56,6.49,6.49,0,0,0,2.22-1.92v2.71h.83c0-.61.11-.92.37-.92a1.84,1.84,0,0,1,.77.29,5.49,5.49,0,0,0,2.38.63,4.5,4.5,0,0,0,2.71-.81,2.81,2.81,0,0,0,1.18-2.43A3.39,3.39,0,0,0,16.53,47l-1.4-.66c-1.57-.69-2-1-2-1.58s.6-1,1.4-1a1.36,1.36,0,0,1,.43.06,1.37,1.37,0,0,1,.11.31.23.23,0,0,1,0,.12c.35.94.86,1.57,1.63,1.57a1.11,1.11,0,0,0,1.12-1.06c0-.83-.55-1.25-1.49-1.74a6.21,6.21,0,0,1-.49-2.29A3.76,3.76,0,0,1,17,37.91a3.66,3.66,0,0,1,2.6-1.12,4.82,4.82,0,0,1,1.56.24.64.64,0,0,1,.35.82v0a1.73,1.73,0,0,0-.11.6,1.64,1.64,0,0,0,.45,1.14,1.44,1.44,0,0,0,1.1.48,1.53,1.53,0,0,0,1.12-.48,1.62,1.62,0,0,0,.47-1.14A1.45,1.45,0,0,0,24.48,38ZM5.75,43.63c1.2,0,1.8.71,1.8,2.12H3.69C4,44.34,4.71,43.63,5.75,43.63Z"></path>
+                <path fill="white" d="M36.66,38.46A3.25,3.25,0,0,0,33.33,42a6.84,6.84,0,0,0,.17,1.42,4.46,4.46,0,0,0-2.72-.92,4.18,4.18,0,0,0-4.31,3.93,3.82,3.82,0,0,0,2.18,3.42,6.14,6.14,0,0,0,2.42.52c1.57.07,2.55.41,2.55,1s-.52.55-2.46.76l-.61,0c-3.56.41-4.92,2.35-4.92,4.08a3.5,3.5,0,0,0,1.59,3,6.64,6.64,0,0,0,3.94,1.13A7.55,7.55,0,0,0,35,59.51a2.43,2.43,0,0,0,1.42-2c0-1-.64-1.74-1.91-2.38l-.55.32a2.83,2.83,0,0,1,.92,1.77,1.56,1.56,0,0,1-1.1,1.42,5.42,5.42,0,0,1-2.34.52c-2.06,0-3.44-.78-3.44-2a1.39,1.39,0,0,1,.86-1.24,12.25,12.25,0,0,1,3.45-.73c2.4-.26,3.62-1.21,3.62-2.89a3.07,3.07,0,0,0-2.13-2.38,4.17,4.17,0,0,0-.73-.14,5.76,5.76,0,0,0,.89-.67,3.71,3.71,0,0,0,1.13-2.66,2.88,2.88,0,0,0-.7-2.11,10.22,10.22,0,0,1-.2-1.94c0-1.62.52-2.58,1.65-2.58.55,0,.69.24.84.73s.34.72.81.84a.27.27,0,0,1,.14,0h.12a1.08,1.08,0,0,0,1-1.19A1.86,1.86,0,0,0,36.66,38.46ZM31.58,48.8c-1,0-1.63-1.12-1.63-2.74s.58-2.76,1.63-2.76,1.62,1.11,1.62,2.76S32.65,48.8,31.58,48.8Z"></path>
+			</svg>
+            <input type="color" id="change-color" value="#3B0E59">
+        </section>
+    </div>
+    <script src="./change_color.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* common css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: #fff;
+    --green: #359967;
+}
+@font-face {
+    font-family: 'Flavour';
+    src: url(./fonts/UTM\ Flavour.ttf);
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black-text);
+    font-size: 10px;
+}
+#wrapper {
+    width: 100%;
+    height: auto;
+
+    background-color: var(--white);
+}
+@media all and (max-width: 1024px){
+    html{
+        font-size: 9px;
+    }
+}
+@media all and (max-width: 740px){
+    html{
+        font-size: 8px;
+    }
+}
+@media all and (max-width: 480px){
+    html{
+        font-size: 7px;
+    }
+}
+/* #about-me */
+#about-me{
+    max-width: 310px;
+    height: 40px;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: monospace, sans-serif;
+    font-weight: bolder;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px double #440a67;
+    color: #440a67;
+}
+
+/* banner css */
+.banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+/* p css */
+p{
+    max-width: 680px;
+    height: fit-content;
+    padding: 1rem;
+    margin: 2rem auto;
+
+    /* background-color: #fff; */
+
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    text-align: justify;
+}
+p.special{
+    font-size: 2.6rem;
+    font-family: 'Flavour';
+    line-height: normal;
+}
+hr{
+    width: calc(100% - 4rem);
+    max-width: 300px;
+    margin: 2rem auto;
+}
+img.max-660{
+    display: block;
+
+    width: 100%;
+    max-width: 660px;
+    margin: 2rem auto;
+}
+img.max-1000{
+    display: block;
+
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+.title{
+    max-width: 660px;
+    height: 7.4rem;
+    margin: 2rem auto;
+
+    /* background-color: #fff; */
+    color: var(--green);
+
+    font-family: 'Roboto Slab';
+    font-size: 3.5rem;
+    line-height: 7.4rem;
+}
+.title img{
+    width: auto;
+    height: 7.5rem;
+    float: left;
+    margin-right: 1.5rem;
+}

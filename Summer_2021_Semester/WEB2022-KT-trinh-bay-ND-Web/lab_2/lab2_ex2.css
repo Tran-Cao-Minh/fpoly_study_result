@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /* moi text trong web se duoc thua huong */
+    font-family: Arial, Helvetica, sans-serif;  
+    text-align: justify;
+}
+:root{
+    /* bien mau sac cho trang web */
+    --colorA: #A975F5;
+    --colorB: #F57F56;
+    --colorC: #7A2BF0;
+    --colorD: #F2F1DA;
+    --colorE: #DAF2ED;
+}
+body{
+    background-color: #cccccc;
+    width: 100%;
+}
+#wrap{
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+    background-color: #ffffff;
+}
+/* end general css */
+
+header{
+    max-width: 980px;
+    height: 160px;
+    margin-bottom: 6px;
+    background-color: var(--colorB);
+    overflow: hidden;
+    position: relative;
+}
+header > .title{
+    color: var(--colorE);
+    line-height: 106px;
+    font-weight: bolder;
+    font-size: 40px;
+    text-indent: 12px;
+}
+header > .decoration{
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--colorA);
+}
+/* end header css */
+
+.content{
+    max-width: 980px;
+    height: 824px;
+    margin-bottom: 14px;
+}
+
+aside{
+    /* w:326px */
+    width: 33.265306122%; 
+    height: 824px;
+    float: left;
+}
+aside .title{
+    width: 100%;
+    height: 38px;
+    background-color: var(--colorC);
+    color: var(--colorD);
+    font-size: 16px;
+    line-height: 38px;
+    text-indent: 6px;
+}
+/* end aside general css */
+
+.color-news{
+    width: 100%;
+    height: 586px;
+    overflow: hidden;
+    background-color: var(--colorD);
+    /* cac phan tu co chu se duoc thua huong thuoc tinh neu chua co thuoc tinh color */
+    color: var(--colorC); 
+    margin-bottom: 5px;
+}
+.color-news > .title{
+    margin-bottom: 10px;
+}
+.color-news-post{
+    width: 100%;
+    min-height: 84px;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.post-img{
+    max-width: 84px;
+    height: 84px;
+    margin-left: 7px;
+    float: left;
+}
+.post-img > img
+{
+    max-width: 84px;
+    height: 84px;
+    border-radius: 5px;
+}
+.post-content{
+    max-width: 221px;
+    height: 84px;
+    float: left;
+    margin-left: 7px;
+}
+.post-content-title{
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+/* end color news in aside css */
+
+.img-black-white{
+    width: 100%;
+    height: 233px;
+    background-color: var(--colorD);
+}
+.contain-img-list
+{
+    width: 326px;
+    height: 180px;
+    margin-top: 3px;
+    padding: 0 10px;
+}
+.contain-img-list > img
+{
+    max-width: 73px;
+    height: 73px;
+    margin: 9px 0 0;
+}
+/* end black and white in aside css */
+/* end aside css */
+
+main{
+    /* w: 640px */
+    width: 65.306122449%;
+    height: 824px;
+    float: right;
+}
+main .title{
+    width: 100%;
+    height: 38px;
+    background-color: var(--colorC);
+    color: var(--colorD);
+    line-height: 38px;
+    text-indent: 6px;
+}
+.banner{
+    width: 100%;
+    height: 342px;
+    background-color: var(--color3);
+    margin-bottom: 5px;
+}
+.banner > img{
+    width: 100%;
+    height: 342px;
+}
+.theory{
+    width: 100%;
+    height: 239px;
+    background-color: var(--colorD);
+    /* cac phan tu co chu se duoc thua huong thuoc tinh neu chua co thuoc tinh color */
+    color: var(--colorC); 
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.contain-img-theory{
+    width: 100%;
+    max-width: 160px;
+    height: 160px;
+    margin: 18px 9px 0;
+    float: left;
+}
+.contain-img-theory > img
+{
+    width: 100%;
+    max-width: 160px;
+    height: 160px;
+    border-radius: 5px;
+}
+.contain-content-theory{
+    max-width: 453px;
+    height: 145px;
+    margin-top: 18px;
+    float: left;
+    font-size: 11px;
+}
+.view-more{
+    max-width: 70px;
+    height: 15px;
+    float: right;
+    margin: 10px 0 0 5px;
+    font-size: 11px;
+    /* initial la lay gia tri mac dinh */
+    color: initial; 
+}
+.view-more > img{
+    max-width: 4px;
+    height: 6px;
+}
+.review{
+    max-width: 640px;
+    height: 233px;
+    background-color: var(--colorD);
+    /* cac phan tu co chu se duoc thua huong thuoc tinh neu chua co thuoc tinh color */
+    color: var(--colorC); 
+    overflow: hidden;
+}
+.review-item{
+    max-width: 320px;
+    height: 125px;
+    margin-top: 15px;
+    float: left;
+}
+.review-item > img{
+    max-width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 0 5px;
+    float: left;
+}
+.contain-content-review{
+    max-width: 205px;
+    height: 100px;
+    float: left;
+}
+
+.review-content-title{
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.post-content-inf,
+.review-content-inf{
+    font-size: 11px;
+}
+/* end main css */
+footer
+{
+    max-width: 980px;
+    min-height: 56px;
+    border-top: 1px solid var(--colorA);
+}
+footer > .inf
+{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    color: var(--colorC);
+    padding-bottom: 12px;
+    margin: 12px auto 0;
+}
+/* end footer css */

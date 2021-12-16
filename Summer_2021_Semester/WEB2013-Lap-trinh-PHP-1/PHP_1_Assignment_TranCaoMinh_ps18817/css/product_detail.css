@@ -1,0 +1,489 @@
+#wrapper {
+    background-image: url(../../images/general/bookpattern.png);
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+/*---------------------------------*/
+/* page-name css */
+.page-name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 1024px;
+    height: auto;
+    margin: 2rem auto 0;
+    padding: 1rem;
+
+    background: var(--white);
+
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem var(--black-text);
+}
+
+.page-name span {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.page-name .product-id-false {
+    width: 100%;
+    height: auto;
+    padding: 4.5rem 1rem 3rem;
+    margin-top: 1rem;
+
+    background: var(--white);
+
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.2rem var(--gray-text);
+
+    text-align: center;
+}
+
+.page-name .product-id-false .fas {
+    color: var(--tertiary-color);
+
+    border-radius: 30%;
+    border: 3rem solid transparent;
+    box-shadow: 0 0 3rem var(--primary-color);
+
+    font-size: 13rem;
+}
+
+.page-name .product-id-false span {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+
+    /* background: blue; */
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+}
+.page-name .product-id-false a {
+    display: block;
+
+    width: 25rem;
+    margin: 2rem auto 0;
+    padding: 1rem 0;
+
+    background: var(--primary-color);
+    color: var(--white);
+
+    border-radius: 0.5rem;
+
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*---------------------------------*/
+/* product-detail css */
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1024px;
+    height: auto;
+    margin: 2rem auto 0;
+
+    background: var(--white);
+
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem var(--black-text);
+}
+
+.product-detail .contain-img {
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    width: 35rem;
+    height: auto;
+    padding: 1rem;
+
+    background: var(--gray);
+
+    border-radius: 0.5rem;
+}
+
+.product-detail .contain-img img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 1rem;
+}
+
+.product-detail .contain-information {
+    width: calc(100% - 35rem);
+    height: auto;
+    padding: 1rem;
+
+    /* background: lightgreen; */
+}
+
+.product-detail .product-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    display: block;
+
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1rem;
+
+    /* background: lightcyan; */
+
+    font-family: "Open Sans";
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: bold;
+}
+
+.product-detail .publishing-house {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    display: block;
+
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+
+    /* background: lightcyan; */
+
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.product-detail .product-price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: auto;
+    height: 4rem;
+    margin-bottom: 1rem;
+
+    /* background: lightcyan; */
+}
+
+.product-detail .price {
+    /* background: #000; */
+    padding-right: 1.5rem;
+
+    color: var(--red);
+
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.product-detail .old-price {
+    padding-right: 1.5rem;
+    color: var(--black-text);
+
+    font-size: 1.6rem;
+    text-decoration: line-through;
+}
+
+.product-detail .sale-percent {
+    padding: 0.3rem 0.5rem;
+
+    color: var(--white);
+    background: var(--red);
+
+    border-radius: 0.5rem;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.product-detail .view {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    display: block;
+
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+
+    /* background: lightcyan; */
+
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.product-detail button.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 4rem;
+    padding: 0 3.5rem;
+    margin-bottom: 1rem;
+
+    background: transparent;
+    color: var(--primary-color);
+
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 0.5rem;
+
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.product-detail .add-to-cart:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.product-detail .title {
+    display: block;
+
+    width: 100%;
+    height: 3rem;
+
+    /* background: lightcyan; */
+
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+.product-detail .description {
+    white-space: pre-wrap;
+    display: block;
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.4rem;
+
+    /* background: lightblue; */
+
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+/* > > > > > > > > > > ------------*/
+/* reponsive */
+@media all and (max-width: 1024px) {
+    .product-detail {
+        flex-wrap: wrap;
+        max-width: 800px;
+    }
+
+    .product-detail .contain-img {
+        justify-content: center;
+
+        width: 100%;
+        height: 40rem;
+    }
+
+    .product-detail .contain-img img {
+        width: auto;
+        height: 100%;
+    }
+
+    .product-detail .contain-information {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-detail button.add-to-cart {
+        background: var(--primary-color);
+        color: var(--white)
+    }
+}
+
+/*---------------------------------*/
+/* contain-comment css */
+.contain-comment {
+    max-width: 1024px;
+    height: auto;
+    margin: 2rem auto;
+    padding: 1rem 1rem 0;
+
+    background: var(--white);
+
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem var(--black-text);
+}
+
+.contain-comment .post-comment {
+    width: 100%;
+    height: auto;
+
+    padding: 1.5rem 0;
+
+    /* background: lightblue; */
+}
+
+.contain-comment .input-area {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: auto;
+
+    /* background: lightpink; */
+}
+
+.contain-comment .fas.fa-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 50%;
+
+    background: var(--gray);
+    color: var(--gray-text);
+
+    font-size: 2.5rem;
+}
+
+.contain-comment textarea {
+    resize: none;
+
+    width: calc(100% - 4.5rem);
+    padding: 0.5rem;
+
+    background: transparent;
+
+    outline: none;
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+}
+
+.contain-comment textarea:hover {
+    border-color: var(--secondary-color);
+}
+
+.contain-comment .post-area {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: auto;
+
+    /* background: lightcyan; */
+}
+
+.contain-comment button.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 4rem;
+    padding: 0 1rem;
+    margin-top: 0.5rem;
+
+    background: transparent;
+    color: var(--primary-color);
+
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 0.5rem;
+
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contain-comment button.post:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+
+.contain-comment ul.comment-list {
+    list-style: none;
+
+    width: 100%;
+    height: auto;
+
+    /* background: lightgray; */
+}
+
+.contain-comment .comment-item {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0 1.5rem;
+
+    /* background: lightpink; */
+
+    border-top: 1px solid var(--primary-color);
+}
+
+.contain-comment .comment-information {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    display: block;
+    width: 100%;
+
+    height: 3rem;
+
+    /* background: lightcyan; */
+
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.contain-comment .content {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    /* background: lightcoral; */
+
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+/* > > > > > > > > > > ------------*/
+/* reponsive */
+@media all and (max-width: 1024px) {
+    .contain-comment {
+        max-width: 800px;
+    }
+
+    .contain-comment button.post {
+        background: var(--primary-color);
+        color: var(--white);
+    }
+
+
+}

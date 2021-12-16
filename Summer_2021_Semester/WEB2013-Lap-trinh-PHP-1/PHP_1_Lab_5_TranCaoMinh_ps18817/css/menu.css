@@ -1,0 +1,26 @@
+.menu1 {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.menu1 li {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+}
+
+.menu1 li::after {
+    content: '  |  '
+}
+
+.menu1 li a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.menu1 li a:hover {
+    text-decoration: underline;
+}

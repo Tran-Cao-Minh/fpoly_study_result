@@ -1,0 +1,167 @@
+/* common css */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gray: #f4f4f4;
+    --purple: #3B0E59;
+    --black: #191919;
+    --white: #ffffff;
+    --grayText: #656565; 
+}
+#wrap{
+    width: 100%;
+    background-color: var(--gray);
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+/* end common css */
+/* change color css */
+.change-color{
+    width: 40px;
+    height: 40px;
+    background-color: var(--purple);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.change-color svg{
+    width: 25px;
+    height: 28.66px;
+    display: block;
+    margin: 6px auto 0;
+}
+.change-color input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+}
+/* end change color css */
+/* header css */
+header{
+    width: 100%;
+    height: 75px;
+    background-color: var(--white);
+    border-bottom: 5px solid var(--black);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header-bar{
+    max-width: 1110px;
+    height: 75px;
+    margin: auto;
+}
+.header-bar .logo{
+    width: 108px;
+    height: 75px;
+    background-color: var(--purple);
+    padding-top: 8px;
+    float: left;
+}
+.header-bar .logo svg{
+    display: block;
+    margin: auto;
+}
+.header-bar .menu{
+    width: fit-content;
+    height: 75px;
+    float: left;
+}
+.header-bar .menu-list{
+    width: fit-content;
+    height: 75px;
+    float: left;
+    margin-left: 52px;
+    font-size: 17px;
+    line-height: 75px;
+    font-family: 'Montserrat';
+}
+.header-bar .menu-list:hover{
+    border-bottom: 15px double var(--purple);
+}
+.header-bar .contain-search-icon{
+    width: fit-content;
+    height: 75px;
+    float: right;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 75px;
+    margin-right: 25px;
+}
+.header-bar .weDesign{
+    width: 111.7px;
+    height: 75px;
+    padding-top: 25px;
+    float: right;
+}
+.header-bar .weDesign:hover{
+    fill: var(--purple);
+}
+/* end header css */
+/* footer css */
+footer{
+    width: 100%;
+    height: 600px;
+    padding: 60px 0 0;
+    background-color: var(--purple);
+}
+.footer-bar{
+    max-width: 1110px;
+    height: 400px;
+    margin: auto;
+    border-top: 3px solid var(--white);
+}
+.footer-bar .title{
+    width: 100%;
+    height: 110px;
+    font-size: 83px;
+    text-align: center;
+    font-family: "lora";
+    margin: 20px 0 20px;
+    color: var(--white);
+    font-style: italic;
+}
+.footer-bar .email{
+    width: 100%;
+    height: 110px;
+    font-size: 39px;
+    text-align: center;
+    font-family: "lora";
+    color: var(--white);
+}
+.footer-bar .social-media{
+    max-width: 370px;
+    height: 75px;
+    margin: auto;
+}
+.footer-bar .logo{
+    margin-top: 10px;
+    float: left;
+}
+.footer-bar .social-media-list{
+    float: right;
+    font-size: 18px;
+    line-height: 23px;
+    cursor: pointer;
+    font-family: "lora";
+    color: var(--white);
+}
+.footer-bar .about-me{
+    height: 120px;
+    width: 1024px;
+    margin: 50px auto 0;
+    font-size: 39px;
+    text-align: center;
+    font-family: "lora";
+    line-height: 60px;
+    color: var(--white);
+}
+/* end footer css */

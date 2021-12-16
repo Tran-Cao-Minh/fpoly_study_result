@@ -1,0 +1,565 @@
+/* common css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    color: var(--black-text);
+}
+
+:root {
+    --primary-color: #440a67;
+    --primary-color-blur: #430a6750;
+    --secondary-color: #4ca1a3;
+    --tertiary-color: #b4aee8;
+    --red: #ff3333;
+    --gray: #f4f4f4;
+    --black-text: #1b1b1b;
+    --gray-text: #888;
+    --white: #fff;
+}
+
+#wrapper {
+    width: 100%;
+    background-color: var(--gray);
+    position: relative;
+}
+
+/* ------------------------------ */
+/* header css */
+header {
+    width: 100%;
+    height: 12rem;
+
+    background-image: linear-gradient(var(--tertiary-color), var(--primary-color));
+
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+header .header-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1240px;
+    height: 12rem;
+    margin: auto;
+
+    /* background: #0000001e; */
+}
+
+header .contain-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8rem;
+    height: 8rem;
+    margin: 0 1rem;
+
+    background: var(--white);
+
+    box-shadow: 0 0 0.8rem var(--primary-color);
+
+    border-radius: 50%;
+}
+
+header .contain-logo img {
+    width: auto;
+    height: 5rem;
+}
+
+header span {
+    width: auto;
+    height: auto;
+    margin: 0 1rem;
+
+    /* background: rgb(87, 66, 66); */
+    color: var(--white);
+
+    font-size: 3rem;
+}
+
+/* ------------------------------ */
+/* login css */
+.login {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 4rem 1rem;
+
+    background: var(--tertiary-color);
+}
+
+.login .login-form {
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    padding: 1.5rem 1rem;
+
+    background: var(--white);
+
+    border-radius: 0.5rem;
+}
+
+.login .form-group {
+    position: relative;
+
+    width: 100%;
+    height: 10.5rem;
+
+    /* background-color: lightgreen; */
+}
+
+.login label {
+    display: block;
+
+    width: 100%;
+    height: 4rem;
+
+    /* background-color: lightblue; */
+    color: var(--secondary-color);
+
+    font-size: 1.7rem;
+    line-height: 4rem;
+    text-indent: 1rem;
+}
+
+.login input {
+    width: 100%;
+    height: auto;
+    padding: 0 1rem;
+
+    background: var(--white);
+    color: var(--black-text);
+
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--tertiary-color);
+    outline: none;
+
+
+    font-family: "Open Sans";
+    font-size: 1.8rem;
+    line-height: 4rem;
+}
+
+.login input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.4rem var(--primary-color-blur);
+}
+
+
+.login button {
+    display: block;
+
+    width: 34rem;
+    margin: 0.5rem auto 0;
+
+    background-color: var(--primary-color);
+    color: var(--white);
+
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+
+    font-size: 2rem;
+    line-height: 4rem;
+    font-family: "Open Sans";
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: var(--secondary-color);
+}
+
+.login .notification {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+
+    /* background: lightblue; */
+    color: var(--red);
+
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* ------------------------------ */
+/* SIDE-BAR CSS */
+aside {
+    position: relative;
+
+    width: 23.5rem;
+    height: auto;
+    background: var(--tertiary-color);
+
+    border: 0.2rem solid var(--tertiary-color);
+    border-top: 0;
+}
+
+aside .heading {
+    position: absolute;
+
+    width: 100%;
+    height: 6rem;
+
+    background: var(--primary-color);
+    color: var(--white);
+
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 6rem;
+}
+
+aside nav {
+    width: 100%;
+    height: auto;
+    padding: 8rem 0.5rem 0.5rem;
+
+    background: var(--white);
+
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+aside nav a {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    /* background: red; */
+    color: var(--primary-color);
+
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--primary-color);
+
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: 0.2s;
+}
+
+aside nav a:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+aside .log-out {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 0.7rem;
+    padding: 1rem;
+
+    background: var(--white);
+
+    border-radius: 2rem;
+
+    text-align: center;
+}
+
+aside .title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+    
+    /* background: green; */
+    color: var(--primary-color);
+
+    font-size: 1.8rem;
+}
+
+aside .admin-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    display: block;
+
+    width: 100%;
+    height: auto;
+    
+    /* background: rgb(127, 133, 127); */
+
+    font-size: 2rem;
+}
+
+aside button[type=submit] {
+    display: block;
+
+    width: 14rem;
+    margin: 0.7rem auto 0.5rem;
+
+    background-color: var(--primary-color);
+    color: var(--white);
+
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+
+    font-size: 1.4rem;
+    line-height: 4rem;
+    font-family: "Open Sans";
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+aside button[type=submit]:hover {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+/* ------------------------------ */
+/* MAIN CSS */
+main {
+    width: calc(100% - 23.5rem);
+    height: auto;
+    padding-left: 0.75rem;
+    padding-bottom: 4rem;
+}
+
+main>.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 7.5rem;
+    margin: auto;
+
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* function css */
+.function {
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+}
+
+.function .select-bar {
+    background: var(--tertiary-color);
+    height: 4.285rem;
+
+    overflow: auto;
+    
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.function .select-bar button {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+
+    text-transform: uppercase;
+
+    transition: 0.5s;
+}
+
+.function .select-bar button:hover {
+    background: var(--gray-text);
+}
+
+.function .control-area {
+    width: 100%;
+    height: auto;
+}
+
+.function>.select-bar>form {
+    display: inline-block;
+}
+
+.function .control-area form {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0.2rem 2.2rem 1rem;
+
+    border-bottom: 0.5rem dashed #212529;
+
+    font-size: 1.75rem;
+}
+
+.function .khu_vuc_chon_cot div:nth-child(n + 3):hover {
+    background: #eee !important;
+}
+
+.function .show-result {
+    width: 100%;
+    height: auto;
+    padding: 1.6rem 2rem 2.2rem;
+
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    line-height: 3.6rem;
+}
+
+.function form .contain-img {
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+
+    background: #e9ecef;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+
+    text-align: center;
+}
+
+.function form .contain-img img {
+    width: auto;
+    height: 20rem;
+}
+
+/* end function css */
+
+/* contain-table css */
+.contain-table {
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+    overflow-x: auto;
+}
+
+.contain-table .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 8rem;
+}
+
+.contain-table table {
+    width: max-content;
+    height: auto;
+    margin: auto;
+}
+
+.contain-table th {
+    position: relative;
+
+    box-shadow: 2px 0 1px var(--black-text);
+
+}
+
+.contain-table th:not(:first-child):hover {
+    cursor: pointer;
+    background: var(--tertiary-color);
+}
+
+.contain-table th input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    opacity: 0;
+}
+
+.contain-table td span,
+.contain-table th span {
+    display: block;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+
+    max-width: 35rem;
+    height: 4.5rem;
+    padding: 0 1rem;
+
+    /* background: lightblue; */
+
+    line-height: 4.5rem;
+}
+
+.contain-table td:first-child span {
+    display: flex;
+    align-items: center;
+
+    line-height: normal;
+}
+
+/* end contain-table css */
+/* END MAIN CSS */
+
+/* footer css */
+footer {
+    width: 100%;
+    height: 8rem;
+}
+
+footer .inf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+
+    background: var(--primary-color);
+    color: var(--white);
+
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    font-size: 3rem;
+}
+
+/* end footer css */
+
+/* responsive css */
+@media all and (max-width: 1024px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media all and (max-width: 740px) {
+    html {
+        font-size: 7px;
+    }
+}

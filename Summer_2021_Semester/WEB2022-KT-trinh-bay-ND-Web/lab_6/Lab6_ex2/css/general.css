@@ -1,0 +1,285 @@
+/* nhung fonts */
+@font-face {
+    font-family: 'Open Sans Medium';
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Seagull';
+    src: url(../fonts/UTM\ SeagullBold.ttf);
+}
+
+/* common css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #216353;
+    --contrast-primary-color: #7a4d1d;
+    --secondary-color: #75daad;
+    --tertiary-color: #edffea;
+    --black-text: #333;
+    --gray-text: #888;
+    --white: #fff;
+    --black: #000;
+    --gray: #f4f4f4;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Open Sans Medium';
+    color: var(--black-text);
+}
+
+#wrap {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/background.png);
+    background-size: 313px 300px;
+}
+
+/* header css */
+header {
+    width: 100%;
+    height: 6rem;
+    background-color: #000000aa;
+    position: absolute;
+    z-index: 2;
+}
+
+header .header-bar {
+    max-width: 1240px;
+    height: 6rem;
+    margin: auto;
+}
+
+header .logo {
+    width: auto;
+    height: 5rem;
+    margin: 0.5rem 0 0 1rem;
+    float: left;
+    cursor: pointer;
+}
+
+header nav {
+    float: right;
+    width: auto;
+    height: 6rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav a {
+    display: block;
+    width: fit-content;
+    height: 6rem;
+    float: left;
+    color: var(--white);
+    font-size: 2rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    line-height: 6rem;
+    letter-spacing: 0.1rem;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+header nav a.choosen {
+    border-bottom: 0.5rem solid var(--secondary-color);
+}
+
+header nav a:before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: .1s;
+    z-index: -1;
+}
+
+header nav a:hover:before {
+    top: 0%;
+}
+
+.search-area {
+    float: right;
+    width: 4rem;
+    height: 6rem;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.search-area .fas {
+    font-size: 3.5rem;
+    line-height: 6rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.search-area .fas:hover {
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+
+.search-area>input {
+    width: 75rem;
+    height: 6rem;
+    position: relative;
+    left: -75rem;
+    top: -6rem;
+    font-size: 2rem;
+    padding: 0 2rem 0.1rem;
+    border-radius: 5rem;
+    border: 0.8rem solid var(--black);
+    z-index: 1;
+    outline: none;
+}
+
+/* banner css */
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right top;
+    position: relative;
+    z-index: 0;
+}
+
+.banner .slogan {
+    position: absolute;
+    top: calc(50vh - 18rem);
+    left: 10vw;
+    width: 50rem;
+    height: 36rem;
+    background-color: #00000088;
+    border-radius: 1rem;
+    font-size: 6rem;
+    font-family: 'Seagull';
+    text-align: center;
+    color: var(--tertiary-color);
+    overflow: hidden;
+}
+
+.banner .slogan .primary {
+    color: var(--secondary-color);
+    font-size: 8rem;
+    animation: emphasize-text 1.5s infinite;
+}
+
+.banner .slogan .deco {
+    width: 2rem;
+    height: 36rem;
+    position: absolute;
+    top: 0;
+    transform: skewX(-10deg);
+    background-image: linear-gradient(to left, var(--tertiary-color), transparent);
+    animation: emphasize 1.5s infinite ease-in-out;
+}
+
+@keyframes emphasize {
+    0% {
+        left: -5rem;
+    }
+
+    100% {
+        left: 55rem;
+    }
+}
+
+/* footer css */
+footer {
+    width: 100%;
+    height: 20rem;
+    background-color: var(--black-text);
+}
+
+footer .footer-bar {
+    max-width: 1240px;
+    height: 20rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+footer .logo {
+    width: auto;
+    height: 15rem;
+    margin-top: 2.5rem;
+    float: left;
+}
+
+footer .thanks {
+    width: 30rem;
+    height: 11rem;
+    margin-top: 4.5rem;
+    float: left;
+    font-size: 2.5rem;
+    color: var(--tertiary-color);
+    font-family: 'Seagull';
+    text-align: center;
+}
+
+footer .contact {
+    width: 37rem;
+    height: 18.5rem;
+    float: left;
+    margin-top: 0.75rem;
+}
+
+footer .title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 3rem;
+    color: var(--tertiary-color);
+    margin-bottom: 0.4rem;
+}
+
+footer .location,
+footer .email,
+footer .phone {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    color: var(--tertiary-color);
+}
+
+footer .social-media-bar {
+    width: 100%;
+    height: 4rem;
+    margin-top: 0.5rem;
+}
+
+footer .social-media-bar a {
+    text-decoration: none;
+    font-size: 3.5rem;
+    word-spacing: 1rem;
+    color: var(--tertiary-color);
+}
+
+footer .social-media-bar a:hover {
+    color: var(--primary-color);
+}

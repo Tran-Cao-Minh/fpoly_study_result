@@ -1,0 +1,1 @@
+<h2>TIN CHI TIẾT</h2>

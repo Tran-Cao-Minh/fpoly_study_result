@@ -1,0 +1,184 @@
+/* my-ability css */
+.my-ability {
+    max-width: 1024px;
+    height: auto;
+    margin: auto;
+    padding-top: 2rem;
+    background-color: var(--gray);
+    box-shadow: 0 0 1rem black;
+}
+
+.my-ability .heading {
+    width: 100%;
+    height: 15rem;
+    font-size: 4rem;
+    font-family: 'Open Sans Bold';
+    text-align: center;
+    line-height: 15rem;
+}
+
+.my-ability .present {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    margin-top: 3rem;
+    border: 0.5rem inset var(--secondary-color);
+    position: relative;
+    padding: 2rem 3rem;
+}
+
+.my-ability .future {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    margin-top: 4rem;
+    border: 0.5rem outset var(--secondary-color);
+    position: relative;
+    padding: 2rem 3rem;
+}
+
+.my-ability .present .title {
+    width: fit-content;
+    height: 4rem;
+    background-color: var(--white);
+    position: absolute;
+    top: -2.25rem;
+    left: 1rem;
+    font-family: 'Open Sans Bold';
+    font-size: 2rem;
+    border: 0.5rem inset var(--secondary-color);
+    border-radius: 5rem;
+    padding: 0 1rem;
+}
+
+.my-ability .future .title {
+    width: fit-content;
+    height: 4rem;
+    background-color: var(--white);
+    position: absolute;
+    top: -2.25rem;
+    left: 1rem;
+    font-family: 'Open Sans Bold';
+    font-size: 2rem;
+    border: 0.5rem outset var(--secondary-color);
+    border-radius: 5rem;
+    padding: 0 1rem;
+}
+
+.my-ability .content {
+    width: 100%;
+    height: fit-content;
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 3rem;
+}
+
+.my-ability .content p {
+    padding-top: 1rem;
+}
+
+.my-ability .content a {
+    color: var(--primary-color);
+}
+
+.my-ability .content a:hover {
+    color: var(--contrast-primary-color);
+}
+
+/* my-inf css */
+.my-inf {
+    max-width: 1024px;
+    height: auto;
+    margin: auto;
+    background-color: var(--gray);
+    padding: 2rem 0 3rem 0;
+    box-shadow: 0 0 1rem black;
+}
+
+.my-inf .heading {
+    width: 100%;
+    height: 15rem;
+    font-size: 4rem;
+    font-family: 'Open Sans Bold';
+    text-align: center;
+    line-height: 15rem;
+}
+
+.my-inf .contain-inf {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    margin-top: 2rem;
+    border: 0.5rem double var(--primary-color);
+    position: relative;
+    padding: 2rem 1rem;
+    display: flex;
+}
+
+.my-inf .contain-inf .deco {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 50%;
+    border: 0.8rem solid var(--primary-color);
+}
+
+.my-inf .contain-inf .deco.s1 {
+    top: -1.25rem;
+    left: -1.25rem;
+}
+
+.my-inf .contain-inf .deco.s2 {
+    top: -1.25rem;
+    right: -1.25rem;
+}
+
+.my-inf .contain-inf .deco.s3 {
+    bottom: -1.25rem;
+    left: -1.25rem;
+}
+
+.my-inf .contain-inf .deco.s4 {
+    bottom: -1.25rem;
+    right: -1.25rem;
+}
+
+.my-inf .contain-img {
+    width: 32rem;
+    height: 61rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+.my-inf .contain-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: center top;
+    border-radius: 0.5rem;
+}
+
+.my-inf .content {
+    width: calc(100% - 33rem);
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.my-inf .content p {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.my-inf .content .conjoined {
+    display: block;
+    width: fit-content;
+    min-height: 3rem;
+    text-align: justify;
+}
+
+.my-inf .content .bold {
+    font-family: 'Open Sans Bold';
+}

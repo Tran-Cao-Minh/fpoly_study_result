@@ -1,0 +1,577 @@
+/* common css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: #fff;
+    --yellow: #fcff55;
+
+    --black-text: #3a3a3a;
+    --gray-text: #666;
+    --pink-text: #f06464;
+
+    --black-background: #262626;
+    --light-black-background: #313131;
+    --blue-background: #359af3;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black-text);
+    font-size: 10px;
+}
+#wrapper {
+    width: 100%;
+    height: auto;
+
+    /* background-color: lightsteelblue; */
+}
+@media all and (max-width: 1024px){
+    html{
+        font-size: 8px;
+    }
+}
+@media all and (max-width: 740px){
+    html{
+        font-size: 6px;
+    }
+    header nav{
+        display: none;
+    }
+    .tech-store{
+        padding-left: 8rem;
+    }
+}
+/* header css */
+header{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 7rem;
+    overflow: hidden;
+
+    /* background-color: lightgoldenrodyellow; */
+}
+header .header-bar{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1240px;
+    height: 7rem;
+    margin: auto;
+    padding: 0 1rem;
+
+    /* background-color: lightblue; */
+}
+header .logo{
+    display: inline-block;
+    height: 7rem;
+
+    /* background-color: blue; */
+}
+header img{
+    height: 3rem;
+    width: auto;
+
+    margin-top: 2rem;
+}
+header ul.menu-list{
+    display: flex;
+    justify-content: space-between;
+
+    width: 80rem;
+    height: 7rem;
+
+    /* background-color: blue; */
+
+    list-style: none;
+}
+header li{
+    position: relative;
+}
+header a.menu-item{
+    display: block;
+
+    width: fit-content;
+    height: 7rem;
+    padding: 0 1rem;
+
+    /* background-color: green; */
+    color: var(--white);
+
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 7rem;
+}
+header .choosen{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 0.5rem;
+
+    background-color: var(--white);
+}
+/* #about-me */
+#about-me{
+    max-width: 310px;
+    height: 40px;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: monospace, sans-serif;
+    font-weight: bolder;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px double #440a67;
+    color: #440a67;
+}
+/* banner css */
+.banner{
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: fit-content;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+.banner .container{
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    /* background-color: blue; */
+}
+.banner .prod-name{
+    width: fit-content;
+    padding-bottom: 5rem;
+
+    font-size: 7rem;
+    font-weight: bold;
+    /* line-height: 15rem; */
+    text-align: center;
+
+    color: var(--white);
+    /* background-color: red; */
+}
+.banner button{
+    width: fit-content;
+    height: 6rem;
+    padding: 0 5rem;
+
+    background-color: transparent;
+    color: var(--white);
+
+    border-radius: 0.4rem;
+    border: 0.3rem solid var(--white);
+
+    font-family: 'Open Sans';
+    font-size: 2rem;
+}
+.banner .index-bar{
+    position: absolute;
+    bottom: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 6rem;
+    height: 1.2rem;
+
+    /* background-color: red; */
+}
+.banner .index-dot{
+    width: 1.2rem;
+    height: 1.2rem;
+
+    border-radius: 50%;
+    border: 0.2rem solid var(--white);
+}
+.banner .index-dot.choosen{
+    background-color: var(--white);
+}
+/* buy-reason css */
+.buy-reason{
+    width: 100%;
+    height: auto;
+    margin-top: -3px;
+    overflow: hidden;
+
+    background-color: var(--white);
+}
+.buy-reason .container{
+    max-width: 1240px;
+    height: auto;
+    margin: auto;
+    padding: 6rem 0 6rem;
+
+    /* background-color: lightblue; */
+}
+.buy-reason .heading{
+    display: block;
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 5rem;
+
+    /* background-color: #eee; */
+
+    font-size: 4rem;
+    line-height: 5rem;
+    text-align: center;
+}
+.buy-reason .reason-list{
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    height: auto;
+
+    /* background-color: #eee; */
+}
+.buy-reason .reason-item{
+    max-width: 24rem;
+    height: auto;
+
+    /* background-color: #ddd; */
+}
+.buy-reason img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+
+    /* background-color: #111; */
+}
+.buy-reason .title{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+
+    /* background-color: #fff; */
+
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+}
+.buy-reason .content{
+    display: block;
+    width: 100%;
+    height: auto;
+
+    /* background-color: #fff; */
+
+    font-family: 'Open Sans';
+    font-size: 1.6rem;
+    text-align: center;
+}
+/* for-your-passion css */
+.for-your-passion{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    background-color: var(--black-background);
+}
+.for-your-passion .container{
+    max-width: 1240px;
+    height: 72rem;
+    margin: auto;
+
+    /* background-color: lightgreen; */
+}
+.for-your-passion .contain-img{
+    width: 67rem;
+    height: 72rem;
+    float: left;
+
+    /* background-color: #c2c; */
+
+    overflow: hidden;
+}
+.for-your-passion img{
+    width: 76rem;
+    height: auto;
+    margin-left: -9rem;
+
+    /* background-color: #e0e; */
+}
+.for-your-passion .contain-content{
+    float: left;
+
+    width: 32rem;
+    height: 30rem;
+    margin: 23rem 0 0 8rem;
+
+    /* background-color: #eee; */
+
+    font-family: 'Open Sans';
+}
+.for-your-passion .title{
+    display: block;
+
+    width: 100%;
+    height: 7rem;
+
+    /* background-color: lightblue; */
+    color: var(--white);
+
+    font-size: 4rem;
+    line-height: 7rem;
+}
+.for-your-passion .content{
+    display: block;
+
+    max-width: 32rem;
+    height: fit-content;
+    margin: 2rem 0;
+
+    /* background-color: rgb(121, 139, 145); */
+    color: var(--white);
+
+    font-size: 1.6rem;
+    text-align: justify;
+}
+.for-your-passion .youtube{
+    max-width: 32rem;
+    height: 8rem;
+
+    /* background-color: #fff; */
+}
+.for-your-passion button{
+    float: left;
+
+    width: 14rem;
+    height: 8rem;
+    margin-right: 1rem;
+
+    background-image: url(./images/video_btn.png);
+    background-size: cover;
+
+    border: none;
+    border-radius: 0.8rem;
+}
+.for-your-passion .content-video{
+    float: left;
+    display: block;
+
+    width: 17rem;
+    height: 8rem;
+
+    /* background-color: #ccc; */
+    color: var(--white);
+
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.for-your-passion .index-bar{
+    display: flex;
+    justify-content: space-between;
+
+    width: 6rem;
+    height: 1.2rem;
+    margin-top: 2rem;
+
+    /* background-color: red; */
+}
+.for-your-passion .index-dot{
+    width: 1.2rem;
+    height: 1.2rem;
+
+    border-radius: 50%;
+    border: 0.2rem solid var(--white);
+}
+.for-your-passion .index-dot.choosen{
+    background-color: var(--white);
+}
+/* new-features css */
+.new-features{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    background-color: var(--light-black-background);
+}
+.new-features .container{
+    max-width: 1240px;
+    height: 72rem;
+    margin: auto;
+
+    /* background-color: lightgreen; */
+}
+.new-features img{
+    float: right;
+
+    margin-top: 11rem;
+
+    /* background-color: blue; */
+}
+.new-features .contain-content{
+    float: right;
+
+    width: 48rem;
+    height: 52rem;
+    margin-top: 10rem;
+
+    /* background-color: #eee; */
+
+    font-family: 'Open Sans';
+}
+.new-features .title{
+    display: block;
+
+    max-width: 32rem;
+    height: 7rem;
+
+    /* background-color: lightblue; */
+    color: var(--white);
+
+    font-size: 4rem;
+    line-height: 7rem;
+}
+.new-features .content{
+    display: block;
+
+    max-width: 32rem;
+    height: fit-content;
+    margin: 2rem 0;
+
+    /* background-color: rgb(121, 139, 145); */
+    color: var(--white);
+
+    font-size: 1.6rem;
+    text-align: justify;
+}
+.new-features .contain-content img{
+    width: 40rem;
+    height: auto;
+
+    margin: 0 0 0 -2rem;
+    float: left;
+}
+/* taken-with-camera css */
+.taken-with-camera{
+    width: 100%;
+    height: 68rem;
+
+    background-color: var(--white);
+}
+.taken-with-camera .container{
+    max-width: 1240px;
+    height: 21rem;
+    padding-top: 5rem;
+    margin: auto;
+
+    /* background-color: lightgreen; */
+}
+.taken-with-camera .heading{
+    display: block;
+    width: 100%;
+    height: 8rem;
+
+    /* background-color: #eee; */
+    color: var(--yellow);
+
+    font-size: 4rem;
+    line-height: 8rem;
+    text-align: center;
+}
+.taken-with-camera .content{
+    max-width: 54rem;
+    margin: auto;
+
+    /* background-color: blue; */
+
+    font-family: 'Open Sans';
+    font-size: 1.6rem;
+}
+.taken-with-camera .img-list{
+    width: 100%;
+    height: 40rem;
+
+    /* background-color: lightgray; */
+}
+.taken-with-camera .img-item{
+    width: 25%;
+    height: 40rem;
+    float: left;
+
+    /* background-color: pink; */
+}
+.taken-with-camera img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* tech-store css */
+.tech-store{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 68rem;
+
+    background-color: var(--blue-background);
+}
+.tech-store .container{
+    max-width: 1240px;
+    width: fit-content;
+    height: 21rem;
+    margin: auto;
+
+    /* background-color: lightgreen; */
+}
+.tech-store .logo{
+    display: block;
+    max-width: 64rem;
+    height: 21rem;
+    margin-right: 2rem;
+    float: left;
+
+    /* background-color: red; */
+    color: var(--white);
+
+    font-family: 'Open Sans';
+    font-size: 10rem;
+    line-height: 21rem;
+}
+.tech-store .slogan{
+    display: inline-block;
+    width: fit-content;
+    height: 21rem;
+    padding: 4rem 0;
+    margin-right: 2rem;
+
+    /* background-color: red; */
+    color: var(--white);
+
+    font-family: 'Open Sans';
+    font-size: 3rem;
+    /* line-height: 21rem; */
+}
+.tech-store button{
+    width: fit-content;
+    height: 6rem;
+    padding: 0 5rem;
+
+    background-color: transparent;
+    color: var(--white);
+
+    border-radius: 0.4rem;
+    border: 0.3rem solid var(--white);
+
+    font-family: 'Open Sans';
+    font-size: 2rem;
+}

@@ -1,0 +1,180 @@
+@media all and (max-width: 980px){
+    .content{
+        padding: 0 0 calc(50% + 1360px) 0;
+    }     
+    aside{
+        width: 94%;
+        max-width: 970px;
+        margin-left: 3%;
+    }
+    .color-news{
+        height: fit-content;
+    }
+    .color-news-post{
+        width: 49%;
+        min-width: 200px;
+        margin: 0 0.5% 10px;
+        border: 1px solid var(--colorA);
+        border-bottom: none;
+        border-radius: 10px;
+        float: left;
+    }
+    .post-img{
+        max-width: 100px;
+        height: 100px;
+        margin: 5px calc(50% - 50px) 0;
+    }
+    .post-img > img
+    {
+        max-width: 100px;
+        height: 100px;
+    }
+    .post-content{
+        max-width: 420px;
+        min-height: 84px;
+        float: left;
+        margin: 0 7px 0;
+    }
+    .post-content-title{
+        margin-bottom: 2px;
+        font-size: 15px;
+        text-align: left;
+    }
+    .img-black-white{
+        width: 100%;
+        height: auto;
+    }
+    .contain-img-list
+    {
+        width: 98%;
+        height: 130px;
+        margin: 3px 1% 0;
+        padding: 0 10px;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .contain-img-list > img
+    {
+        max-width: 100px;
+        height: 100px;
+        margin-right: 5px;
+    }
+    main{
+        width: 94%;
+        max-width: 970px;
+        float: left;
+        margin-left: 3%;
+        height: auto;
+    }
+    .banner{
+        width: 100%;
+        height: fit-content;
+    }
+    .banner > img{
+        width: 100%;
+        height: auto;
+    }
+    .theory{
+        height: auto;  
+        padding-bottom: 15px;
+    }
+    .contain-img-theory{
+        margin: 18px 0 0 9px;
+    }
+    .contain-content-theory{
+        width: calc(100% - 190px);
+        max-width: 970px;
+        height: auto;
+        float: left;
+        margin: 18px 9px 0;
+    }
+    .review{
+        max-width: 970px;
+        height: auto;
+    }
+    .review-item{
+        width: 49%;
+        max-width: 485px;
+        min-width: 220px;
+        height: 230px;
+        margin: 15px 0.5% 0px;
+        border: 1px solid var(--colorA);
+        border-bottom: none;
+        border-radius: 10px;
+    }
+    .review-item > img{
+        margin-left: calc(50% - 50px);
+    }
+    .contain-content-review{
+        width: 98%;
+        max-width: 485px;
+        height: 100px;
+        float: left;
+    }
+}
+@media all and (max-width: 500px){
+    .content{
+        padding: 0 0 calc(25% + 1540px) 0;
+    }  
+    aside{
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .color-news{
+        height: fit-content;
+    }
+    .color-news-post{
+        width: 100%;
+        margin: 0 0 10px;
+        border: none;
+        background-color: transparent;
+    }
+    .post-img{
+        max-width: 80px;
+        height: 80px;
+        margin: 3px;
+    }
+    .post-img > img
+    {
+        max-width: 80px;
+        height: 80px;
+    }
+    .post-content{
+        width: calc(100% - 100px);
+        margin-left: 5px;
+    }
+    .post-content-title{
+        font-size: 11px;
+        font-weight: bolder;
+    }
+    .contain-img-theory{
+        max-width: 500px;
+        margin: 10px 0 0 0;
+    }
+    .contain-img-theory > img{
+        margin-left: calc(50% - 80px);
+    }
+    .contain-content-theory{
+        width: 98%;
+        max-width: 970px;
+        height: auto;
+        float: left;
+        margin: 18px 1% 0;
+    }
+    .review{
+        height: 350px;
+    }
+    .review-item{
+        width: 100%;
+        max-width: 500px;
+        height: 125px;
+        margin: 15px 0 0px;
+        border: none;
+    }
+    .review-item > img{
+        margin-left: 5px;
+    }
+    .contain-content-review{
+        width: calc(100% - 115px);
+    }
+}

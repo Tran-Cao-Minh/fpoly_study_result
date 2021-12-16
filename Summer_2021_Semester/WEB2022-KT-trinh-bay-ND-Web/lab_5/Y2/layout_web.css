@@ -1,0 +1,656 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color-1: #8a07f5;
+    --sub-color-1: #f3f5dc;
+    --main-color-2: #f56418;
+    --sub-color-2: #dcf5f4;
+    --light-main-color-1: #ae58f5;
+    --white: #fff;
+    --black: #000;
+    --black-shadow: #00000033;
+}
+html{
+    font-family: arial;
+    font-size: 10px;
+}
+#wrap{
+    width: 100%;
+    height: auto;
+    background-color: #eee;
+    background-image: url(./images/bookpattern.png);
+}
+/* embedded fonts */
+/* font Akashi */
+@font-face {
+    font-family: 'Akashi';
+    src: url(./fonts/UTM\ Akashi.ttf);
+}
+/* font Alba Matter */
+@font-face {
+    font-family: 'Alba Matter';
+    src: url(./fonts/UTM\ Alba\ Matter.ttf);
+}
+/* font Alter Gothic */
+@font-face {
+    font-family: 'Alter Gothic';
+    src: url(./fonts/UTM\ Alter\ Gothic.ttf);
+}
+/* font Androgyne */
+@font-face {
+    font-family: 'Androgyne';
+    src: url(./fonts/UTM\ Androgyne.ttf);
+}
+/* font Seagull */
+@font-face {
+    font-family: 'Seagull';
+    src: url(./fonts/UTM\ SeagullBold.ttf);
+}
+/* header css */
+header{
+    width: 100%;
+    height: 7rem;
+    background-color: var(--light-main-color-1);
+}
+header .header-bar{
+    max-width: 1240px;
+    height: 7rem;
+    margin: auto;
+}
+header .logo{
+    width: 7rem;
+    height: 7rem;
+    float: left;
+    text-align: center;
+    padding-top: 1rem;
+}
+header .logo img{
+    width: auto;
+    height: 5rem;
+}
+header .search-area{
+    width: calc(100% - 14rem);
+    height: 7rem;
+    float: left;
+    padding: 1rem 0;
+    text-align: center;
+}
+header .search-area input{
+    width: 80%;
+    height: 5rem;
+    padding: 0 2rem 0.4rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: var(--main-color-1);
+    font-family: 'Androgyne', sans-serif;
+}
+header .menu{
+    width: 7rem;
+    height: 7rem;
+    float: left;
+    padding-top: 1rem;
+    text-align: center;
+}
+header .menu img{
+    width: auto;
+    height: 5rem;
+    cursor: pointer;
+}
+/* page 1 css */
+.heading-page{
+    max-width: 1240px;
+    height: auto;
+    margin: auto;
+    padding: 2rem 0;
+    background-color: var(--sub-color-1);
+    text-align: center;
+}
+.heading-page img{
+    width: 95%;
+    height: auto;
+}
+/* page 2,4 css */
+.even-page{
+    max-width: 1240px;
+    height: 54rem;
+    margin: auto;
+    background-color: var(--sub-color-2);
+    position: relative;
+}
+.even-page .index-bar{
+    width: 60rem;
+    height: 10rem;
+    background-color: var(--main-color-2);
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+.even-page .index-bar .index{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    float: left;
+    font-size: 10rem;
+    color: var(--sub-color-2);
+    font-family: 'Akashi';
+    line-height: 9rem;
+    text-align: center;
+}
+.even-page img{
+    width: 42rem;
+    height: auto;
+    position: absolute;
+    left: 12rem;
+    bottom: 7rem;
+    box-shadow: 0 0 15px 7.5px var(--main-color-2);
+    border-radius: 1rem;
+    filter: drop-shadow(0 2rem 0 var(--black-shadow));
+}
+.even-page .content{
+    width: calc(100% - 66rem);
+    height: fit-content;
+    float: right;
+    margin: 4rem 3rem 0 0;
+    color: var(--main-color-2);
+}
+.even-page .title{
+    display: block;
+    width: 100%;
+    height: 6rem;
+    font-size: 5rem;
+    font-family: 'Alter Gothic';
+    line-height: 6rem;
+    text-align: left;
+}
+.even-page .title .index{
+    display: none;
+}
+.even-page p{
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-family: 'Alter Gothic';
+    text-align: justify;
+    text-align-last: left;
+}
+/* page 3,5 css */
+.odd-page{
+    max-width: 1240px;
+    height: 54rem;
+    margin: auto;
+    background-color: var(--sub-color-1);
+    position: relative;
+}
+.odd-page .index-bar{
+    width: 60rem;
+    height: 10rem;
+    background-color: var(--main-color-1);
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+}
+.odd-page .index-bar .index{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    float: right;
+    font-size: 10rem;
+    color: var(--sub-color-1);
+    font-family: 'Akashi';
+    line-height: 9rem;
+    text-align: center;
+}
+.odd-page img{
+    width: 42rem;
+    height: auto;
+    position: absolute;
+    right: 12rem;
+    bottom: 7rem;
+    box-shadow: 0 0 15px 7.5px var(--main-color-1);
+    border-radius: 1rem;
+    filter: drop-shadow(0 2rem 0 #00000033);
+}
+.odd-page .content{
+    width: calc(100% - 66rem);
+    height: fit-content;
+    float: left;
+    margin: 4rem 0 0 3rem;
+    color: var(--main-color-1);
+}
+.odd-page .title{
+    display: block;
+    width: 100%;
+    height: 6rem;
+    font-size: 5rem;
+    font-family: 'Alter Gothic';
+    line-height: 6rem;
+    text-align: right;
+}
+.odd-page .title .index{
+    display: none;
+}
+.odd-page p{
+    display: block;
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-family: 'Alter Gothic';
+    text-align: justify;
+    text-align-last: right;
+}
+/* top-comment css */
+.top-comment{
+    max-width: 1240px;
+    height: auto;
+    margin: auto;
+    background-color: var(--sub-color-2);
+}
+.top-comment .heading{
+    width: 100%;
+    height: 7rem;
+    text-align: center;
+    font-size: 3.4rem;
+    line-height: 7rem;
+    font-family: 'Seagull';
+    color: var(--main-color-2);
+}
+.top-comment .comment-slide{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    padding-bottom: 4rem;
+}
+.top-comment .comment-slide img{
+    margin-top: 1rem;
+    width: 40rem;
+    height: 40rem;
+}
+.top-comment .comment-slide button{
+    width: 9.5rem;
+    height: 17rem;
+    background-image: url(./images/next.png);
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 13rem;
+    opacity: 0.5;
+    transition: 0.1s;
+}  
+.top-comment .comment-slide .prev{
+    left: 0;
+    transform: rotate(180deg);
+} 
+.top-comment .comment-slide .next{
+    right: 0;
+}
+.top-comment .comment-slide button:hover{
+    opacity: 1;
+}
+.top-comment .user-name{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    font-family: 'Seagull';
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--main-color-2);
+}
+.top-comment .comment{
+    max-width: 1024px;
+    width: calc(100% - 4rem);
+    height: fit-content;
+    margin: auto;
+    font-family: 'Seagull';
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--main-color-2);
+    text-align: justify;
+    text-align-last: center;
+}
+.top-comment .index-bar{
+    width: 20rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: calc(50% - 10rem);
+    display: flex;
+    justify-content: space-between;
+}
+.top-comment .index-dot{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+.top-comment .index-dot.choosen{
+    background-color: var(--main-color-2);
+}
+/* footer css */
+footer{
+    width: 100%;
+    background-color: var(--sub-color-1);
+    height: auto;
+}
+.footer-bar{
+    max-width: 1240px;
+    height: auto;
+    padding-bottom: 2rem;
+    margin: auto;
+    text-align: center;
+}
+footer .buy-now{
+    width: 30rem;
+    height: 6rem;
+    background-color: var(--main-color-1);
+    margin: 2rem auto;
+    border: none;
+    border-radius: 10rem;
+    font-size: 2.5rem;
+    font-family: 'Androgyne';
+    color: var(--sub-color-1);
+    padding-bottom: 0.3rem;
+    transition: 0.1s;
+}
+footer .buy-now:hover{
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+footer .contact-area{
+    width: calc(100% - 5rem);
+    max-width: 1024px;
+    height: auto;
+    margin: auto;
+    padding: 2rem 0;
+    border: 0.4rem solid var(--black);
+    border-radius: 2rem;
+    position: relative;
+}
+footer .contact-area .heading{
+    width: fit-content;
+    height: 4rem;
+    padding: 0 2rem;
+    position: absolute;
+    top: calc(-2.2rem);
+    left: 3rem;
+    font-size: 2rem;
+    font-family: 'Seagull';
+    line-height: 3rem;
+    border: 0.3rem solid var(--black);
+    border-radius: 4rem;
+    background-color: var(--main-color-1);
+    color: var(--sub-color-1);
+}
+footer .contact-list{
+    width: 95%;
+    height: fit-content;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .contact-item{
+    width: fit-content;
+    height: 3rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-family: 'Seagull';
+    color: var(--main-color-1);
+}
+footer .social-media-list{
+    width: 32rem;
+    height: 4rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer .social-media-item{
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    font-size: 2.5rem;
+    line-height: 4.2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--sub-color-1);
+    background-color: var(--main-color-1);
+    transition: 0.1s;
+}
+footer .social-media-item:hover{
+    font-size: 2.8rem;
+}
+/* about-me */
+#about-me{
+    max-width: 310px;
+    height: 40px;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: monospace, sans-serif;
+    font-weight: bolder;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px double #440a67;
+    color: #440a67;
+}
+/* responsive css */
+@media all and (max-width: 1240px){  
+    /* header css */
+    header .logo{
+        margin-left: 2rem;
+    }
+    header .search-area{
+        width: calc(100% - 18rem);
+    }
+    header .search-area input{
+        width: 90%;
+    }
+}
+@media all and (max-width: 1024px){
+    :root{
+        --main-color-1: #8301F5;
+        --sub-color-1: #F4F5EB;
+        --main-color-2: #F55200;
+        --sub-color-2: #DCF5F3;
+        --light-main-color-1: #C793F5;
+    }
+    html{
+        font-size: 9px;
+    }
+}
+@media all and (max-width: 960px){
+    /* page 2,3,4,5 css */
+    .even-page,
+    .odd-page{
+        height: auto;
+        display: flex;
+        padding-bottom: 2.5rem;
+    }
+    .even-page .index-bar,
+    .odd-page .index-bar{
+        width: 100%;
+        top: 33rem;
+        border-radius: 0;
+    }
+    .even-page .index-bar .index,
+    .odd-page .index-bar .index{
+        display: none;
+    }
+    .even-page img,
+    .odd-page img{
+        width: 66rem;
+        position: absolute;
+        left: calc(50% - 33rem);
+        top: 4rem;
+    }
+    .even-page .content,
+    .odd-page .content{
+        width: 66rem;
+        margin: 73rem auto 0;
+    }
+    .even-page .title,
+    .odd-page .title{
+        text-align: center;
+    }
+    .even-page .title .index,
+    .odd-page .title .index{
+        display: inline;
+    }
+    .even-page p,
+    .odd-page p{
+        margin-top: 1rem;
+        font-size: 3rem;
+        font-family: 'Alter Gothic';
+        text-align: justify;
+        text-align-last: left;
+    }
+    /* footer css */
+    footer .buy-now{
+        margin: 2rem auto 4rem;
+    }
+    footer .contact-area{
+        border-radius: 20rem;
+    }
+    footer .contact-area .heading{
+        width: 16rem;
+        left: calc(50% - 8rem);
+    }
+    footer .contact-list{
+        flex-direction: column;
+    }
+    footer .contact-item{
+        height: 4rem;
+        line-height: 4rem;
+        align-self: center;
+    }
+    footer .social-media-item{
+        line-height: 4.4rem;
+    }
+}
+@media all and (max-width: 740px){
+    html{
+        font-size: 7px;
+    }
+    /* page 2,3,4,5 css */
+    .even-page img,
+    .odd-page img{
+        width: 80%;
+        left: 10%;
+        top: 4%;
+    }
+    .even-page .index-bar,
+    .odd-page .index-bar{
+        top: 35%;
+    }
+    .even-page .content,
+    .odd-page .content{
+        width: 80%;
+        margin: 88% 10% 0;
+    }
+    .even-page .title,
+    .odd-page .title{
+        height: 5rem;
+        font-size: 4.2rem;
+        line-height: 5rem;
+    }
+    .even-page p,
+    .odd-page p{
+        margin-top: 0.5rem;
+        font-size: 2.6rem;
+    }
+    /* top-comment css */
+    .top-comment .comment-slide button{
+        width: 7.3rem;
+        height: 13rem;
+        top: 14rem;
+    }  
+    .top-comment .heading{
+        height: 5rem;
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+}
+@media all and (max-width: 420px){
+    header .search-area{
+        padding: 1.5rem 0;
+    }
+    header .search-area input{
+        height: 4rem;
+        font-size: 1.3rem;
+    } 
+    /* page 1 css */
+    .heading-page img{
+        width: 100%;
+    }
+    /* page 2,3,4,5 css */
+    .even-page .index-bar,
+    .odd-page .index-bar{
+        top: 30%;
+    }
+    .even-page .content,
+    .odd-page .content{
+        width: 90%;
+        margin: 90% 5% 0;
+    }
+    .even-page .title,
+    .odd-page .title{
+        height: 3.4rem;
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+    }
+    .even-page p,
+    .odd-page p{
+        margin-top: 0.28rem;
+        font-size: 1.6rem;
+    }
+    /* top-comment css */
+    .top-comment .heading{
+        height: 4rem;
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+    .top-comment .comment-slide img{
+        margin-top: 0.5rem;
+    }
+    .top-comment .comment-slide button{
+        width: 4.5rem;
+        height: 8rem;
+        top: 17rem;
+    }
+    .top-comment .user-name{
+        height: 3rem;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    .top-comment .comment{
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .top-comment .index-bar{
+        width: 15rem;
+        height: 1.5rem;
+        left: calc(50% - 7.5rem);
+    }
+    .top-comment .index-dot{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    /* footer css */
+    footer .contact-area{
+        border-radius: 5rem;
+    }
+    footer .contact-item{
+        font-size: 2rem;
+    }
+}

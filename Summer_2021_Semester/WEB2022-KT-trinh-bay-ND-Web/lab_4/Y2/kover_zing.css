@@ -1,0 +1,434 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /* dinh dang font va mau mac dinh cho chu cua trang */
+    font-family: "Roboto";
+    color: var(--black-text);
+}
+:root{
+    --black-text: #333;
+    --black-header-text: #444;
+    --white: #fff;
+    --gray-text: #888;
+    --blue-link: #04b2f7;
+    --red-text: #dd3333;
+    --yellow-underline: #e2a85f;
+    --black-kover-logo: #151515;
+    --yellow-kover-logo: #fd8a00;
+}
+#wrap{
+    width: 100%;
+    height: auto;
+}
+/* header css */
+header{
+    width: 100%;
+    height: 52px;
+    font-family: arial;
+    color: var(--black-header-text);
+    position: fixed;
+    z-index: 3;
+    background-color: var(--white);
+    box-shadow: 0 0 3px black;
+}
+header .header-bar{
+    max-width: 1100px;
+    height: 52px;
+    margin: auto;
+}
+header .contain-logo{
+    width: 120px;
+    height: 52px;
+    float: left;
+    cursor: pointer;
+}
+header .contain-logo img{
+    width: 94px;
+    height: 29px;
+    float: left;
+    margin: 6px 0 2px;
+}
+header .contain-logo .slogan{
+    width: 100%;
+    height: 10px;
+    font-size: 8px;
+    text-align: left;
+    float: left;
+    font-weight: bolder;
+    letter-spacing: 0.25px;
+}
+header .header-nav{
+    width: 100%;
+    max-width: 740px;
+    height: 52px;
+    float: left;
+}
+header .menu-item,
+header .more{
+    width: fit-content;
+    height: 52px;
+    float: left;
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 52px;
+    font-weight: bold;
+    cursor: pointer;
+}
+header .more{
+    margin-right: 0;
+}
+header .menu-item.choosen,
+header .menu-item:hover{
+    color: var(--blue-link);
+    border-bottom: 3.5px solid var(--blue-link);
+}
+header .dot{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-top: 24px;
+    float: left;
+    margin-right: 4px;
+    background-color: var(--black-header-text);
+}
+header .user-img{
+    width: 30px;
+    height: 30px;
+    margin: 11px 10px 0 12px; 
+    float: right;
+}
+header .user-img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+header .search-btn{
+    width: fit-content;
+    height: 52px;
+    line-height: 52px;
+    float: right;
+    font-size: 25px;
+}
+header .search-btn:hover{
+    color: var(--blue-link);
+}
+.main-video{
+    width: 100%;
+    height: calc(100vh);
+    overflow: hidden;
+}
+.main-video video{
+    width: 100%;
+    height: auto;
+}
+.kover-logo{
+    width: 240px;
+    height: 85px;
+    /* background-color: blue; */
+    margin: 50px auto;
+    position: relative;
+    font-family: "montserrat";
+    font-size: 60px;
+    line-height: 85px;
+    text-align: center;
+    color: var(--black-kover-logo);
+}
+.kover-logo .deco-1{
+    width: 35px;
+    height: 15px;
+    background-color: var(--white);
+    position: absolute;
+    top: 35px;
+    left: 150px;
+    z-index: 0;
+}
+.kover-logo .deco-2{
+    width: 28px;
+    position: absolute;
+    top: 29px;
+    left: 137px;
+    fill: var(--yellow-kover-logo);
+    transform: rotate(-135deg);
+    z-index: 1;
+}
+.kover-logo .deco-3{
+    width: 35px;
+    position: absolute;
+    top: 25.5px;
+    left: 133px;
+    fill: var(--white);
+    transform: rotate(-135deg);
+    z-index: 0;
+}
+.main-slogan{
+    max-width: 1024px;
+    height: 250px;
+    margin: 130px auto 120px;
+    text-align: center;
+    color: var(--red-text);
+    font-size: 27px;
+    font-weight: bolder;
+    line-height: 35px;
+    position: relative;
+}
+.main-slogan .deco-1{
+    width: 320px;
+    height: 8px;
+    background-color: var(--yellow-underline);
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 160px);
+}
+p.post-p{
+    max-width: 660px;
+    height: fit-content;
+    margin: 30px auto;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+}
+img.post-i{
+    display: block;
+    max-width: 660px;
+    height: auto;
+    margin: 10px auto;
+}
+img.post-i-100{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+.post-title{
+    width: 660px;
+    height: 300px;
+    margin: 30px auto;
+    position: relative;
+}
+.post-title .title-number{
+    width: fit-content;
+    height: 300px;
+    float: left;
+    font-size: 210px;
+    color: var(--red-text);
+    font-family: "Imbue";
+    margin-top: -25px;
+}
+.post-title .title-content{
+    width: fit-content;
+    height: 300px;
+    float: right;
+    text-align: right;
+    font-size: 50px;
+    color: var(--black-kover-logo);
+    font-family: "Pridi";
+    line-height: 65px;
+    position: relative;
+    z-index: 1;
+}
+.post-title .highlight{
+    width: 320px;
+    height: 17px;   
+    bottom: 44px;
+    right: 0;   
+    background-color: var(--yellow-underline);
+    position: absolute;
+    z-index: 0;
+}
+.opinion{
+    width: 660px;
+    height: 270px;
+    margin: 10px auto;
+}
+.opinion .right{
+    width: 300px;
+    height: 260px;
+    float: left;
+}
+.opinion .deco-group{
+    width: 300px;
+    height: 42px;
+    position: relative;
+    float: left;
+}
+.opinion .contain-deco-1{
+    width: 30px;
+    height: 42px;
+    float: left;
+    margin-right: 2px;
+    font-family: "Revalia";
+    position: relative;
+    overflow: hidden;
+}
+.opinion .deco-1{
+    font-size: 140px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -90px;
+    left: -10px;
+    z-index: 1;
+    -webkit-text-fill-color: var(--white); 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--yellow-underline);
+}
+.opinion .line{
+    width: 225px;
+    height: 40px;
+    background-color: var(--white);
+    float: left;
+    margin-left: 10px;
+    border-bottom: 3px solid var(--yellow-underline);
+}
+.opinion .content{
+    width: 300px;
+    height: 200px;
+    margin-top: 15px;
+    font-size: 25px;
+    text-align: right;
+    color: var(--yellow-underline);
+    font-weight: bold;
+    line-height: 32px;
+    float: left;
+}
+.opinion .black{
+    color: var(--black-kover-logo);
+}
+.opinion .left{
+    width: 335px;
+    height: auto;
+    float: right;
+    margin-top: 32px;
+}
+.author{
+    max-width: 660px;
+    height: fit-content;
+    margin: 10px auto;
+    text-align: center;
+    color: var(--gray-text);
+}
+.author .deco{
+    width: 100px;
+    height: 20px;
+    margin: auto;
+    border-top: 1.5px solid var(--yellow-underline);
+}
+.recommend{
+    max-width: 960px;
+    height: 320px;
+    margin: 20px auto;
+}
+.recommend .heading{
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.recommend .heading .red{
+    color: var(--red-text);
+    font-weight: bolder;
+}
+.recommend .item-list{
+    width: 100%;
+    height: 290px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.recommend .item{
+    width: 290px;
+    height: 290px;
+    padding-top: 4px;
+}
+.recommend img{
+    width: 290px;
+    height: auto;
+}
+.recommend .title{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    float: left;
+    color: var(--black-kover-logo);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.recommend .day-post{
+    float: left;
+    width: fit-content;
+    height: 20px;
+    font-size: 12px;
+    color: var(--gray-text);
+    margin-right: 10px;
+    line-height: 20px;
+}
+.recommend .topic{
+    float: right;
+    width: fit-content;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+/* footer css */
+footer{
+    margin-top: 70px;
+    width: 100%;
+    height: 150px;
+    font-size: 13px;
+    color: var(--gray-text);
+    line-height: 19px;
+    background-color: #f7f7f7;
+}
+.footer-bar{
+    max-width: 1100px;
+    height: 150px;
+    margin: auto;
+}
+footer .left{
+    width: fit-content;
+    height: 150px;
+    float: left;
+}
+footer .left .contain-logo{
+    width: 100%;
+    height: 36px;
+    float: left;
+    margin: 15px 0 2px;
+}
+footer .left img{
+    width: 94px;
+    height: 29px;
+    float: left;
+    margin: 6px 0 2px;
+
+}
+footer .left .content{
+    width: 100%;
+}
+footer .right{
+    width: fit-content;
+    height: 58px;
+    float: right;
+    margin-top: 46px;
+}
+/* about-me */
+#about-me{
+    max-width: 310px;
+    height: 40px;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: monospace;
+    font-weight: bolder;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px double #440a67;
+    color: #440a67;
+}

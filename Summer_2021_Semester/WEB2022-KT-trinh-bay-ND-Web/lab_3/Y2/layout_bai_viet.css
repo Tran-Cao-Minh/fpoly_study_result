@@ -1,0 +1,291 @@
+/* main-post css */
+.main-post{
+    max-width: 1024px;
+    height: auto;
+    margin: 75px auto 0;
+    padding: 35px 0 10px;
+    border-bottom: 1px solid var(--black);
+} 
+.main-post .post-heading{
+    width: 100%;
+    height: auto;
+    padding-bottom: 25px;
+}
+.post-heading .day-post{
+    width: 85px;
+    height: 20px;
+    font-family: "montserrat";
+    color: var(--grayText);
+    font-size: 14px;
+    float: left;
+}
+.post-heading .category{
+    width: calc(100% - 140px);
+    height: 20px;
+    font-family: "montserrat";
+    color: var(--black);
+    font-size: 14px;
+    float: left;
+    cursor: pointer;
+}
+.post-heading .category:hover{
+    color: var(--purple);
+}
+.post-heading .face-icon{
+    width: 10px;
+    height: 20px;
+    margin-right: 15px;
+    float: left;
+    cursor: pointer;
+}
+.post-heading .share-icon{
+    width: 15px;
+    height: 20px;
+    margin-right: 15px;
+    float: left;
+    cursor: pointer;
+}
+.post-heading .title{
+    width: 100%;
+    height: fit-content;
+    padding: 45px 0 25px;
+    font-family: "lora";
+    font-size: 45px;
+    text-align: center;
+    color: var(--black)
+}
+.post-heading .author{
+    width: fit-content;
+    height: 25px;
+    padding-right: 4px;
+    float: left;
+    cursor: pointer;
+}
+.post-heading .cont-img{
+    width: 32px;
+    height: 25px;
+    float: left;
+}
+.post-heading .cont-img img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.post-heading .author-name{
+    width: fit-content;
+    height: 25px;
+    float: left;
+    font-family: "montserrat";
+    color: var(--grayText);
+    font-size: 14px;
+    line-height: 25px;
+}
+.post-heading .read-time{
+    width: fit-content;
+    height: 25px;
+    float: left;
+    font-family: "montserrat";
+    color: var(--grayText);
+    font-size: 14px;
+    line-height: 25px;
+}
+.main-post .post-body{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 1px;
+    margin-top: 50px;
+}
+.post-body p, 
+.post-body h4{
+    width: 100%;
+    padding-bottom: 35px;
+    font-family: "lora";
+    font-size: 18px;
+    text-align: justify;
+    color: var(--black);
+    text-align: justify;
+    line-height: 30px;
+}
+.post-body h4{
+    font-weight: bolder;
+}
+.post-body iframe{
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    height: 420px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.post-body figure{
+    width: 100%;
+    padding-bottom: 35px;
+}
+.post-body figure img{
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin: auto;
+}
+.post-body figure figcaption{
+    width: 100%;
+    text-align: center;
+    font-family: "lora";
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--grayText)
+}
+.main-post .post-footing{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 1px;
+    margin-top: 10px;
+}
+.post-footing p,
+.post-footing ul
+{
+    width: 100%;
+    padding-bottom: 30px;
+    font-family: "lora";
+    font-size: 18px;
+    color: var(--black);
+    line-height: 30px;
+}
+.post-footing p{
+    text-align: right;
+}
+.post-footing ul{
+    font-weight: bolder;
+    text-indent: 5px;
+    padding-left: 20px;
+}
+.post-footing li:hover{
+    color: var(--purple);
+}
+/* end main-post css */
+/* same-author css */
+.same-author{
+    max-width: 1024px;
+    height: 455px;
+    margin: 0 auto 25px;
+    border-bottom: 1px solid var(--black);
+} 
+.same-author > .title{
+    width: 100%;
+    height: 16px;
+    font-family: "montserrat";
+    color: var(--grayText);
+    font-size: 14px;
+    text-indent: 20px;
+    margin: 15px 0;
+}
+.same-author .post-area{
+    width: 100%;
+    max-width: 600px;
+    height: 380px;
+    margin: 30px auto 0;
+}
+.same-author .cont-post{
+    width: 100%;
+    height: 76px;
+    margin-bottom: 20px;
+}
+.same-author .cont-img{
+    width: 170px;
+    height: 76px;
+    float: left;
+}
+.same-author .cont-img img{
+    width: 145px;
+    height: 76px;
+}
+.same-author .cont-post .title{
+    width: calc(100% - 170px);
+    height: 55px;
+    margin-top: 10px;
+    float: left;
+    font-family: "space mono";
+    font-size: 18px;
+}
+.same-author .cont-post .title:hover{
+    color: var(--purple);
+    cursor: pointer;
+}
+/* must-try css */
+.must-try{
+    max-width: 1024px;
+    height: 540px;
+    margin: 0 auto 50px;
+    border-bottom: 1px solid var(--black);
+} 
+.must-try > .title{
+    width: 100%;
+    height: 30px;
+    font-family: "space mono";
+    color: var(--black);
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.must-try .post-area{
+    width: 100%;
+    height: 460px;
+    margin-top: 20px;
+}
+.must-try .cont-post{
+    width: calc(50% - 8px);
+    height: 136px;
+    float: left;
+    margin-bottom: 22px;
+    background-color: var(--white);
+}
+.must-try .cont-post:nth-child(odd){
+    margin-right: 16px;
+}
+.must-try .cont-img{
+    width: 185px;
+    height: 136px;
+    float: left;
+}
+.must-try .cont-img img{
+    width: 178px;
+    height: 136px;
+}
+.must-try .cont-post .title{
+    width: calc(100% - 190px);
+    height: 50px;
+    float: left;
+    font-family: "lora";
+    font-size: 18px;
+    text-align: justify;
+    overflow: hidden;
+    color: var(--black);
+}
+.must-try .cont-post .title:hover{
+    color: var(--purple);
+    cursor: pointer;
+}
+.must-try .content{
+    width: calc(100% - 190px);
+    height: 80px;
+    margin-top: 5px;
+    float: left;
+    font-family: "montserrat";
+    text-align: justify;
+    font-size: 11px;
+    color: var(--grayText);
+    overflow: hidden;
+}
+/* banner css */
+.banner{
+    width: 100%;
+    max-width: 1520px;
+    padding-bottom: 0.1%;
+    margin: 0 auto 50px;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+/* end banner css */

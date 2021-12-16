@@ -1,0 +1,151 @@
+.xem-san-pham {
+    width: auto;
+    height: auto;
+    padding: 0.6rem 0.5rem 0.1rem;
+
+    background: lightpink;
+}
+
+.xem-san-pham .tieu-de {
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+
+    background: lightcyan;
+}
+
+.xem-san-pham .prod-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    list-style-type: none;
+
+    max-width: 1024px;
+    height: auto;
+    margin: 0.5rem auto;
+    padding: 15px 0;
+
+    background: lightcyan;
+}
+
+.xem-san-pham .prod-item {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 14rem;
+    height: auto;
+    padding: 10px;
+    margin: 5px 0;
+
+    border-radius: 5px;
+
+    box-shadow: 0 0 2px #000;
+
+    background-color: white;
+}
+
+.xem-san-pham .contain-img {
+    width: 100%;
+    height: 150px;
+
+    background-color: #f4f4f4;
+
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.xem-san-pham .contain-img img {
+    width: auto;
+    height: 150px;
+
+    border-radius: 5px;
+}
+
+.xem-san-pham .name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    width: 100%;
+    height: 25px;
+    margin: 10px 0;
+
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.xem-san-pham .price {
+    width: 50%;
+    height: 25px;
+
+    color: #ff3333;
+
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 25px;
+}
+
+.xem-san-pham .luot-xem {
+    width: 50%;
+
+    color: #888;
+
+    font-size: 14px;
+    text-align: right;
+    line-height: 25px;
+}
+
+.xem-san-pham .phan-chia-trang {
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    background: lightcyan;
+}
+
+.xem-san-pham ul.danh-sach-trang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.xem-san-pham ul.danh-sach-trang li a,
+.xem-san-pham ul.danh-sach-trang li span {
+    display: flex;
+    justify-content: center;
+
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 0.4rem;
+
+    color: #1b1b1b;
+
+    border: 0.4rem solid;
+    border-radius: 50%;
+    
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 2.4rem;
+}
+
+.xem-san-pham ul.danh-sach-trang li a {
+    text-decoration: none;
+    border-color: lightpink;
+}
+
+.xem-san-pham ul.danh-sach-trang li span {
+    border-color: #333;
+}
+

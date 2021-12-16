@@ -1,0 +1,102 @@
+body,
+td,
+th {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #000;
+	background-color: #999;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+/*-------------------------------------------STYLE_TAGS---------------------------------------*/
+.text_links {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 80px;
+	/* đã thực hiện tăng line-height lên 160px  */
+	margin-top: 42px;
+	margin-bottom: 7px;
+	text-align: center;
+	color: #B81414;
+	letter-spacing: normal;
+	/* đã chuyển letter spacing thành normal */
+}
+
+h2 {
+	font-size: 13px;
+	line-height: 21px;
+	margin-top: 21px;
+	margin-left: 75px;
+}
+
+h2 .title_left {
+	text-align: right
+}
+
+p {
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 14px;
+	color: #cccccc;
+	/* đã bỏ text-align và định nghĩa tại các class wrap_ */
+}
+
+p.pleasure {
+	font-size: 12px;
+	line-height: normal; 
+	/* đã chỉnh line-height sang normal */
+	margin-bottom: 14px;
+	/* đã bỏ text-align và định nghĩa tại các class wrap_ */
+	color: #F00;
+}
+
+.emphasis {
+	font-size: 17px;
+	line-height: 21px;
+	margin-bottom: 14px;
+	text-align: left;
+	color: #B81414;
+}
+
+/*-------------------------------------------DIV_TAGS---------------------------------------*/
+#wrap {
+	width: 980px;
+	margin: 0pt auto 0pt auto;
+	overflow: auto;
+	background-color: #FFF
+}
+
+.wrap_content {
+	width: 980px;
+	float: left;
+	margin-top: 10px
+}
+
+.wrap_left {
+	width: 250px;
+	float: left;
+	margin-right: 10px;
+	text-align: right;
+	/* đã chuyển text-align sang right*/
+}
+
+.wrap_right {
+	width: 720px;
+	float: left;
+	text-align: left;
+	/* đã chuyển text-align sang left*/
+}
+
+.box_left {
+	width: 250px;
+	float: left;
+	margin-bottom: 10px;
+}
